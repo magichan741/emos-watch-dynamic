@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="439" viewBox="0 0 780 439">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12283d"/>
+      <stop offset="1" stop-color="#0b1118"/>
+    </linearGradient>
+  </defs>
+  <rect width="780" height="439" fill="url(#g)"/>
+  <text x="390" y="200" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="40"
+        fill="#9ecbff" text-anchor="middle">EMOS</text>
+  <text x="390" y="248" font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-size="22"
+        fill="#5c7390" text-anchor="middle">DYNAMIC LIST</text>
+</svg>

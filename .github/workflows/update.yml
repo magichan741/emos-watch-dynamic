@@ -1,0 +1,78 @@
+name: Update EMOS Dynamic Lists
+
+on:
+  schedule:
+    # 每日 07:30（北京时间）生成，赶在 EMOS 08:00 抓取之前
+    - cron: "30 23 * * *"
+    # 每日 16:30（北京时间）生成，赶在 EMOS 17:00 抓取之前
+    - cron: "30 8 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "README.md"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+      TMDB_LANG: zh-CN
+      TMDB_REGION: CN
+      PUBLIC_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 生成片单 JSON
+        id: gen
+        continue-on-error: true   # 单个榜单失败不阻断部署，保证接口不中断
+        run: python scripts/generate.py
+
+      - name: 校验 EMOS 规范
+        if: steps.gen.outcome == 'success'
+        run: python scripts/validate.py
+
+      - name: 提交更新到仓库（便于 raw 链接与历史回溯）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain docs data/cache)" ]; then
+            git add docs data/cache
+            git commit -m "chore: update emos watch json [skip ci]"
+            git push
+          else
+            echo "无变化，跳过提交"
+          fi
+
+      - name: 打包 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

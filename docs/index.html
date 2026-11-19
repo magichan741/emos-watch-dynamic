@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMOS 动态片单 API</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --line:#26303d;
+    --txt:#e6edf3; --sub:#8b98a5; --accent:#2f9bff; --ok:#2ea043;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;padding:48px 20px 64px;background:
+      radial-gradient(1200px 600px at 50% -10%, #16283d 0%, transparent 60%), var(--bg);
+    color:var(--txt);font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:920px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 8px;letter-spacing:.5px}
+  h1 span{color:var(--accent)}
+  .lead{color:var(--sub);font-size:14px;margin:0 0 28px}
+  .lead code{color:#c9d6e2;background:#1b2430;padding:2px 6px;border-radius:5px}
+  .grid{display:grid;gap:14px}
+  .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:18px 20px;transition:border-color .2s, transform .2s;
+  }
+  .card:hover{border-color:#3d5468;transform:translateY(-2px)}
+  .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .name{font-weight:600;font-size:16px}
+  .badge{font-size:12px;color:#a7f3c0;background:rgba(46,160,67,.14);
+    border:1px solid rgba(46,160,67,.35);padding:1px 8px;border-radius:99px}
+  .meta{color:var(--sub);font-size:12px;margin-left:auto}
+  .url{
+    display:flex;gap:8px;margin-top:12px;align-items:center;
+    background:#0f151d;border:1px solid var(--line);border-radius:10px;padding:8px 10px;
+  }
+  .url a{
+    color:#9ecbff;text-decoration:none;font-size:13px;font-family:ui-monospace,Menlo,Consolas,monospace;
+    word-break:break-all;flex:1;
+  }
+  .url a:hover{text-decoration:underline}
+  .copy{
+    flex:none;cursor:pointer;border:1px solid #2c4a6b;background:#14283d;color:#bcd8f5;
+    font-size:12px;padding:5px 11px;border-radius:8px;
+  }
+  .copy:hover{background:#1a3450}
+  .copy.done{color:#a7f3c0;border-color:#2ea043}
+  .empty{color:var(--sub);font-size:14px;padding:16px 0}
+  .note{
+    margin-top:28px;border-left:3px solid var(--accent);background:#111a24;
+    padding:14px 18px;border-radius:0 12px 12px 0;color:#b9c6d3;font-size:13px;
+  }
+  .note b{color:var(--txt)}
+  footer{margin-top:32px;color:#6b7885;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>EMOS <span>动态片单</span> API</h1>
+  <p class="lead">
+    由 GitHub Actions 定时生成，GitHub Pages 托管。把下面的地址逐个填入
+    EMOS 后台「动态片单」抓取地址即可，EMOS 每日 <code>08:00</code> / <code>17:00</code> 自动拉取。
+  </p>
+  <div class="grid" id="grid">
+    <div class="empty">正在读取索引…</div>
+  </div>
+
+  <div class="note">
+    <b>说明</b>：接口只返回 <code>tmdb_id</code> / <code>tmdb_type</code> / <code>title</code> / <code>sort</code>，
+    影片需已在 EMOS 媒体库中存在才会显示。数据每 30 分钟刷新一次榜单，每日两次重建。
+  </div>
+  <footer id="foot">EMOS /api/watch 规范 · 自动部署</footer>
+</div>
+<script>
+const base = location.pathname.replace(/\/index\.html$/, "").replace(/\/$/, "");
+const grid = document.getElementById("grid");
+
+function el(tag, cls, text){
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+}
+
+async function copyText(text, btn){
+  try{
+    await navigator.clipboard.writeText(text);
+  }catch(e){
+    const ta = document.createElement("textarea");
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); ta.remove();
+  }
+  const old = btn.textContent;
+  btn.textContent = "已复制"; btn.classList.add("done");
+  setTimeout(()=>{ btn.textContent = old; btn.classList.remove("done"); }, 1500);
+}
+
+async function load(){
+  try{
+    const res = await fetch(base + "/watch/index.json?_=" + Date.now());
+    if(!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    const lists = data.lists || [];
+    if(!lists.length){
+      grid.innerHTML = '<div class="empty">还没有生成任何片单，请先配置 TMDB_API_KEY 并运行一次 Actions。</div>';
+      return;
+    }
+    grid.innerHTML = "";
+    for(const l of lists){
+      const url = location.origin + base + "/" + l.file;
+      const card = el("div","card");
+      const top = el("div","top");
+      top.appendChild(el("div","name", l.name));
+      top.appendChild(el("div","badge", (l.videos||0) + " 条"));
+      top.appendChild(el("div","meta", l.updated_at || ""));
+      card.appendChild(top);
+
+      const row = el("div","url");
+      const a = el("a", null, url);
+      a.href = url; a.target = "_blank"; a.rel = "noopener";
+      const btn = el("button","copy","复制");
+      btn.onclick = () => copyText(url, btn);
+      row.appendChild(a); row.appendChild(btn);
+      card.appendChild(row);
+      grid.appendChild(card);
+    }
+    document.getElementById("foot").textContent =
+      "最近更新：" + (data.updated_at || "-") + " · 共 " + lists.length + " 个片单";
+  }catch(e){
+    grid.innerHTML = '<div class="empty">读取索引失败：' + e.message + '</div>';
+  }
+}
+load();
+</script>
+</body>
+</html>

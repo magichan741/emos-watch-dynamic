@@ -1,0 +1,36 @@
+{
+  "_comment": "slug=接口文件名；name=EMOS 片单标题（1-50字）；source=数据源；max_items=最多条数；cover=可选自定义封面",
+  "default_max_items": 100,
+  "lists": [
+    {
+      "slug": "tmdb-daily",
+      "name": "TMDB 每日热门",
+      "source": "tmdb_trending_day",
+      "max_items": 100
+    },
+    {
+      "slug": "imdb-top250",
+      "name": "IMDb Top250",
+      "source": "imdb_top250",
+      "max_items": 250
+    },
+    {
+      "slug": "weekly-picks",
+      "name": "每周必看",
+      "source": "tmdb_trending_week",
+      "max_items": 100
+    },
+    {
+      "slug": "latest-movies",
+      "name": "最新电影",
+      "source": "tmdb_now_playing",
+      "max_items": 100
+    },
+    {
+      "slug": "latest-tv",
+      "name": "最新电视剧",
+      "source": "tmdb_on_the_air",
+      "max_items": 100
+    }
+  ]
+}
