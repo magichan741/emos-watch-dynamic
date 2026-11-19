@@ -1,7 +1,7 @@
 {
   "name": "最新电影",
   "cover": "https://image.tmdb.org/t/p/w780/kyjjzPqMVlGo2BggtyetZgGBRkw.jpg",
-  "updated_at": "2026-11-19 12:41:56",
+  "updated_at": "2026-11-19 12:48:52",
   "videos": [
     {
       "tmdb_id": 1551025,
@@ -2395,6 +2395,12 @@
       "tmdb_id": 1504358,
       "tmdb_type": "movie",
       "title": "别祝我好运",
+      "sort": 100
+    },
+    {
+      "tmdb_id": 1493400,
+      "tmdb_type": "movie",
+      "title": "摇滚夏令营3",
       "sort": 100
     }
   ]
