@@ -86,12 +86,16 @@
         "ko",
         "en"
       ],
-      "pages": 3,
+      "pages": 4,
       "max_items": 50,
       "params": {
         "vote_count.gte": 10,
         "sort_by": "popularity.desc",
         "without_genres": "16,10762,10764,10767,10763"
+      },
+      "quota": {
+        "zh": 20,
+        "ko": 15
       }
     }
   ]
