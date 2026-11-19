@@ -323,6 +323,10 @@ def discover_multi(client, cfg=None):
         for lang in langs:
             rest.extend([x for x in pools.get(lang, []) if x not in picked])
         picked = dedupe(picked)
+        zid = {x["tmdb_id"] for x in pools.get("zh", [])}
+        print("[multi-debug] zh top5=%s | picked=%d | zh_in_picked=%d" % (
+            [x["title"] for x in pools.get("zh", [])[:5]], len(picked),
+            len([x for x in picked if x["tmdb_id"] in zid])))
         if len(picked) < total:
             rest.sort(key=lambda x: x.get("popularity", 0), reverse=True)
             picked = dedupe(picked + rest)
