@@ -300,41 +300,44 @@ def discover(client, media, params, pages=2):
     return dedupe(items)
 
 def discover_multi(client, cfg=None):
-    """多语言合并：国产剧 + 韩剧 + 欧美剧，按热度统一排名。"""
+    """多语言合并：国产剧 + 韩剧 + 欧美剧。
+
+    有 quota 时：各语言先取各自热度前 N 条，再按「名次」交叉混排，
+    避免某一语言因为 popularity 绝对值高而把其他语言挤出榜单。
+    """
     cfg = cfg or {}
     langs = cfg.get("languages") or ["zh", "ko", "en"]
     pages = int(cfg.get("pages", 3))
-    base = dict(cfg.get("params") or {})
-    quota = cfg.get("quota")            # 形如 {"zh":18,"ko":16,"en":16}，用于均衡配额
     total = int(cfg.get("max_items", 50))
+    quota = cfg.get("quota") or {}
+    base = dict(cfg.get("params") or {})
 
     pools = {}
     for lang in langs:
         q = dict(base)
         q["with_original_language"] = lang
         pools[lang] = discover(client, "tv", q, pages)
-        print("[multi-debug] lang=%s pool=%d q=%s" % (lang, len(pools[lang]), q))
 
     if quota:
-        picked = []
-        for lang, n in quota.items():
-            picked.extend(pools.get(lang, [])[:int(n)])
-        rest = []
-        for lang in langs:
-            rest.extend([x for x in pools.get(lang, []) if x not in picked])
-        picked = dedupe(picked)
-        zid = {x["tmdb_id"] for x in pools.get("zh", [])}
-        print("[multi-debug] zh top5=%s | picked=%d | zh_in_picked=%d" % (
-            [x["title"] for x in pools.get("zh", [])[:5]], len(picked),
-            len([x for x in picked if x["tmdb_id"] in zid])))
-        if len(picked) < total:
+        slots = []
+        for li, lang in enumerate(langs):
+            n = int(quota.get(lang, 0))
+            for rank, it in enumerate(pools.get(lang, [])[:n]):
+                slots.append((rank, li, it))
+        slots.sort(key=lambda t: (t[0], t[1]))          # 名次优先，其次语言顺序
+        ordered = dedupe([t[2] for t in slots])
+
+        if len(ordered) < total:
+            used = {(x["tmdb_id"], x["tmdb_type"]) for x in ordered}
+            rest = dedupe([x for lang in langs for x in pools.get(lang, [])])
+            rest = [x for x in rest if (x["tmdb_id"], x["tmdb_type"]) not in used]
             rest.sort(key=lambda x: x.get("popularity", 0), reverse=True)
-            picked = dedupe(picked + rest)
-        return sorted(picked, key=lambda x: x.get("popularity", 0), reverse=True)[:total]
+            ordered += rest
+        return ordered[:total]
 
     merged = dedupe([x for lang in langs for x in pools.get(lang, [])])
     merged.sort(key=lambda x: x.get("popularity", 0), reverse=True)
-    return merged
+    return merged[:total]
 
 
 def imdb_top250(client, cfg=None):
