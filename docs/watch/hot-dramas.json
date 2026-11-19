@@ -1,7 +1,7 @@
 {
   "name": "热门剧集",
   "cover": "https://image.tmdb.org/t/p/w780/iabiheoeDk9uEZrsFJRySIEPNap.jpg",
-  "updated_at": "2026-11-19 09:17:10",
+  "updated_at": "2026-11-19 09:18:30",
   "videos": [
     {
       "tmdb_id": 5920,
@@ -268,39 +268,39 @@
       "sort": 44
     },
     {
+      "tmdb_id": 1480,
+      "tmdb_type": "tv",
+      "title": "甜心俏佳人",
+      "sort": 45
+    },
+    {
       "tmdb_id": 108978,
       "tmdb_type": "tv",
       "title": "侠探杰克",
-      "sort": 45
+      "sort": 46
     },
     {
       "tmdb_id": 2004,
       "tmdb_type": "tv",
       "title": "马尔科姆的一家",
-      "sort": 46
+      "sort": 47
     },
     {
       "tmdb_id": 1695,
       "tmdb_type": "tv",
       "title": "神探阿蒙",
-      "sort": 47
+      "sort": 48
     },
     {
       "tmdb_id": 1431,
       "tmdb_type": "tv",
       "title": "犯罪现场调查",
-      "sort": 48
+      "sort": 49
     },
     {
       "tmdb_id": 1399,
       "tmdb_type": "tv",
       "title": "权力的游戏",
-      "sort": 49
-    },
-    {
-      "tmdb_id": 79744,
-      "tmdb_type": "tv",
-      "title": "菜鸟老警",
       "sort": 50
     }
   ]
