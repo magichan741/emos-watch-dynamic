@@ -313,6 +313,7 @@ def discover_multi(client, cfg=None):
         q = dict(base)
         q["with_original_language"] = lang
         pools[lang] = discover(client, "tv", q, pages)
+        print("[multi-debug] lang=%s pool=%d q=%s" % (lang, len(pools[lang]), q))
 
     if quota:
         picked = []
