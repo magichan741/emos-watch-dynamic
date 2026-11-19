@@ -299,6 +299,39 @@ def discover(client, media, params, pages=2):
             break
     return dedupe(items)
 
+def discover_multi(client, cfg=None):
+    """多语言合并：国产剧 + 韩剧 + 欧美剧，按热度统一排名。"""
+    cfg = cfg or {}
+    langs = cfg.get("languages") or ["zh", "ko", "en"]
+    pages = int(cfg.get("pages", 3))
+    base = dict(cfg.get("params") or {})
+    quota = cfg.get("quota")            # 形如 {"zh":18,"ko":16,"en":16}，用于均衡配额
+    total = int(cfg.get("max_items", 50))
+
+    pools = {}
+    for lang in langs:
+        q = dict(base)
+        q["with_original_language"] = lang
+        pools[lang] = discover(client, "tv", q, pages)
+
+    if quota:
+        picked = []
+        for lang, n in quota.items():
+            picked.extend(pools.get(lang, [])[:int(n)])
+        rest = []
+        for lang in langs:
+            rest.extend([x for x in pools.get(lang, []) if x not in picked])
+        picked = dedupe(picked)
+        if len(picked) < total:
+            rest.sort(key=lambda x: x.get("popularity", 0), reverse=True)
+            picked = dedupe(picked + rest)
+        return sorted(picked, key=lambda x: x.get("popularity", 0), reverse=True)[:total]
+
+    merged = dedupe([x for lang in langs for x in pools.get(lang, [])])
+    merged.sort(key=lambda x: x.get("popularity", 0), reverse=True)
+    return merged
+
+
 def imdb_top250(client, cfg=None):
     return imdb_chart(client, "movie")
 
@@ -348,6 +381,7 @@ SOURCES = {
     "imdb_top250_tv": lambda c, cfg: imdb_top250_tv(c),
     "tmdb_discover_tv": lambda c, cfg: discover_tv(c, cfg),
     "tmdb_discover_movie": lambda c, cfg: discover_movie(c, cfg),
+    "tmdb_discover_multi": lambda c, cfg: discover_multi(c, cfg),
 }
 
 
