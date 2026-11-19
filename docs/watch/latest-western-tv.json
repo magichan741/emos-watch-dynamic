@@ -1,0 +1,307 @@
+{
+  "name": "最新欧美电视剧",
+  "cover": "https://image.tmdb.org/t/p/w780/aC0bCy1HK7PTG0L3OHLg9GwGsFn.jpg",
+  "updated_at": "2026-11-19 12:41:56",
+  "videos": [
+    {
+      "tmdb_id": 308007,
+      "tmdb_type": "tv",
+      "title": "镶金理想",
+      "sort": 1
+    },
+    {
+      "tmdb_id": 279382,
+      "tmdb_type": "tv",
+      "title": "Eldorado",
+      "sort": 2
+    },
+    {
+      "tmdb_id": 342575,
+      "tmdb_type": "tv",
+      "title": "The AJ Styles Podcast",
+      "sort": 3
+    },
+    {
+      "tmdb_id": 342572,
+      "tmdb_type": "tv",
+      "title": "Dossiê Celebridades",
+      "sort": 4
+    },
+    {
+      "tmdb_id": 342565,
+      "tmdb_type": "tv",
+      "title": "Ós Blauw",
+      "sort": 5
+    },
+    {
+      "tmdb_id": 341593,
+      "tmdb_type": "tv",
+      "title": "Inventeur Gadget - Les 1000 vies de Jean Chalopin",
+      "sort": 6
+    },
+    {
+      "tmdb_id": 340280,
+      "tmdb_type": "tv",
+      "title": "戈登档案",
+      "sort": 7
+    },
+    {
+      "tmdb_id": 318420,
+      "tmdb_type": "tv",
+      "title": "12 星座恋爱实验",
+      "sort": 8
+    },
+    {
+      "tmdb_id": 316752,
+      "tmdb_type": "tv",
+      "title": "Somos así",
+      "sort": 9
+    },
+    {
+      "tmdb_id": 288120,
+      "tmdb_type": "tv",
+      "title": "维也纳风云",
+      "sort": 10
+    },
+    {
+      "tmdb_id": 342465,
+      "tmdb_type": "tv",
+      "title": "Yirshawn",
+      "sort": 11
+    },
+    {
+      "tmdb_id": 342453,
+      "tmdb_type": "tv",
+      "title": "Gufengers",
+      "sort": 12
+    },
+    {
+      "tmdb_id": 342410,
+      "tmdb_type": "tv",
+      "title": "The Fourth Seat",
+      "sort": 13
+    },
+    {
+      "tmdb_id": 339407,
+      "tmdb_type": "tv",
+      "title": "He Said, She Said: Till Death Do Us Part",
+      "sort": 14
+    },
+    {
+      "tmdb_id": 342485,
+      "tmdb_type": "tv",
+      "title": "Murder Case Fire in the Suburbs",
+      "sort": 15
+    },
+    {
+      "tmdb_id": 342249,
+      "tmdb_type": "tv",
+      "title": "Mark of a Murderer",
+      "sort": 16
+    },
+    {
+      "tmdb_id": 339424,
+      "tmdb_type": "tv",
+      "title": "177 Giorni. Il rapimento di Farouk",
+      "sort": 17
+    },
+    {
+      "tmdb_id": 336199,
+      "tmdb_type": "tv",
+      "title": "Crime and Punishment in America",
+      "sort": 18
+    },
+    {
+      "tmdb_id": 271338,
+      "tmdb_type": "tv",
+      "title": "基督山伯爵夫人",
+      "sort": 19
+    },
+    {
+      "tmdb_id": 342374,
+      "tmdb_type": "tv",
+      "title": "La Cueva",
+      "sort": 20
+    },
+    {
+      "tmdb_id": 342335,
+      "tmdb_type": "tv",
+      "title": "Space Jam: Beyond the Jam",
+      "sort": 21
+    },
+    {
+      "tmdb_id": 339285,
+      "tmdb_type": "tv",
+      "title": "GOLDEN",
+      "sort": 22
+    },
+    {
+      "tmdb_id": 342147,
+      "tmdb_type": "tv",
+      "title": "Historias Cotidianas",
+      "sort": 23
+    },
+    {
+      "tmdb_id": 342106,
+      "tmdb_type": "tv",
+      "title": "The Adventure of baby pumpkin",
+      "sort": 24
+    },
+    {
+      "tmdb_id": 342082,
+      "tmdb_type": "tv",
+      "title": "Wallis Simpson",
+      "sort": 25
+    },
+    {
+      "tmdb_id": 341936,
+      "tmdb_type": "tv",
+      "title": "Koba LaD : Demain j'arrête",
+      "sort": 26
+    },
+    {
+      "tmdb_id": 341602,
+      "tmdb_type": "tv",
+      "title": "艾伦的宇宙",
+      "sort": 27
+    },
+    {
+      "tmdb_id": 332912,
+      "tmdb_type": "tv",
+      "title": "The White House Is Fake",
+      "sort": 28
+    },
+    {
+      "tmdb_id": 287296,
+      "tmdb_type": "tv",
+      "title": "秘蜜",
+      "sort": 29
+    },
+    {
+      "tmdb_id": 342292,
+      "tmdb_type": "tv",
+      "title": "Alessandro Barbero: 1848 L'Europa in rivolta",
+      "sort": 30
+    },
+    {
+      "tmdb_id": 342081,
+      "tmdb_type": "tv",
+      "title": "Rewarding",
+      "sort": 31
+    },
+    {
+      "tmdb_id": 341950,
+      "tmdb_type": "tv",
+      "title": "Clangold",
+      "sort": 32
+    },
+    {
+      "tmdb_id": 341554,
+      "tmdb_type": "tv",
+      "title": "Geheimsache Doping: Kinder",
+      "sort": 33
+    },
+    {
+      "tmdb_id": 338586,
+      "tmdb_type": "tv",
+      "title": "Shattered Legends",
+      "sort": 34
+    },
+    {
+      "tmdb_id": 315222,
+      "tmdb_type": "tv",
+      "title": "Infamia",
+      "sort": 35
+    },
+    {
+      "tmdb_id": 305487,
+      "tmdb_type": "tv",
+      "title": "El laberinto de las mariposas",
+      "sort": 36
+    },
+    {
+      "tmdb_id": 303182,
+      "tmdb_type": "tv",
+      "title": "枕边杀局",
+      "sort": 37
+    },
+    {
+      "tmdb_id": 342010,
+      "tmdb_type": "tv",
+      "title": "Inka Enigma",
+      "sort": 38
+    },
+    {
+      "tmdb_id": 341927,
+      "tmdb_type": "tv",
+      "title": "Jossi",
+      "sort": 39
+    },
+    {
+      "tmdb_id": 341769,
+      "tmdb_type": "tv",
+      "title": "Valentín: La muerte del Gallo de Oro",
+      "sort": 40
+    },
+    {
+      "tmdb_id": 341555,
+      "tmdb_type": "tv",
+      "title": "The Killing of the Golden Rooster",
+      "sort": 41
+    },
+    {
+      "tmdb_id": 340816,
+      "tmdb_type": "tv",
+      "title": "Sicarios",
+      "sort": 42
+    },
+    {
+      "tmdb_id": 340784,
+      "tmdb_type": "tv",
+      "title": "The Jigsaw Puzzle Murder",
+      "sort": 43
+    },
+    {
+      "tmdb_id": 340085,
+      "tmdb_type": "tv",
+      "title": "Crown of Deceit: Inside the Miss Universe Scandal",
+      "sort": 44
+    },
+    {
+      "tmdb_id": 335981,
+      "tmdb_type": "tv",
+      "title": "扯淡电影史",
+      "sort": 45
+    },
+    {
+      "tmdb_id": 254630,
+      "tmdb_type": "tv",
+      "title": "12 12 12",
+      "sort": 46
+    },
+    {
+      "tmdb_id": 249565,
+      "tmdb_type": "tv",
+      "title": "好女儿",
+      "sort": 47
+    },
+    {
+      "tmdb_id": 342468,
+      "tmdb_type": "tv",
+      "title": "Carpetgate",
+      "sort": 48
+    },
+    {
+      "tmdb_id": 342331,
+      "tmdb_type": "tv",
+      "title": "The Body",
+      "sort": 49
+    },
+    {
+      "tmdb_id": 342103,
+      "tmdb_type": "tv",
+      "title": "James May: The Human Machine",
+      "sort": 50
+    }
+  ]
+}
