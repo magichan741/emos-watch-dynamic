@@ -4,16 +4,17 @@
 
 | 片单 | 接口文件 | 数据源 |
 | --- | --- | --- |
-| TMDB 每日热门 | `/watch/tmdb-daily.json` | TMDB `/trending/all/day` |
-| IMDb Top250 | `/watch/imdb-top250.json` | IMDb 电影榜 + TMDB `/find` 映射 |
-| IMDb Top250 剧集 | `/watch/imdb-top250-tv.json` | IMDb 剧集榜 + TMDB `/find` 映射 |
-| 每周必看 | `/watch/weekly-picks.json` | TMDB `/trending/all/week` |
-| 最新电影 | `/watch/latest-movies.json` | TMDB `/movie/now_playing` |
-| 最新电视剧 | `/watch/latest-tv.json` | TMDB `/tv/on_the_air` |
-| 国产剧 | `/watch/cn-drama.json` | discover：`with_original_language=zh` |
-| 韩剧 | `/watch/korea-drama.json` | discover：`with_original_language=ko` |
-| 日漫番剧 | `/watch/anime.json` | discover：`ja` + `with_genres=16` |
-| 热门剧集（混合） | `/watch/hot-dramas.json` | 国产 20 + 韩 15 + 欧美 15，按各语言热度名次交叉混排 |
+| TMDB 每日热门 | `/watch/tmdb-daily.json` | 20 条，TMDB `/trending/all/day` |
+| IMDb Top250 电影 | `/watch/imdb-top250.json` | 250 条，IMDb 电影榜 + TMDB `/find` 映射 |
+| IMDb Top250 剧集 | `/watch/imdb-top250-tv.json` | 250 条，IMDb 剧集榜 + TMDB `/find` 映射 |
+| 最新电影 | `/watch/latest-movies.json` | 400 条，上映日期倒序 + `vote_count.gte=5` |
+| 最新剧集 | `/watch/latest-tv.json` | 40 条，近 45 天首播 + 按热度排序 |
+| 最新国产电视剧 | `/watch/latest-cn-tv.json` | 50 条，`zh` + 排除动画/综艺 |
+| 最新欧美电视剧 | `/watch/latest-western-tv.json` | 50 条，`en|es|fr|de|it|pt` 合并 |
+| 最新日韩电视剧 | `/watch/latest-jp-kr-tv.json` | 50 条，`ja|ko` 合并 |
+| 最新国漫 | `/watch/latest-cn-anime.json` | 50 条，`zh` + `with_genres=16` |
+| 最新日漫 | `/watch/latest-jp-anime.json` | 50 条，`ja` + `with_genres=16` |
+| 最新综艺 | `/watch/latest-variety.json` | 50 条，`zh` + Reality/Talk |
 
 接口地址形如：
 
