@@ -1,40 +1,68 @@
 {
-  "updated_at": "2026-11-19 08:54:55",
+  "updated_at": "2026-11-19 09:08:32",
   "lists": [
     {
       "slug": "tmdb-daily",
       "name": "TMDB 每日热门",
       "file": "watch/tmdb-daily.json",
       "videos": 20,
-      "updated_at": "2026-11-19 08:54:55"
+      "updated_at": "2026-11-19 09:08:32"
     },
     {
       "slug": "imdb-top250",
       "name": "IMDb Top250",
       "file": "watch/imdb-top250.json",
       "videos": 250,
-      "updated_at": "2026-11-19 08:54:55"
+      "updated_at": "2026-11-19 09:08:32"
+    },
+    {
+      "slug": "imdb-top250-tv",
+      "name": "IMDb Top250 剧集",
+      "file": "watch/imdb-top250-tv.json",
+      "videos": 245,
+      "updated_at": "2026-11-19 09:08:32"
     },
     {
       "slug": "weekly-picks",
       "name": "每周必看",
       "file": "watch/weekly-picks.json",
       "videos": 20,
-      "updated_at": "2026-11-19 08:54:55"
+      "updated_at": "2026-11-19 09:08:32"
     },
     {
       "slug": "latest-movies",
       "name": "最新电影",
       "file": "watch/latest-movies.json",
       "videos": 40,
-      "updated_at": "2026-11-19 08:54:55"
+      "updated_at": "2026-11-19 09:08:32"
     },
     {
       "slug": "latest-tv",
       "name": "最新电视剧",
       "file": "watch/latest-tv.json",
       "videos": 20,
-      "updated_at": "2026-11-19 08:54:55"
+      "updated_at": "2026-11-19 09:08:32"
+    },
+    {
+      "slug": "cn-drama",
+      "name": "国产剧",
+      "file": "watch/cn-drama.json",
+      "videos": 60,
+      "updated_at": "2026-11-19 09:08:32"
+    },
+    {
+      "slug": "korea-drama",
+      "name": "韩剧",
+      "file": "watch/korea-drama.json",
+      "videos": 60,
+      "updated_at": "2026-11-19 09:08:32"
+    },
+    {
+      "slug": "anime",
+      "name": "日漫番剧",
+      "file": "watch/anime.json",
+      "videos": 60,
+      "updated_at": "2026-11-19 09:08:32"
     }
   ]
 }
