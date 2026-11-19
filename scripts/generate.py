@@ -292,6 +292,9 @@ def discover(client, media, params, pages=2):
         q = {"language": TMDB_LANG, "page": page, "include_adult": "false",
              "sort_by": "popularity.desc"}
         q.update(params or {})
+        today = datetime.date.today().isoformat()
+        q = {k: (v.replace("{today}", today) if isinstance(v, str) else v)
+             for k, v in q.items()}
         data = client.get("/discover/%s" % media, **q)
         for r in data.get("results", []):
             items.append(norm_item(r, media))
