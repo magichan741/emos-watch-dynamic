@@ -285,6 +285,17 @@ def imdb_chart(client, kind="movie"):
     return dedupe(items)
 
 
+DATE_TOKEN_RE = re.compile(r"\{today(?:-([0-9]+))?\}")
+
+
+def resolve_date(value):
+    """把参数里的 {today} / {today-30} 替换成当天或 N 天前的日期。"""
+    def repl(m):
+        offset = int(m.group(1) or 0)
+        return (datetime.date.today() - datetime.timedelta(days=offset)).isoformat()
+    return DATE_TOKEN_RE.sub(repl, value)
+
+
 def discover(client, media, params, pages=2):
     """TMDB discover：按原创语言、类型、平台等条件筛片。"""
     items = []
@@ -292,9 +303,7 @@ def discover(client, media, params, pages=2):
         q = {"language": TMDB_LANG, "page": page, "include_adult": "false",
              "sort_by": "popularity.desc"}
         q.update(params or {})
-        today = datetime.date.today().isoformat()
-        q = {k: (v.replace("{today}", today) if isinstance(v, str) else v)
-             for k, v in q.items()}
+        q = {k: (resolve_date(v) if isinstance(v, str) else v) for k, v in q.items()}
         data = client.get("/discover/%s" % media, **q)
         for r in data.get("results", []):
             items.append(norm_item(r, media))

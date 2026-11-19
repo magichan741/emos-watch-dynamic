@@ -24,7 +24,7 @@
       "slug": "latest-movies",
       "name": "最新电影",
       "source": "tmdb_discover_movie",
-      "pages": 20,
+      "pages": 21,
       "max_items": 400,
       "params": {
         "sort_by": "primary_release_date.desc",
@@ -39,7 +39,8 @@
       "pages": 2,
       "max_items": 40,
       "params": {
-        "sort_by": "first_air_date.desc",
+        "sort_by": "popularity.desc",
+        "first_air_date.gte": "{today-45}",
         "first_air_date.lte": "{today}",
         "without_genres": "16,10764,10767"
       }
@@ -116,10 +117,11 @@
       "pages": 3,
       "max_items": 50,
       "params": {
+        "with_original_language": "zh",
         "with_genres": "10764|10767",
         "sort_by": "first_air_date.desc",
         "first_air_date.lte": "{today}",
-        "vote_count.gte": 0
+        "vote_count.gte": 1
       }
     }
   ]
