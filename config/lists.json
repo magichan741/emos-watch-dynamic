@@ -1,5 +1,5 @@
 {
-  "_comment": "slug=接口文件名；name=EMOS 片单标题（1-50字）；source=数据源；max_items=最多条数；cover=可选自定义封面",
+  "_comment": "slug=接口文件名；name=EMOS 片单标题（1-50字）；source=数据源；max_items=最多条数；params=discover 参数；cover=可选自定义封面",
   "default_max_items": 100,
   "lists": [
     {
@@ -12,6 +12,12 @@
       "slug": "imdb-top250",
       "name": "IMDb Top250",
       "source": "imdb_top250",
+      "max_items": 250
+    },
+    {
+      "slug": "imdb-top250-tv",
+      "name": "IMDb Top250 剧集",
+      "source": "imdb_top250_tv",
       "max_items": 250
     },
     {
@@ -31,6 +37,43 @@
       "name": "最新电视剧",
       "source": "tmdb_on_the_air",
       "max_items": 100
+    },
+    {
+      "slug": "cn-drama",
+      "name": "国产剧",
+      "source": "tmdb_discover_tv",
+      "pages": 3,
+      "max_items": 60,
+      "params": {
+        "with_original_language": "zh",
+        "vote_count.gte": 5,
+        "sort_by": "popularity.desc"
+      }
+    },
+    {
+      "slug": "korea-drama",
+      "name": "韩剧",
+      "source": "tmdb_discover_tv",
+      "pages": 3,
+      "max_items": 60,
+      "params": {
+        "with_original_language": "ko",
+        "vote_count.gte": 5,
+        "sort_by": "popularity.desc"
+      }
+    },
+    {
+      "slug": "anime",
+      "name": "日漫番剧",
+      "source": "tmdb_discover_tv",
+      "pages": 3,
+      "max_items": 60,
+      "params": {
+        "with_original_language": "ja",
+        "with_genres": 16,
+        "vote_count.gte": 5,
+        "sort_by": "popularity.desc"
+      }
     }
   ]
 }

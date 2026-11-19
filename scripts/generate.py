@@ -26,8 +26,10 @@ import urllib.error
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT, "config", "lists.json")
-SEED_PATH = os.path.join(ROOT, "data", "imdb-top250.json")
-CACHE_PATH = os.path.join(ROOT, "data", "cache", "imdb-map.json")
+SEED_MOVIE = os.path.join(ROOT, "data", "imdb-top250.json")
+SEED_TV = os.path.join(ROOT, "data", "imdb-top250-tv.json")
+CACHE_MOVIE = os.path.join(ROOT, "data", "cache", "imdb-map.json")
+CACHE_TV = os.path.join(ROOT, "data", "cache", "imdb-tv-map.json")
 OUT_DIR = os.path.join(ROOT, "docs", "watch")
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -172,43 +174,46 @@ def on_the_air(client):
 
 IMDB_ID_RE = re.compile(r"tt\d{7,8}")
 
+IMDB_CHARTS = {
+    "movie": "https://www.imdb.com/chart/top/",
+    "tv": "https://www.imdb.com/chart/toptv/",
+}
 
-def fetch_imdb_ids_live():
+
+def fetch_imdb_ids_live(kind="movie"):
     """尝试在线抓取 IMDb Top250 榜单 HTML（可能被反爬拦截）。"""
     if FORCE_IMDB_SEED:
         return []
-    url = "https://www.imdb.com/chart/top/"
+    url = IMDB_CHARTS.get(kind, IMDB_CHARTS["movie"])
     try:
         status, body = http_get(url, {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
         })
         if status != 200:
-            print("[imdb] 在线榜单返回 %s，改用内置种子" % status)
+            print("[imdb-%s] 在线榜单返回 %s，改用内置种子" % (kind, status))
             return []
         html = body.decode("utf-8", "replace")
-        ids = []
-        seen = set()
+        ids, seen = [], set()
         for m in IMDB_ID_RE.finditer(html):
             tid = m.group(0)
             if tid not in seen:
                 seen.add(tid)
                 ids.append(tid)
         if len(ids) < 100:
-            print("[imdb] 在线榜单仅解析到 %d 条，改用内置种子" % len(ids))
+            print("[imdb-%s] 在线榜单仅解析到 %d 条，改用内置种子" % (kind, len(ids)))
             return []
-        print("[imdb] 在线榜单解析成功：%d 条" % len(ids))
+        print("[imdb-%s] 在线榜单解析成功：%d 条" % (kind, len(ids)))
         return ids
     except Exception as e:
-        print("[imdb] 在线抓取失败（%s），改用内置种子" % e)
+        print("[imdb-%s] 在线抓取失败（%s），改用内置种子" % (kind, e))
         return []
 
 
-def load_seed_ids():
-    with open(SEED_PATH, "r", encoding="utf-8") as f:
+def load_seed_ids(path):
+    with open(path, "r", encoding="utf-8") as f:
         rows = json.load(f)
     for r in rows:
-        # 兼容不同来源字段：id / titleid
         if not r.get("id"):
             r["id"] = r.get("titleid")
     rows.sort(key=lambda r: r.get("rank", 10 ** 6))
@@ -216,32 +221,36 @@ def load_seed_ids():
             for r in rows if (r.get("id") or "").startswith("tt")]
 
 
-def load_cache():
-    if os.path.exists(CACHE_PATH):
+def load_cache(path):
+    if os.path.exists(path):
         try:
-            with open(CACHE_PATH, "r", encoding="utf-8") as f:
+            with open(path, "r", encoding="utf-8") as f:
                 return json.load(f)
         except Exception:
             return {}
     return {}
 
 
-def save_cache(cache):
-    os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
-    with open(CACHE_PATH, "w", encoding="utf-8") as f:
+def save_cache(path, cache):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=1, sort_keys=True)
 
 
-def imdb_top250(client):
-    ids = fetch_imdb_ids_live()
+def imdb_chart(client, kind="movie"):
+    """IMDb Top250：电影 / 剧集。优先在线榜，失败用内置种子。"""
+    seed_path = SEED_TV if kind == "tv" else SEED_MOVIE
+    cache_path = CACHE_TV if kind == "tv" else CACHE_MOVIE
+
+    ids = fetch_imdb_ids_live(kind)
     if not ids:
-        seed = load_seed_ids()
+        seed = load_seed_ids(seed_path)
         ids = [t for t, _ in seed]
         seed_title = {t: n for t, n in seed}
     else:
         seed_title = {}
 
-    cache = load_cache()
+    cache = load_cache(cache_path)
     items, misses = [], 0
     for tid in ids[:250]:
         hit = cache.get(tid)
@@ -251,29 +260,60 @@ def imdb_top250(client):
         try:
             data = client.get("/find/%s" % tid, external_source="imdb_id", language=TMDB_LANG)
         except Exception as e:
-            print("[imdb] %s 匹配失败：%s" % (tid, e))
+            print("[imdb-%s] %s 匹配失败：%s" % (kind, tid, e))
             misses += 1
             continue
-        res = (data.get("movie_results") or [None])[0]
-        if res is None:
-            res = (data.get("tv_results") or [None])[0]
-        kind = "movie" if data.get("movie_results") else "tv"
-        item = norm_item(res, kind) if res else None
+        movie_res = (data.get("movie_results") or [None])[0]
+        tv_res = (data.get("tv_results") or [None])[0]
+        if kind == "tv":
+            res, real_kind = (tv_res, "tv") if tv_res else (movie_res, "movie")
+        else:
+            res, real_kind = (movie_res, "movie") if movie_res else (tv_res, "tv")
+        if not res:
+            misses += 1
+            continue
+        item = norm_item(res, real_kind)
         if not item:
             misses += 1
             continue
-        if not item["title"] and seed_title.get(tid):
-            item["title"] = seed_title[tid]
         cache[tid] = item
         items.append(item)
         time.sleep(0.03)
 
-    save_cache(cache)
-    print("[imdb] 命中 %d 条，未匹配 %d 条" % (len(items), misses))
+    save_cache(cache_path, cache)
+    print("[imdb-%s] 命中 %d 条，未匹配 %d" % (kind, len(items), misses))
     return dedupe(items)
 
 
-# ---------------- 输出 ----------------
+def discover(client, media, params, pages=2):
+    """TMDB discover：按原创语言、类型、平台等条件筛片。"""
+    items = []
+    for page in range(1, max(1, pages) + 1):
+        q = {"language": TMDB_LANG, "page": page, "include_adult": "false",
+             "sort_by": "popularity.desc"}
+        q.update(params or {})
+        data = client.get("/discover/%s" % media, **q)
+        for r in data.get("results", []):
+            items.append(norm_item(r, media))
+        if page >= data.get("total_pages", 1):
+            break
+    return dedupe(items)
+
+def imdb_top250(client, cfg=None):
+    return imdb_chart(client, "movie")
+
+
+def imdb_top250_tv(client, cfg=None):
+    return imdb_chart(client, "tv")
+
+
+def discover_tv(client, cfg=None):
+    return discover(client, "tv", (cfg or {}).get("params"), int((cfg or {}).get("pages", 2)))
+
+
+def discover_movie(client, cfg=None):
+    return discover(client, "movie", (cfg or {}).get("params"), int((cfg or {}).get("pages", 2)))
+
 
 def build_payload(name, items, max_items, cover_override, now_str):
     trimmed = items[:max_items]
@@ -305,6 +345,9 @@ SOURCES = {
     "tmdb_now_playing": lambda c, cfg: now_playing(c),
     "tmdb_on_the_air": lambda c, cfg: on_the_air(c),
     "imdb_top250": lambda c, cfg: imdb_top250(c),
+    "imdb_top250_tv": lambda c, cfg: imdb_top250_tv(c),
+    "tmdb_discover_tv": lambda c, cfg: discover_tv(c, cfg),
+    "tmdb_discover_movie": lambda c, cfg: discover_movie(c, cfg),
 }
 
 

@@ -5,10 +5,14 @@
 | 片单 | 接口文件 | 数据源 |
 | --- | --- | --- |
 | TMDB 每日热门 | `/watch/tmdb-daily.json` | TMDB `/trending/all/day` |
-| IMDb Top250 | `/watch/imdb-top250.json` | IMDb 榜单 + TMDB `/find` 映射 |
+| IMDb Top250 | `/watch/imdb-top250.json` | IMDb 电影榜 + TMDB `/find` 映射 |
+| IMDb Top250 剧集 | `/watch/imdb-top250-tv.json` | IMDb 剧集榜 + TMDB `/find` 映射 |
 | 每周必看 | `/watch/weekly-picks.json` | TMDB `/trending/all/week` |
 | 最新电影 | `/watch/latest-movies.json` | TMDB `/movie/now_playing` |
 | 最新电视剧 | `/watch/latest-tv.json` | TMDB `/tv/on_the_air` |
+| 国产剧 | `/watch/cn-drama.json` | discover：`with_original_language=zh` |
+| 韩剧 | `/watch/korea-drama.json` | discover：`with_original_language=ko` |
+| 日漫番剧 | `/watch/anime.json` | discover：`ja` + `with_genres=16` |
 
 接口地址形如：
 
@@ -117,7 +121,22 @@ EMOS 每日 **08:00 / 17:00** 抓取；本工作流在北京时间 **07:30 / 16:
 { "slug": "netflix-top", "name": "Netflix 热门", "source": "tmdb_trending_week", "max_items": 50 }
 ```
 
-可用 `source`：`tmdb_trending_day`、`tmdb_trending_week`、`tmdb_now_playing`、`tmdb_on_the_air`、`imdb_top250`。
+按语言/类型/平台筛片用 discover，`params` 直接透传 TMDB 参数：
+
+```json
+{
+  "slug": "thriller",
+  "name": "悬疑片精选",
+  "source": "tmdb_discover_movie",
+  "pages": 2,
+  "max_items": 40,
+  "params": { "with_genres": 53, "vote_average.gte": 7.5, "vote_count.gte": 200 }
+}
+```
+
+可用 `source`：`tmdb_trending_day`、`tmdb_trending_week`、`tmdb_now_playing`、`tmdb_on_the_air`、`imdb_top250`、`imdb_top250_tv`、`tmdb_discover_movie`、`tmdb_discover_tv`。
+
+常用类型号：动作 28 / 喜剧 35 / 恐怖 27 / 动画 16 / 悬疑 53 / 科幻 878 / 纪录 99 / 爱情 10749；语言用 `zh`、`ko`、`ja`、`en`。
 
 支持的环境变量（写进 workflow 的 `env:`）：
 
@@ -145,8 +164,10 @@ EMOS 每日 **08:00 / 17:00** 抓取；本工作流在北京时间 **07:30 / 16:
 .
 ├── .github/workflows/update.yml   # 定时生成 + 校验 + 部署 Pages
 ├── config/lists.json              # 片单定义
-├── data/imdb-top250.json          # IMDb Top250 种子（线上抓取失败时兜底）
+├── data/imdb-top250.json          # IMDb 电影 Top250 种子（抓取失败时兜底）
+├── data/imdb-top250-tv.json       # IMDb 剧集 Top250 种子
 ├── data/cache/imdb-map.json       # IMDb→TMDB 映射缓存（减少 API 调用）
+├── data/cache/imdb-tv-map.json    # 剧集版映射缓存
 ├── scripts/generate.py            # 生成器（纯标准库，无需 pip）
 ├── scripts/validate.py            # 规范校验
 ├── docs/                          # Pages 输出目录
