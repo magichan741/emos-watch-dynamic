@@ -48,7 +48,7 @@
         "with_original_language": "zh",
         "vote_count.gte": 5,
         "sort_by": "popularity.desc",
-        "without_genres": "10764"
+        "without_genres": "16,10762,10764"
       }
     },
     {
@@ -61,7 +61,7 @@
         "with_original_language": "ko",
         "vote_count.gte": 5,
         "sort_by": "popularity.desc",
-        "without_genres": "10764"
+        "without_genres": "10764,10767,10763,10762"
       }
     },
     {
