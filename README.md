@@ -13,6 +13,7 @@
 | 国产剧 | `/watch/cn-drama.json` | discover：`with_original_language=zh` |
 | 韩剧 | `/watch/korea-drama.json` | discover：`with_original_language=ko` |
 | 日漫番剧 | `/watch/anime.json` | discover：`ja` + `with_genres=16` |
+| 热门剧集（混合） | `/watch/hot-dramas.json` | 国产 20 + 韩 15 + 欧美 15，按各语言热度名次交叉混排 |
 
 接口地址形如：
 
@@ -134,7 +135,21 @@ EMOS 每日 **08:00 / 17:00** 抓取；本工作流在北京时间 **07:30 / 16:
 }
 ```
 
-可用 `source`：`tmdb_trending_day`、`tmdb_trending_week`、`tmdb_now_playing`、`tmdb_on_the_air`、`imdb_top250`、`imdb_top250_tv`、`tmdb_discover_movie`、`tmdb_discover_tv`。
+可用 `source`：`tmdb_trending_day`、`tmdb_trending_week`、`tmdb_now_playing`、`tmdb_on_the_air`、`imdb_top250`、`imdb_top250_tv`、`tmdb_discover_movie`、`tmdb_discover_tv`、`tmdb_discover_multi`。
+
+`tmdb_discover_multi` 用于多区域合并榜，靠 `languages` + `quota` 控制比例（`quota` 缺失时退化为纯热度排序，容易被单一语言霸榜）：
+
+```json
+{
+  "slug": "hot-dramas",
+  "name": "热门剧集",
+  "source": "tmdb_discover_multi",
+  "languages": ["zh", "ko", "en"],
+  "pages": 4,
+  "max_items": 50,
+  "quota": { "zh": 20, "ko": 15, "en": 15 }
+}
+```
 
 常用类型号：动作 28 / 喜剧 35 / 恐怖 27 / 动画 16 / 悬疑 53 / 科幻 878 / 纪录 99 / 爱情 10749；语言用 `zh`、`ko`、`ja`、`en`。
 
