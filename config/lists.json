@@ -29,7 +29,7 @@
       "params": {
         "sort_by": "primary_release_date.desc",
         "primary_release_date.lte": "{today}",
-        "vote_count.gte": 0
+        "vote_count.gte": 5
       }
     },
     {
