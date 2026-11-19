@@ -1,0 +1,127 @@
+{
+  "name": "每周必看",
+  "cover": "https://image.tmdb.org/t/p/w780/x4puqjv2DJL5JnicLzEl8YmEkNc.jpg",
+  "updated_at": "2026-11-19 08:54:55",
+  "videos": [
+    {
+      "tmdb_id": 84773,
+      "tmdb_type": "tv",
+      "title": "指环王：力量之戒",
+      "sort": 1
+    },
+    {
+      "tmdb_id": 1368337,
+      "tmdb_type": "movie",
+      "title": "奥德赛",
+      "sort": 2
+    },
+    {
+      "tmdb_id": 291507,
+      "tmdb_type": "tv",
+      "title": "青春共体",
+      "sort": 3
+    },
+    {
+      "tmdb_id": 1131943,
+      "tmdb_type": "movie",
+      "title": "马登",
+      "sort": 4
+    },
+    {
+      "tmdb_id": 213375,
+      "tmdb_type": "tv",
+      "title": "幻视任务",
+      "sort": 5
+    },
+    {
+      "tmdb_id": 1185344,
+      "tmdb_type": "movie",
+      "title": "野兽座驾",
+      "sort": 6
+    },
+    {
+      "tmdb_id": 1003596,
+      "tmdb_type": "movie",
+      "title": "复仇者联盟5：毁灭之日",
+      "sort": 7
+    },
+    {
+      "tmdb_id": 1300968,
+      "tmdb_type": "movie",
+      "title": "饥饿游戏：收获日出",
+      "sort": 8
+    },
+    {
+      "tmdb_id": 969681,
+      "tmdb_type": "movie",
+      "title": "蜘蛛侠：崭新之日",
+      "sort": 9
+    },
+    {
+      "tmdb_id": 1400837,
+      "tmdb_type": "movie",
+      "title": "另一个妈妈",
+      "sort": 10
+    },
+    {
+      "tmdb_id": 1381071,
+      "tmdb_type": "movie",
+      "title": "哥斯拉-0.0",
+      "sort": 11
+    },
+    {
+      "tmdb_id": 254630,
+      "tmdb_type": "tv",
+      "title": "12 12 12",
+      "sort": 12
+    },
+    {
+      "tmdb_id": 1423191,
+      "tmdb_type": "movie",
+      "title": "生化危机：爆发夜",
+      "sort": 13
+    },
+    {
+      "tmdb_id": 1263337,
+      "tmdb_type": "movie",
+      "title": "野兽之心",
+      "sort": 14
+    },
+    {
+      "tmdb_id": 1286656,
+      "tmdb_type": "movie",
+      "title": "我演洛奇",
+      "sort": 15
+    },
+    {
+      "tmdb_id": 1567605,
+      "tmdb_type": "movie",
+      "title": "寒夜怪谈",
+      "sort": 16
+    },
+    {
+      "tmdb_id": 1170608,
+      "tmdb_type": "movie",
+      "title": "沙丘3",
+      "sort": 17
+    },
+    {
+      "tmdb_id": 1616687,
+      "tmdb_type": "movie",
+      "title": "绝境反击",
+      "sort": 18
+    },
+    {
+      "tmdb_id": 279246,
+      "tmdb_type": "tv",
+      "title": "再婚皇后",
+      "sort": 19
+    },
+    {
+      "tmdb_id": 1375441,
+      "tmdb_type": "movie",
+      "title": "黄金时段",
+      "sort": 20
+    }
+  ]
+}
