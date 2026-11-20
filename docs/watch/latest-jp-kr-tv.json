@@ -1,306 +1,306 @@
 {
   "name": "最新日韩电视剧",
-  "cover": "https://image.tmdb.org/t/p/w780/wWg1iMJY5ZsTiNg8ROcAMEtd1cC.jpg",
-  "updated_at": "2026-11-20 01:28:05",
+  "cover": "https://image.tmdb.org/t/p/w780/yf4OpktM8RJfx9nN5suAGAVdUEs.jpg",
+  "updated_at": "2026-11-20 12:12:35",
   "videos": [
+    {
+      "tmdb_id": 300523,
+      "tmdb_type": "tv",
+      "title": "罪蓝之路",
+      "sort": 1
+    },
     {
       "tmdb_id": 339422,
       "tmdb_type": "tv",
       "title": "成了杀人魔的猎物",
-      "sort": 1
+      "sort": 2
+    },
+    {
+      "tmdb_id": 342666,
+      "tmdb_type": "tv",
+      "title": "사운드:트랙",
+      "sort": 3
     },
     {
       "tmdb_id": 342469,
       "tmdb_type": "tv",
       "title": "미스틱: 내일의 스타를 조각하다",
-      "sort": 2
+      "sort": 4
     },
     {
       "tmdb_id": 342409,
       "tmdb_type": "tv",
       "title": "PLAYERS",
-      "sort": 3
+      "sort": 5
     },
     {
       "tmdb_id": 340751,
       "tmdb_type": "tv",
       "title": "在你的角落",
-      "sort": 4
+      "sort": 6
     },
     {
       "tmdb_id": 335860,
       "tmdb_type": "tv",
       "title": "此味终将成追忆",
-      "sort": 5
+      "sort": 7
     },
     {
       "tmdb_id": 301354,
       "tmdb_type": "tv",
       "title": "文武",
-      "sort": 6
+      "sort": 8
     },
     {
       "tmdb_id": 342044,
       "tmdb_type": "tv",
       "title": "松本会議〜企画ができるまで〜",
-      "sort": 7
+      "sort": 9
     },
     {
       "tmdb_id": 342024,
       "tmdb_type": "tv",
       "title": "우리동네 플레이리스트",
-      "sort": 8
+      "sort": 10
     },
     {
       "tmdb_id": 332683,
       "tmdb_type": "tv",
       "title": "地雷格力高",
-      "sort": 9
+      "sort": 11
     },
     {
       "tmdb_id": 341856,
       "tmdb_type": "tv",
       "title": "预报之外的他",
-      "sort": 10
+      "sort": 12
     },
     {
       "tmdb_id": 341043,
       "tmdb_type": "tv",
       "title": "そもそもミステリー",
-      "sort": 11
+      "sort": 13
     },
     {
       "tmdb_id": 339715,
       "tmdb_type": "tv",
       "title": "对我来说火热的新人",
-      "sort": 12
+      "sort": 14
     },
     {
       "tmdb_id": 339711,
       "tmdb_type": "tv",
       "title": "女王不流泪",
-      "sort": 13
+      "sort": 15
     },
     {
       "tmdb_id": 337133,
       "tmdb_type": "tv",
       "title": "倾泻而来的你：恋爱禁区",
-      "sort": 14
+      "sort": 16
     },
     {
       "tmdb_id": 341833,
       "tmdb_type": "tv",
       "title": "자랑할 개 있습니다",
-      "sort": 15
+      "sort": 17
     },
     {
       "tmdb_id": 341829,
       "tmdb_type": "tv",
       "title": "Bar幼稚",
-      "sort": 16
+      "sort": 18
     },
     {
       "tmdb_id": 341290,
       "tmdb_type": "tv",
       "title": "生中継！羊文学 TOUR 2026 “すーーーはーーー”",
-      "sort": 17
+      "sort": 19
     },
     {
       "tmdb_id": 326975,
       "tmdb_type": "tv",
       "title": "BOSS的甜蜜诱惑",
-      "sort": 18
+      "sort": 20
     },
     {
       "tmdb_id": 299764,
       "tmdb_type": "tv",
       "title": "热烈的告别",
-      "sort": 19
+      "sort": 21
     },
     {
       "tmdb_id": 342489,
       "tmdb_type": "tv",
       "title": "After One Night",
-      "sort": 20
+      "sort": 22
     },
     {
       "tmdb_id": 341820,
       "tmdb_type": "tv",
       "title": "おはなしのくに",
-      "sort": 21
+      "sort": 23
     },
     {
       "tmdb_id": 313738,
       "tmdb_type": "tv",
       "title": "独一无二的浪漫",
-      "sort": 22
+      "sort": 24
     },
     {
       "tmdb_id": 340126,
       "tmdb_type": "tv",
       "title": "전지적 집착 시점",
-      "sort": 23
+      "sort": 25
     },
     {
       "tmdb_id": 330629,
       "tmdb_type": "tv",
       "title": "尤金尼亚之谜",
-      "sort": 24
+      "sort": 26
     },
     {
       "tmdb_id": 341667,
       "tmdb_type": "tv",
       "title": "幾田りら DREAMS & MEMORIES",
-      "sort": 25
+      "sort": 27
     },
     {
       "tmdb_id": 332269,
       "tmdb_type": "tv",
       "title": "隔壁座位，弗兰西斯卡",
-      "sort": 26
+      "sort": 28
     },
     {
       "tmdb_id": 342359,
       "tmdb_type": "tv",
       "title": "ピエール瀧のあなたのことを廃してます",
-      "sort": 27
+      "sort": 29
     },
     {
       "tmdb_id": 341480,
       "tmdb_type": "tv",
       "title": "내 아이돌은 공익근무요원",
-      "sort": 28
+      "sort": 30
     },
     {
       "tmdb_id": 341199,
       "tmdb_type": "tv",
       "title": "지옥의 짬밥",
-      "sort": 29
+      "sort": 31
     },
     {
       "tmdb_id": 339293,
       "tmdb_type": "tv",
       "title": "开除我？我让集团破产",
-      "sort": 30
+      "sort": 32
     },
     {
       "tmdb_id": 339279,
       "tmdb_type": "tv",
       "title": "还魂医师",
-      "sort": 31
+      "sort": 33
     },
     {
       "tmdb_id": 332803,
       "tmdb_type": "tv",
       "title": "只是逢场作戏",
-      "sort": 32
+      "sort": 34
     },
     {
       "tmdb_id": 341059,
       "tmdb_type": "tv",
       "title": "결혼부터 할까요, 기사님?",
-      "sort": 33
+      "sort": 35
     },
     {
       "tmdb_id": 340881,
       "tmdb_type": "tv",
       "title": "時空鉄道　～あの頃に途中下車～",
-      "sort": 34
+      "sort": 36
     },
     {
       "tmdb_id": 279246,
       "tmdb_type": "tv",
       "title": "再婚皇后",
-      "sort": 35
+      "sort": 37
     },
     {
       "tmdb_id": 341723,
       "tmdb_type": "tv",
       "title": "내 아내의 속사정",
-      "sort": 36
+      "sort": 38
     },
     {
       "tmdb_id": 340413,
       "tmdb_type": "tv",
       "title": "二畳半レコード",
-      "sort": 37
+      "sort": 39
     },
     {
       "tmdb_id": 337691,
       "tmdb_type": "tv",
       "title": "老师，请拿身体偿还吧",
-      "sort": 38
+      "sort": 40
     },
     {
       "tmdb_id": 330628,
       "tmdb_type": "tv",
       "title": "我的甜蜜家园",
-      "sort": 39
+      "sort": 41
     },
     {
       "tmdb_id": 340529,
       "tmdb_type": "tv",
       "title": "언니만 따라와",
-      "sort": 40
+      "sort": 42
     },
     {
       "tmdb_id": 340471,
       "tmdb_type": "tv",
       "title": "中部ドキュメンタリーシリーズ",
-      "sort": 41
+      "sort": 43
     },
     {
       "tmdb_id": 335176,
       "tmdb_type": "tv",
       "title": "溺愛　～ 実は、最強ヒーロー ～",
-      "sort": 42
+      "sort": 44
     },
     {
       "tmdb_id": 332637,
       "tmdb_type": "tv",
       "title": "我竟然要一个人活下去",
-      "sort": 43
+      "sort": 45
     },
     {
       "tmdb_id": 307478,
       "tmdb_type": "tv",
       "title": "谎言",
-      "sort": 44
+      "sort": 46
     },
     {
       "tmdb_id": 289517,
       "tmdb_type": "tv",
       "title": "末路兼职",
-      "sort": 45
+      "sort": 47
     },
     {
       "tmdb_id": 342495,
       "tmdb_type": "tv",
       "title": "처음 뵙겠습니다",
-      "sort": 46
+      "sort": 48
     },
     {
       "tmdb_id": 340373,
       "tmdb_type": "tv",
       "title": "언더커버 셰프: 멀리서 찾아온 벗",
-      "sort": 47
+      "sort": 49
     },
     {
       "tmdb_id": 338744,
       "tmdb_type": "tv",
       "title": "前特种部队王牌，成了怪物警察",
-      "sort": 48
-    },
-    {
-      "tmdb_id": 335951,
-      "tmdb_type": "tv",
-      "title": "暑假",
-      "sort": 49
-    },
-    {
-      "tmdb_id": 334810,
-      "tmdb_type": "tv",
-      "title": "青之花 器之森",
       "sort": 50
     }
   ]
