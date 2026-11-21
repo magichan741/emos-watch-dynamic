@@ -87,17 +87,10 @@
     {
       "slug": "latest-cn-anime",
       "name": "最新更新国漫",
-      "source": "tmdb_discover_tv",
-      "pages": 5,
+      "source": "bili_cn_anime",
       "max_items": 50,
-      "params": {
-        "with_original_language": "zh",
-        "with_genres": 16,
-        "without_genres": "10762",
-        "vote_count.gte": 1,
-        "sort_by": "first_air_date.desc",
-        "first_air_date.lte": "{today}"
-      }
+      "season_type": 4,
+      "day": 3
     },
     {
       "slug": "latest-jp-anime",

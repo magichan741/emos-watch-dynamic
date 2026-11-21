@@ -352,6 +352,108 @@ def discover_multi(client, cfg=None):
     return merged[:total]
 
 
+
+# ---------------- B 站国创/番剧榜单 ----------------
+
+BILI_RANK = "https://api.bilibili.com/pgc/web/rank/list"
+BILI_CACHE = os.path.join(ROOT, "data", "cache", "bili-map.json")
+
+
+def norm_title(s):
+    s = s or ""
+    s = re.sub(r"[（(][^)）]*[)）]", "", s)          # 去掉（中配）之类
+    s = re.sub(r"第[一二三四五六七八九十0-9]+季", "", s)
+    s = re.sub(r"season\s*\d+", "", s, flags=re.I)
+    s = re.sub(r"[\s·:：\-—_,，。!！?？'\"“”《》]+", "", s)
+    return s.lower()
+
+
+def bili_rank_rows(season_type=4, day=3):
+    url = "%s?day=%s&season_type=%s" % (BILI_RANK, day, season_type)
+    status, body = http_get(url, {
+        "Referer": "https://www.bilibili.com",
+        "Accept": "application/json",
+    })
+    if status != 200:
+        raise RuntimeError("B站榜单返回 %s" % status)
+    data = json.loads(body.decode("utf-8", "replace"))
+    if data.get("code") not in (0, None):
+        raise RuntimeError("B站榜单 code=%s" % data.get("code"))
+    return (data.get("result") or {}).get("list") or []
+
+
+def bili_cn_anime(client, cfg=None):
+    """国创榜单：顺序来自 B 站，条目按标题匹配到 TMDB。"""
+    cfg = cfg or {}
+    season_type = int(cfg.get("season_type", 4))
+    day = int(cfg.get("day", 3))
+    total = int(cfg.get("max_items", 50))
+
+    rows = bili_rank_rows(season_type, day)
+    cache = load_cache(BILI_CACHE)
+    items, misses = [], 0
+
+    for row in rows:
+        sid = str(row.get("season_id") or "")
+        hit = cache.get(sid)
+        if hit and hit.get("tmdb_id"):
+            items.append(hit)
+            continue
+
+        title = row.get("title") or ""
+        if not title:
+            misses += 1
+            continue
+        q = norm_title(title)
+        best, best_score = None, 0
+        try:
+            data = client.get("/search/tv", query=title, language=TMDB_LANG,
+                              include_adult="false", page=1)
+            for c in (data.get("results") or [])[:10]:
+                for n in (c.get("name"), c.get("original_name")):
+                    nn = norm_title(n)
+                    if not nn:
+                        continue
+                    if nn == q:
+                        sc = 3
+                    elif q and (q in nn or nn in q):
+                        sc = 2
+                    else:
+                        sc = 0
+                    if sc > best_score:
+                        best, best_score = c, sc
+        except Exception as e:
+            print("[bili] 搜索「%s」失败：%s" % (title, e))
+
+        if not best or best_score < 2:
+            misses += 1
+            continue
+        item = norm_item(best, "tv")
+        if not item:
+            misses += 1
+            continue
+        cache[sid] = item
+        items.append(item)
+        time.sleep(0.05)
+
+    save_cache(BILI_CACHE, cache)
+    print("[bili] 榜单 %d 条，映射成功 %d，未匹配 %d" % (len(rows), len(items), misses))
+
+    if len(items) < total:
+        extra = discover(client, "tv", {
+            "with_original_language": "zh",
+            "with_genres": 16,
+            "without_genres": "10762",
+            "vote_count.gte": 1,
+            "sort_by": "first_air_date.desc",
+            "first_air_date.lte": datetime.date.today().isoformat(),
+        }, 5)
+        used = {(x["tmdb_id"], x["tmdb_type"]) for x in items}
+        items += [x for x in extra if (x["tmdb_id"], x["tmdb_type"]) not in used]
+
+    return items[:total]
+
+
 def imdb_top250(client, cfg=None):
     return imdb_chart(client, "movie")
 
@@ -402,6 +504,7 @@ SOURCES = {
     "tmdb_discover_tv": lambda c, cfg: discover_tv(c, cfg),
     "tmdb_discover_movie": lambda c, cfg: discover_movie(c, cfg),
     "tmdb_discover_multi": lambda c, cfg: discover_multi(c, cfg),
+    "bili_cn_anime": lambda c, cfg: bili_cn_anime(c, cfg),
 }
 
 
