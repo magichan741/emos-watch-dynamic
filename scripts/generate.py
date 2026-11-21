@@ -394,11 +394,12 @@ def douban_classic(client):
         print("[douban] 读取口碑池失败：%s" % e)
         return []
 
-    items, misses = [], 0
+    items, misses, miss_names = [], 0, []
     for row in rows:
         title = (row.get("title") or "").strip()
         kind = row.get("type") or "tv"
         if not title:
+            continue
             continue
         hit = cache.get(title)
         if hit and hit.get("tmdb_id"):
@@ -429,17 +430,21 @@ def douban_classic(client):
 
         if not best or best_score < 2:
             misses += 1
+            miss_names.append(title)
             continue
         item = norm_item(best, kind)
         if not item:
             misses += 1
+            miss_names.append(title)
             continue
         cache[title] = item
         items.append(item)
+        print("[douban] %s -> TMDB %s (%s)" % (title, item["tmdb_id"], item["title"]))
         time.sleep(0.05)
 
     save_cache(DOUBAN_CACHE, cache)
-    print("[douban] 口碑池 %d 部，命中 %d，未匹配 %d" % (len(rows), len(items), misses))
+    print("[douban] 口碑池 %d 部，命中 %d，未匹配 %d %s"
+          % (len(rows), len(items), misses, miss_names or ""))
     return items
 
 
