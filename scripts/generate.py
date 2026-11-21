@@ -389,52 +389,67 @@ def bili_rank_rows(season_type=4, day=3):
 VARIETY_CACHE = os.path.join(ROOT, "data", "cache", "variety-platform.json")
 
 
-def variety_platform(client, tmdb_id, cache):
-    """查一档综艺的播出平台（TMDB networks），结果缓存。"""
+VARIETY_DETAIL_TTL = 86400
+
+
+def variety_detail(client, tmdb_id, cache):
+    """取一档综艺的播出平台、最近更新日期、状态（带缓存）。"""
     key = str(tmdb_id)
-    if key in cache:
-        return cache[key]
-    name = ""
+    hit = cache.get(key)
+    if isinstance(hit, dict):
+        return hit
+    info = {"platform": "", "last_air": "", "status": ""}
     try:
         data = client.get("/tv/%d" % tmdb_id, language=TMDB_LANG)
         nets = data.get("networks") or []
         if nets:
-            name = (nets[0].get("name") or "").strip()
+            info["platform"] = (nets[0].get("name") or "").strip()
+        info["last_air"] = data.get("last_air_date") or ""
+        info["status"] = data.get("status") or ""
     except Exception as e:
-        print("[variety] 取平台失败 %s：%s" % (tmdb_id, e))
-    cache[key] = name
-    return name
+        print("[variety] 取详情失败 %s：%s" % (tmdb_id, e))
+    cache[key] = info
+    return info
 
 
 def hot_variety(client, cfg=None):
-    """热播综艺：中文综艺按热度取候选，再按播出平台做配额混排。
+    """热播综艺：中文在播综艺按热度排序，再按播出平台做配额混排。
 
-    腾讯/爱奇艺/优酷/芒果的官方榜单都需私有签名，无法定时抓取；
+    腾讯/爱奇艺/优酷/芒果的官方榜单都需私有签名，无法定时抓取，
     这里用 TMDB 热度 + networks 平台信息做「多平台汇总」。
+    用 last_air_date 判断「还在播」，避免把首播于多年前的长寿综艺漏掉。
     """
     cfg = cfg or {}
     total = int(cfg.get("max_items", 50))
-    pages = int(cfg.get("pages", 5))
+    pages = int(cfg.get("pages", 6))
     per_platform = int(cfg.get("per_platform", 18))
+    air_days = int(cfg.get("air_days", 60))
 
     params = {
         "with_original_language": "zh",
         "with_genres": "10764|10767",
-        "vote_count.gte": 1,
+        "vote_count.gte": 2,
         "sort_by": "popularity.desc",
-        "first_air_date.gte": "{today-%d}" % int(cfg.get("days", 540)),
-        "first_air_date.lte": "{today}",
     }
     params.update(cfg.get("params") or {})
-    items = discover(client, "tv", params, pages)
-    if not items:
+    raw = discover(client, "tv", params, pages)
+    if not raw:
         return []
 
+    cutoff = (datetime.date.today() - datetime.timedelta(days=air_days)).isoformat()
     cache = load_cache(VARIETY_CACHE)
-    for it in items:
-        it["platform"] = variety_platform(client, it["tmdb_id"], cache)
+    items = []
+    for it in raw:
+        info = variety_detail(client, it["tmdb_id"], cache)
+        last = info.get("last_air") or ""
+        if not last or last < cutoff:
+            continue
+        it["platform"] = info.get("platform") or ""
+        it["last_air"] = last
+        items.append(it)
         time.sleep(0.02)
     save_cache(VARIETY_CACHE, cache)
+    print("[variety] 候选 %d 部，近 %d 天仍在更新 %d 部" % (len(raw), air_days, len(items)))
 
     counts, picked, rest = {}, [], []
     for it in items:
@@ -451,8 +466,8 @@ def hot_variety(client, cfg=None):
     for it in picked:
         p = it.get("platform") or "其他"
         stat[p] = stat.get(p, 0) + 1
-    print("[variety] 候选 %d，入选 %d，平台分布：%s"
-          % (len(items), len(picked), "、".join("%s×%d" % (k, v) for k, v in stat.items())))
+    print("[variety] 入选 %d，平台分布：%s"
+          % (len(picked), "、".join("%s×%d" % (k, v) for k, v in stat.items())))
     return picked
 
 
