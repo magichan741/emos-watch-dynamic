@@ -12,7 +12,7 @@
 | 最新国产电视剧 | `/watch/latest-cn-tv.json` | 50 条，`zh` + 排除动画/综艺 |
 | 最新欧美电视剧 | `/watch/latest-western-tv.json` | 50 条，`en|es|fr|de|it|pt` 合并 |
 | 最新日韩电视剧 | `/watch/latest-jp-kr-tv.json` | 50 条，`ja|ko` 合并 |
-| 最新更新国漫 | `/watch/latest-cn-anime.json` | 50 条，`zh` 动画按首播日期倒序 |
+| 最新更新国漫 | `/watch/latest-cn-anime.json` | 50 条，B站国创榜排序 + TMDB 映射（不足部分用最新国漫补位） |
 | 最新日漫 | `/watch/latest-jp-anime.json` | 50 条，`ja` + `with_genres=16` |
 | 最新综艺 | `/watch/latest-variety.json` | 50 条，`zh` + Reality/Talk |
 
