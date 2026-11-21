@@ -357,6 +357,8 @@ def discover_multi(client, cfg=None):
 
 BILI_RANK = "https://api.bilibili.com/pgc/web/rank/list"
 BILI_CACHE = os.path.join(ROOT, "data", "cache", "bili-map.json")
+DOUBAN_SEED = os.path.join(ROOT, "data", "douban-classic.json")
+DOUBAN_CACHE = os.path.join(ROOT, "data", "cache", "douban-map.json")
 
 
 def norm_title(s):
@@ -380,6 +382,65 @@ def bili_rank_rows(season_type=4, day=3):
     if data.get("code") not in (0, None):
         raise RuntimeError("B站榜单 code=%s" % data.get("code"))
     return (data.get("result") or {}).get("list") or []
+
+
+def douban_classic(client):
+    """豆瓣高分国漫口碑池：固定顺序的 20 部经典，按标题匹配到 TMDB。"""
+    cache = load_cache(DOUBAN_CACHE)
+    try:
+        with open(DOUBAN_SEED, "r", encoding="utf-8") as f:
+            rows = json.load(f).get("items") or []
+    except Exception as e:
+        print("[douban] 读取口碑池失败：%s" % e)
+        return []
+
+    items, misses = [], 0
+    for row in rows:
+        title = (row.get("title") or "").strip()
+        kind = row.get("type") or "tv"
+        if not title:
+            continue
+        hit = cache.get(title)
+        if hit and hit.get("tmdb_id"):
+            items.append(hit)
+            continue
+
+        q = norm_title(title)
+        best, best_score = None, 0
+        try:
+            data = client.get("/search/%s" % kind, query=title, language=TMDB_LANG,
+                              include_adult="false", page=1)
+            for c in (data.get("results") or [])[:10]:
+                for n in (c.get("name"), c.get("original_name"),
+                          c.get("title"), c.get("original_title")):
+                    nn = norm_title(n)
+                    if not nn:
+                        continue
+                    if nn == q:
+                        sc = 3
+                    elif q and (q in nn or nn in q):
+                        sc = 2
+                    else:
+                        sc = 0
+                    if sc > best_score:
+                        best, best_score = c, sc
+        except Exception as e:
+            print("[douban] 搜索「%s」失败：%s" % (title, e))
+
+        if not best or best_score < 2:
+            misses += 1
+            continue
+        item = norm_item(best, kind)
+        if not item:
+            misses += 1
+            continue
+        cache[title] = item
+        items.append(item)
+        time.sleep(0.05)
+
+    save_cache(DOUBAN_CACHE, cache)
+    print("[douban] 口碑池 %d 部，命中 %d，未匹配 %d" % (len(rows), len(items), misses))
+    return items
 
 
 def bili_cn_anime(client, cfg=None):
@@ -439,6 +500,15 @@ def bili_cn_anime(client, cfg=None):
     save_cache(BILI_CACHE, cache)
     items = dedupe(items)   # 同一部番的多季会指向同一条 TMDB 记录
     print("[bili] 榜单 %d 条，映射成功 %d，未匹配 %d" % (len(rows), len(items), misses))
+
+    # 豆瓣口碑池：B 站热榜之后补一段常青高分国漫
+    if cfg.get("pool"):
+        used = {(x["tmdb_id"], x["tmdb_type"]) for x in items}
+        pool = [x for x in douban_classic(client)
+                if (x["tmdb_id"], x["tmdb_type"]) not in used]
+        if pool:
+            items += pool[:int(cfg.get("pool_max", 20))]
+            print("[douban] 口碑池补充 %d 条" % len(pool[:int(cfg.get("pool_max", 20))]))
 
     if len(items) < total:
         extra = discover(client, "tv", {

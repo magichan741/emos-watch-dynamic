@@ -90,7 +90,9 @@
       "source": "bili_cn_anime",
       "max_items": 50,
       "season_type": 4,
-      "day": 3
+      "day": 3,
+      "pool": "douban_classic",
+      "pool_max": 20
     },
     {
       "slug": "latest-jp-anime",
