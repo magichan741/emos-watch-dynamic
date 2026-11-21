@@ -462,22 +462,6 @@ def hot_variety(client, cfg=None):
     if len(picked) < total:
         picked += rest[:total - len(picked)]
 
-    # 还不够就用「近两年首播的中文综艺」按热度补位
-    if len(picked) < total:
-        more = discover(client, "tv", {
-            "with_original_language": "zh",
-            "with_genres": "10764|10767",
-            "vote_count.gte": 1,
-            "sort_by": "popularity.desc",
-            "first_air_date.gte": "{today-%d}" % int(cfg.get("fallback_days", 900)),
-            "first_air_date.lte": "{today}",
-        }, 3)
-        used = {(x["tmdb_id"], x["tmdb_type"]) for x in picked}
-        extra = [x for x in more if (x["tmdb_id"], x["tmdb_type"]) not in used]
-        if extra:
-            print("[variety] 热度补位 %d 部" % len(extra[:total - len(picked)]))
-        picked += extra[:total - len(picked)]
-
     stat = {}
     for it in picked:
         p = it.get("platform") or "其他"
