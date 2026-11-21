@@ -1,18 +1,18 @@
 {
   "name": "TMDB 每日热门",
-  "cover": "https://image.tmdb.org/t/p/w780/r47dh8cGfgJ7yCq07oBY7bS1sKs.jpg",
-  "updated_at": "2026-11-21 12:49:37",
+  "cover": "https://image.tmdb.org/t/p/w780/cQ8pU9IimyWiLqP0e0qZqtktbma.jpg",
+  "updated_at": "2026-11-22 00:16:07",
   "videos": [
-    {
-      "tmdb_id": 1300968,
-      "tmdb_type": "movie",
-      "title": "饥饿游戏：收获日出",
-      "sort": 1
-    },
     {
       "tmdb_id": 300523,
       "tmdb_type": "tv",
       "title": "罪蓝之路",
+      "sort": 1
+    },
+    {
+      "tmdb_id": 1300968,
+      "tmdb_type": "movie",
+      "title": "饥饿游戏：收获日出",
       "sort": 2
     },
     {
@@ -22,27 +22,27 @@
       "sort": 3
     },
     {
-      "tmdb_id": 1568060,
-      "tmdb_type": "movie",
-      "title": "完美骗子",
-      "sort": 4
-    },
-    {
       "tmdb_id": 1595124,
       "tmdb_type": "movie",
       "title": "童话继姊妹",
-      "sort": 5
+      "sort": 4
     },
     {
-      "tmdb_id": 247718,
-      "tmdb_type": "tv",
-      "title": "MobLand",
-      "sort": 6
+      "tmdb_id": 1568060,
+      "tmdb_type": "movie",
+      "title": "完美说谎者",
+      "sort": 5
     },
     {
       "tmdb_id": 1003596,
       "tmdb_type": "movie",
       "title": "复仇者联盟5",
+      "sort": 6
+    },
+    {
+      "tmdb_id": 247718,
+      "tmdb_type": "tv",
+      "title": "MobLand",
       "sort": 7
     },
     {
@@ -52,15 +52,15 @@
       "sort": 8
     },
     {
-      "tmdb_id": 1551025,
-      "tmdb_type": "movie",
-      "title": "守护星",
-      "sort": 9
-    },
-    {
       "tmdb_id": 117488,
       "tmdb_type": "tv",
       "title": "黄蜂",
+      "sort": 9
+    },
+    {
+      "tmdb_id": 259909,
+      "tmdb_type": "tv",
+      "title": "嗜血法医：杀魔复生",
       "sort": 10
     },
     {
@@ -70,51 +70,51 @@
       "sort": 11
     },
     {
-      "tmdb_id": 259909,
-      "tmdb_type": "tv",
-      "title": "嗜血法医：杀魔复生",
-      "sort": 12
-    },
-    {
-      "tmdb_id": 1185344,
+      "tmdb_id": 1551025,
       "tmdb_type": "movie",
-      "title": "野兽座驾",
-      "sort": 13
+      "title": "守护星",
+      "sort": 12
     },
     {
       "tmdb_id": 1307474,
       "tmdb_type": "movie",
       "title": "以我儿之名",
+      "sort": 13
+    },
+    {
+      "tmdb_id": 203483,
+      "tmdb_type": "tv",
+      "title": "两京十五日",
       "sort": 14
     },
     {
-      "tmdb_id": 1642568,
+      "tmdb_id": 1185344,
       "tmdb_type": "movie",
-      "title": "我不好惹3",
+      "title": "野兽座驾",
       "sort": 15
-    },
-    {
-      "tmdb_id": 308007,
-      "tmdb_type": "tv",
-      "title": "镶金理想",
-      "sort": 16
     },
     {
       "tmdb_id": 84773,
       "tmdb_type": "tv",
       "title": "指环王：力量之戒",
-      "sort": 17
+      "sort": 16
     },
     {
-      "tmdb_id": 1561834,
+      "tmdb_id": 1642568,
       "tmdb_type": "movie",
-      "title": "最后的晚餐",
-      "sort": 18
+      "title": "我不好惹3",
+      "sort": 17
     },
     {
       "tmdb_id": 243761,
       "tmdb_type": "tv",
       "title": "好搭档",
+      "sort": 18
+    },
+    {
+      "tmdb_id": 1381071,
+      "tmdb_type": "movie",
+      "title": "哥斯拉-0.0",
       "sort": 19
     },
     {
