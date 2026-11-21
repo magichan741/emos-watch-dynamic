@@ -86,15 +86,14 @@
     },
     {
       "slug": "latest-cn-anime",
-      "name": "最新国漫TOP50",
+      "name": "最新更新国漫",
       "source": "tmdb_discover_tv",
-      "pages": 3,
+      "pages": 4,
       "max_items": 50,
       "params": {
         "with_original_language": "zh",
         "with_genres": 16,
-        "sort_by": "popularity.desc",
-        "first_air_date.gte": "{today-730}",
+        "sort_by": "first_air_date.desc",
         "first_air_date.lte": "{today}"
       }
     },
