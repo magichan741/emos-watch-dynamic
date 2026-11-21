@@ -437,6 +437,7 @@ def bili_cn_anime(client, cfg=None):
         time.sleep(0.05)
 
     save_cache(BILI_CACHE, cache)
+    items = dedupe(items)   # 同一部番的多季会指向同一条 TMDB 记录
     print("[bili] 榜单 %d 条，映射成功 %d，未匹配 %d" % (len(rows), len(items), misses))
 
     if len(items) < total:
