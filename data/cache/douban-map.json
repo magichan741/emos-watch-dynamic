@@ -6,6 +6,20 @@
   "tmdb_id": 67063,
   "tmdb_type": "tv"
  },
+ "一念永恒": {
+  "popularity": 23.0779,
+  "poster": "https://image.tmdb.org/t/p/w780/jgeAAUyACa4KIdOPafFlWas3em5.jpg",
+  "title": "一念永恒",
+  "tmdb_id": 107371,
+  "tmdb_type": "tv"
+ },
+ "仙逆": {
+  "popularity": 43.5001,
+  "poster": "https://image.tmdb.org/t/p/w780/zlJ4dqSnoraUSB821BZEGUcveP9.jpg",
+  "title": "仙逆",
+  "tmdb_id": 223911,
+  "tmdb_type": "tv"
+ },
  "全职高手": {
   "popularity": 5.556,
   "poster": "https://image.tmdb.org/t/p/w780/i8q25VBh7ID9rbi5zz4pCO8Djqm.jpg",
@@ -27,6 +41,27 @@
   "tmdb_id": 79141,
   "tmdb_type": "tv"
  },
+ "剑来": {
+  "popularity": 11.6751,
+  "poster": "https://image.tmdb.org/t/p/w780/44LJUcedKZ7fsFeWeOvtLIJzEU.jpg",
+  "title": "剑来",
+  "tmdb_id": 259537,
+  "tmdb_type": "tv"
+ },
+ "吞噬星空": {
+  "popularity": 33.5028,
+  "poster": "https://image.tmdb.org/t/p/w780/dShQsQFLSivwCIRjC7crsnznPXY.jpg",
+  "title": "吞噬星空",
+  "tmdb_id": 101172,
+  "tmdb_type": "tv"
+ },
+ "大主宰": {
+  "popularity": 14.5592,
+  "poster": "https://image.tmdb.org/t/p/w780/e9kdsUK01YSa8Ou5tO72QJ0830X.jpg",
+  "title": "大主宰",
+  "tmdb_id": 226045,
+  "tmdb_type": "tv"
+ },
  "大理寺日志": {
   "popularity": 7.7451,
   "poster": "https://image.tmdb.org/t/p/w780/qa70BcxTel8iERiTWImwSuPecyI.jpg",
@@ -39,6 +74,20 @@
   "poster": "https://image.tmdb.org/t/p/w780/5PCuHBbni6aEdJxTc5RlAuhVC7B.jpg",
   "title": "天官赐福",
   "tmdb_id": 112398,
+  "tmdb_type": "tv"
+ },
+ "妖神记": {
+  "popularity": 41.0019,
+  "poster": "https://image.tmdb.org/t/p/w780/1YzVxVFGGskTPNm31Je266Mtrne.jpg",
+  "title": "妖神记",
+  "tmdb_id": 76806,
+  "tmdb_type": "tv"
+ },
+ "完美世界": {
+  "popularity": 41.2572,
+  "poster": "https://image.tmdb.org/t/p/w780/mNJPCv2dLADVVSgLlzsMJoXdTmb.jpg",
+  "title": "完美世界",
+  "tmdb_id": 124003,
   "tmdb_type": "tv"
  },
  "少年歌行": {
@@ -62,6 +111,13 @@
   "tmdb_id": 79481,
   "tmdb_type": "tv"
  },
+ "斗罗大陆": {
+  "popularity": 35.0153,
+  "poster": "https://image.tmdb.org/t/p/w780/apAcmACYNWwSFKafCSNTafYU7UY.jpg",
+  "title": "斗罗大陆",
+  "tmdb_id": 76572,
+  "tmdb_type": "tv"
+ },
  "时光代理人": {
   "popularity": 17.0245,
   "poster": "https://image.tmdb.org/t/p/w780/44cNZ5PmLOwTIOkYwlAewgzn8Bl.jpg",
@@ -76,11 +132,25 @@
   "tmdb_id": 83708,
   "tmdb_type": "tv"
  },
+ "武动乾坤": {
+  "popularity": 8.3389,
+  "poster": "https://image.tmdb.org/t/p/w780/6O1uKLhWmNe5eH9L0AUEr7E5ELg.jpg",
+  "title": "武动乾坤",
+  "tmdb_id": 87007,
+  "tmdb_type": "tv"
+ },
  "武庚纪": {
   "popularity": 11.827,
   "poster": "https://image.tmdb.org/t/p/w780/A7Foi5X440zduaUZJiFtFxpP4yp.jpg",
   "title": "武庚纪",
   "tmdb_id": 66885,
+  "tmdb_type": "tv"
+ },
+ "灵剑尊": {
+  "popularity": 36.4136,
+  "poster": "https://image.tmdb.org/t/p/w780/5k9OpfDgcEP4tOIlXzTAcYOYSQp.jpg",
+  "title": "灵剑尊",
+  "tmdb_id": 88639,
   "tmdb_type": "tv"
  },
  "灵笼": {
@@ -97,11 +167,25 @@
   "tmdb_id": 83463,
   "tmdb_type": "tv"
  },
+ "百炼成神": {
+  "popularity": 7.948,
+  "poster": "https://image.tmdb.org/t/p/w780/hmv3xA55plOODquwD02IKpxRlWO.jpg",
+  "title": "百炼成神",
+  "tmdb_id": 213791,
+  "tmdb_type": "tv"
+ },
  "眷思量": {
   "popularity": 5.2321,
   "poster": "https://image.tmdb.org/t/p/w780/p6WEDdXoXutyx7rYCGTajQCWami.jpg",
   "title": "眷思量",
   "tmdb_id": 127473,
+  "tmdb_type": "tv"
+ },
+ "神印王座": {
+  "popularity": 27.2198,
+  "poster": "https://image.tmdb.org/t/p/w780/3VoqjhxCtsDMKKdeJdm89AMdcTX.jpg",
+  "title": "神印王座",
+  "tmdb_id": 198182,
   "tmdb_type": "tv"
  },
  "秦时明月": {
@@ -116,6 +200,20 @@
   "poster": "https://image.tmdb.org/t/p/w780/1BfuESuEwnahwRwIXQeLLv87lB.jpg",
   "title": "罗小黑战记",
   "tmdb_id": 88319,
+  "tmdb_type": "tv"
+ },
+ "诛仙": {
+  "popularity": 16.4598,
+  "poster": "https://image.tmdb.org/t/p/w780/qhE3JmBg9aSxB4h1vr84Uc10gjJ.jpg",
+  "title": "诛仙",
+  "tmdb_id": 206484,
+  "tmdb_type": "tv"
+ },
+ "遮天": {
+  "popularity": 23.0823,
+  "poster": "https://image.tmdb.org/t/p/w780/z9JNGlJ8eGy6S6SOlBhpmxjjXGT.jpg",
+  "title": "遮天",
+  "tmdb_id": 224839,
   "tmdb_type": "tv"
  },
  "镇魂街": {
