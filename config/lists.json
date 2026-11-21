@@ -110,17 +110,12 @@
     },
     {
       "slug": "latest-variety",
-      "name": "最新综艺",
-      "source": "tmdb_discover_tv",
-      "pages": 3,
+      "name": "最新热播综艺",
+      "source": "hot_variety",
       "max_items": 50,
-      "params": {
-        "with_original_language": "zh",
-        "with_genres": "10764|10767",
-        "sort_by": "first_air_date.desc",
-        "first_air_date.lte": "{today}",
-        "vote_count.gte": 1
-      }
+      "pages": 5,
+      "per_platform": 18,
+      "days": 540
     }
   ]
 }

@@ -384,6 +384,78 @@ def bili_rank_rows(season_type=4, day=3):
     return (data.get("result") or {}).get("list") or []
 
 
+# ---------------- 热播综艺（多平台汇总） ----------------
+
+VARIETY_CACHE = os.path.join(ROOT, "data", "cache", "variety-platform.json")
+
+
+def variety_platform(client, tmdb_id, cache):
+    """查一档综艺的播出平台（TMDB networks），结果缓存。"""
+    key = str(tmdb_id)
+    if key in cache:
+        return cache[key]
+    name = ""
+    try:
+        data = client.get("/tv/%d" % tmdb_id, language=TMDB_LANG)
+        nets = data.get("networks") or []
+        if nets:
+            name = (nets[0].get("name") or "").strip()
+    except Exception as e:
+        print("[variety] 取平台失败 %s：%s" % (tmdb_id, e))
+    cache[key] = name
+    return name
+
+
+def hot_variety(client, cfg=None):
+    """热播综艺：中文综艺按热度取候选，再按播出平台做配额混排。
+
+    腾讯/爱奇艺/优酷/芒果的官方榜单都需私有签名，无法定时抓取；
+    这里用 TMDB 热度 + networks 平台信息做「多平台汇总」。
+    """
+    cfg = cfg or {}
+    total = int(cfg.get("max_items", 50))
+    pages = int(cfg.get("pages", 5))
+    per_platform = int(cfg.get("per_platform", 18))
+
+    params = {
+        "with_original_language": "zh",
+        "with_genres": "10764|10767",
+        "vote_count.gte": 1,
+        "sort_by": "popularity.desc",
+        "first_air_date.gte": "{today-%d}" % int(cfg.get("days", 540)),
+        "first_air_date.lte": "{today}",
+    }
+    params.update(cfg.get("params") or {})
+    items = discover(client, "tv", params, pages)
+    if not items:
+        return []
+
+    cache = load_cache(VARIETY_CACHE)
+    for it in items:
+        it["platform"] = variety_platform(client, it["tmdb_id"], cache)
+        time.sleep(0.02)
+    save_cache(VARIETY_CACHE, cache)
+
+    counts, picked, rest = {}, [], []
+    for it in items:
+        p = it.get("platform") or "其他"
+        if counts.get(p, 0) < per_platform and len(picked) < total:
+            counts[p] = counts.get(p, 0) + 1
+            picked.append(it)
+        else:
+            rest.append(it)
+    if len(picked) < total:
+        picked += rest[:total - len(picked)]
+
+    stat = {}
+    for it in picked:
+        p = it.get("platform") or "其他"
+        stat[p] = stat.get(p, 0) + 1
+    print("[variety] 候选 %d，入选 %d，平台分布：%s"
+          % (len(items), len(picked), "、".join("%s×%d" % (k, v) for k, v in stat.items())))
+    return picked
+
+
 def douban_classic(client):
     """豆瓣高分国漫口碑池：固定顺序的 20 部经典，按标题匹配到 TMDB。"""
     cache = load_cache(DOUBAN_CACHE)
@@ -585,6 +657,7 @@ SOURCES = {
     "tmdb_discover_movie": lambda c, cfg: discover_movie(c, cfg),
     "tmdb_discover_multi": lambda c, cfg: discover_multi(c, cfg),
     "bili_cn_anime": lambda c, cfg: bili_cn_anime(c, cfg),
+    "hot_variety": lambda c, cfg: hot_variety(c, cfg),
 }
 
 
