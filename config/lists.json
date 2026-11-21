@@ -113,9 +113,9 @@
       "name": "最新热播综艺",
       "source": "hot_variety",
       "max_items": 50,
-      "pages": 6,
+      "pages": 12,
       "per_platform": 18,
-      "air_days": 60
+      "air_days": 90
     }
   ]
 }
