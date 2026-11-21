@@ -504,6 +504,10 @@ def bili_cn_anime(client, cfg=None):
 
     save_cache(BILI_CACHE, cache)
     items = dedupe(items)   # 同一部番的多季会指向同一条 TMDB 记录
+    bili_top = int(cfg.get("bili_top", 0) or 0)
+    if bili_top and len(items) > bili_top:
+        print("[bili] 只取榜单前 %d 条（另有 %d 条排名靠后，略过）" % (bili_top, len(items) - bili_top))
+        items = items[:bili_top]
     print("[bili] 榜单 %d 条，映射成功 %d，未匹配 %d" % (len(rows), len(items), misses))
 
     # 豆瓣口碑池：B 站热榜之后补一段常青高分国漫

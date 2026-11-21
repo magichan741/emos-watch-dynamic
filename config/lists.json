@@ -92,7 +92,8 @@
       "season_type": 4,
       "day": 3,
       "pool": "douban_classic",
-      "pool_max": 28
+      "pool_max": 30,
+      "bili_top": 20
     },
     {
       "slug": "latest-jp-anime",
