@@ -404,6 +404,11 @@
   "platform": "Tencent Video",
   "status": "Returning Series"
  },
+ "154538": {
+  "last_air": "2026-06-15",
+  "platform": "Mango TV",
+  "status": "Returning Series"
+ },
  "154770": {
   "last_air": "2026-10-24",
   "platform": "Hunan Television",
@@ -462,6 +467,11 @@
  "196903": {
   "last_air": "2023-12-17",
   "platform": "TTV Main Channel",
+  "status": "Returning Series"
+ },
+ "197150": {
+  "last_air": "2026-01-28",
+  "platform": "Mango TV",
   "status": "Returning Series"
  },
  "197892": {
@@ -734,6 +744,11 @@
   "platform": "CCTV-10",
   "status": "Returning Series"
  },
+ "237417": {
+  "last_air": "2023-12-23",
+  "platform": "Tencent Video",
+  "status": "Ended"
+ },
  "238136": {
   "last_air": "2025-12-25",
   "platform": "iQiyi",
@@ -893,6 +908,11 @@
   "last_air": "2024-12-27",
   "platform": "Tencent Video",
   "status": "Ended"
+ },
+ "275244": {
+  "last_air": "2025-01-24",
+  "platform": "iQiyi",
+  "status": "Returning Series"
  },
  "275657": {
   "last_air": "2025-02-18",
