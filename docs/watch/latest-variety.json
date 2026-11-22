@@ -1,7 +1,7 @@
 {
   "name": "最新热播综艺",
   "cover": "https://image.tmdb.org/t/p/w780/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
-  "updated_at": "2026-11-22 00:16:07",
+  "updated_at": "2026-11-22 11:23:55",
   "videos": [
     {
       "tmdb_id": 154770,
@@ -178,9 +178,9 @@
       "sort": 29
     },
     {
-      "tmdb_id": 217559,
+      "tmdb_id": 239038,
       "tmdb_type": "tv",
-      "title": "中年好聲音",
+      "title": "爱的修学旅行",
       "sort": 30
     }
   ]

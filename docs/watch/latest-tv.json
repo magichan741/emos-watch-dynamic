@@ -1,7 +1,7 @@
 {
   "name": "最新剧集",
   "cover": "https://image.tmdb.org/t/p/w780/nWuOUzOHrn4VB7zRrrcZQHcB5Vx.jpg",
-  "updated_at": "2026-11-22 00:16:07",
+  "updated_at": "2026-11-22 11:23:55",
   "videos": [
     {
       "tmdb_id": 279246,
@@ -52,27 +52,27 @@
       "sort": 8
     },
     {
+      "tmdb_id": 300523,
+      "tmdb_type": "tv",
+      "title": "罪蓝之路",
+      "sort": 9
+    },
+    {
       "tmdb_id": 289517,
       "tmdb_type": "tv",
       "title": "末路兼职",
-      "sort": 9
+      "sort": 10
     },
     {
       "tmdb_id": 293610,
       "tmdb_type": "tv",
       "title": "Doctor X：白色黑手党时代",
-      "sort": 10
+      "sort": 11
     },
     {
       "tmdb_id": 308007,
       "tmdb_type": "tv",
       "title": "镶金理想",
-      "sort": 11
-    },
-    {
-      "tmdb_id": 300523,
-      "tmdb_type": "tv",
-      "title": "罪蓝之路",
       "sort": 12
     },
     {
@@ -88,159 +88,159 @@
       "sort": 14
     },
     {
-      "tmdb_id": 288673,
-      "tmdb_type": "tv",
-      "title": "魔女嘉莉",
-      "sort": 15
-    },
-    {
       "tmdb_id": 300146,
       "tmdb_type": "tv",
       "title": "嫁金钗",
-      "sort": 16
+      "sort": 15
     },
     {
       "tmdb_id": 213562,
       "tmdb_type": "tv",
       "title": "水晶湖",
-      "sort": 17
+      "sort": 16
     },
     {
       "tmdb_id": 293607,
       "tmdb_type": "tv",
       "title": "百日谎言",
-      "sort": 18
+      "sort": 17
     },
     {
       "tmdb_id": 332839,
       "tmdb_type": "tv",
       "title": "罪兽之法",
-      "sort": 19
+      "sort": 18
     },
     {
       "tmdb_id": 249565,
       "tmdb_type": "tv",
       "title": "好女儿",
-      "sort": 20
+      "sort": 19
     },
     {
       "tmdb_id": 340280,
       "tmdb_type": "tv",
       "title": "戈登档案",
-      "sort": 21
+      "sort": 20
     },
     {
       "tmdb_id": 312661,
       "tmdb_type": "tv",
       "title": "急诊室的奇迹",
-      "sort": 22
+      "sort": 21
     },
     {
       "tmdb_id": 341769,
       "tmdb_type": "tv",
       "title": "Valentín: La muerte del Gallo de Oro",
-      "sort": 23
+      "sort": 22
     },
     {
       "tmdb_id": 289423,
       "tmdb_type": "tv",
       "title": "恋爱充电中",
-      "sort": 24
+      "sort": 23
     },
     {
       "tmdb_id": 335981,
       "tmdb_type": "tv",
       "title": "扯淡电影史",
-      "sort": 25
+      "sort": 24
     },
     {
       "tmdb_id": 298550,
       "tmdb_type": "tv",
       "title": "各取所需",
-      "sort": 26
+      "sort": 25
     },
     {
       "tmdb_id": 301354,
       "tmdb_type": "tv",
       "title": "文武",
-      "sort": 27
+      "sort": 26
     },
     {
       "tmdb_id": 333101,
       "tmdb_type": "tv",
       "title": "金银岛",
-      "sort": 28
+      "sort": 27
     },
     {
       "tmdb_id": 270431,
       "tmdb_type": "tv",
       "title": "折月亮",
-      "sort": 29
+      "sort": 28
     },
     {
       "tmdb_id": 261315,
       "tmdb_type": "tv",
       "title": "十万狂花入梦来",
-      "sort": 30
+      "sort": 29
     },
     {
       "tmdb_id": 314360,
       "tmdb_type": "tv",
       "title": "雅嘎疑云",
-      "sort": 31
+      "sort": 30
     },
     {
       "tmdb_id": 315323,
       "tmdb_type": "tv",
       "title": "影子姐妹",
-      "sort": 32
+      "sort": 31
     },
     {
       "tmdb_id": 275297,
       "tmdb_type": "tv",
       "title": "走马上任",
-      "sort": 33
+      "sort": 32
     },
     {
       "tmdb_id": 303182,
       "tmdb_type": "tv",
       "title": "枕边杀局",
-      "sort": 34
+      "sort": 33
     },
     {
       "tmdb_id": 316702,
       "tmdb_type": "tv",
       "title": "最后的餐桌",
-      "sort": 35
+      "sort": 34
     },
     {
       "tmdb_id": 279155,
       "tmdb_type": "tv",
       "title": "谷雨",
-      "sort": 36
+      "sort": 35
     },
     {
       "tmdb_id": 334412,
       "tmdb_type": "tv",
       "title": "Student of the Year: After Dark",
-      "sort": 37
+      "sort": 36
     },
     {
       "tmdb_id": 303630,
       "tmdb_type": "tv",
       "title": "库比蒂诺",
-      "sort": 38
+      "sort": 37
     },
     {
       "tmdb_id": 305487,
       "tmdb_type": "tv",
-      "title": "El laberinto de las mariposas",
-      "sort": 39
+      "title": "蝴蝶迷宫",
+      "sort": 38
     },
     {
       "tmdb_id": 285322,
       "tmdb_type": "tv",
       "title": "暗潮之下",
+      "sort": 39
+    },
+    {
+      "tmdb_id": 326975,
+      "tmdb_type": "tv",
+      "title": "BOSS的甜蜜诱惑",
       "sort": 40
     }
   ]
