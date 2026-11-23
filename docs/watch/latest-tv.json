@@ -1,7 +1,7 @@
 {
   "name": "最新剧集",
   "cover": "https://image.tmdb.org/t/p/w780/nWuOUzOHrn4VB7zRrrcZQHcB5Vx.jpg",
-  "updated_at": "2026-11-23 11:55:05",
+  "updated_at": "2026-11-24 04:24:59",
   "videos": [
     {
       "tmdb_id": 279246,
@@ -34,15 +34,15 @@
       "sort": 5
     },
     {
-      "tmdb_id": 254630,
-      "tmdb_type": "tv",
-      "title": "12 12 12",
-      "sort": 6
-    },
-    {
       "tmdb_id": 292741,
       "tmdb_type": "tv",
       "title": "夜曲",
+      "sort": 6
+    },
+    {
+      "tmdb_id": 254630,
+      "tmdb_type": "tv",
+      "title": "12 12 12",
       "sort": 7
     },
     {
@@ -64,15 +64,15 @@
       "sort": 10
     },
     {
-      "tmdb_id": 293610,
-      "tmdb_type": "tv",
-      "title": "Doctor X：白色黑手党时代",
-      "sort": 11
-    },
-    {
       "tmdb_id": 308007,
       "tmdb_type": "tv",
       "title": "镶金理想",
+      "sort": 11
+    },
+    {
+      "tmdb_id": 293610,
+      "tmdb_type": "tv",
+      "title": "Doctor X：白色黑手党时代",
       "sort": 12
     },
     {
@@ -88,15 +88,15 @@
       "sort": 14
     },
     {
-      "tmdb_id": 213562,
-      "tmdb_type": "tv",
-      "title": "水晶湖",
-      "sort": 15
-    },
-    {
       "tmdb_id": 307853,
       "tmdb_type": "tv",
       "title": "今天是太阳雨",
+      "sort": 15
+    },
+    {
+      "tmdb_id": 332839,
+      "tmdb_type": "tv",
+      "title": "罪兽之法",
       "sort": 16
     },
     {
@@ -106,9 +106,9 @@
       "sort": 17
     },
     {
-      "tmdb_id": 332839,
+      "tmdb_id": 213562,
       "tmdb_type": "tv",
-      "title": "罪兽之法",
+      "title": "水晶湖",
       "sort": 18
     },
     {
@@ -130,15 +130,15 @@
       "sort": 21
     },
     {
-      "tmdb_id": 312661,
+      "tmdb_id": 298550,
       "tmdb_type": "tv",
-      "title": "急诊室的奇迹",
+      "title": "各取所需",
       "sort": 22
     },
     {
-      "tmdb_id": 315323,
+      "tmdb_id": 335981,
       "tmdb_type": "tv",
-      "title": "影子姐妹",
+      "title": "扯淡电影史",
       "sort": 23
     },
     {
@@ -148,33 +148,33 @@
       "sort": 24
     },
     {
-      "tmdb_id": 298550,
+      "tmdb_id": 312661,
       "tmdb_type": "tv",
-      "title": "各取所需",
+      "title": "急诊室的奇迹",
       "sort": 25
     },
     {
-      "tmdb_id": 335981,
+      "tmdb_id": 315323,
       "tmdb_type": "tv",
-      "title": "扯淡电影史",
+      "title": "影子姐妹",
       "sort": 26
-    },
-    {
-      "tmdb_id": 333101,
-      "tmdb_type": "tv",
-      "title": "金银岛",
-      "sort": 27
     },
     {
       "tmdb_id": 261315,
       "tmdb_type": "tv",
       "title": "十万狂花入梦来",
-      "sort": 28
+      "sort": 27
     },
     {
       "tmdb_id": 316702,
       "tmdb_type": "tv",
       "title": "最后的餐桌",
+      "sort": 28
+    },
+    {
+      "tmdb_id": 333101,
+      "tmdb_type": "tv",
+      "title": "金银岛",
       "sort": 29
     },
     {
@@ -184,21 +184,21 @@
       "sort": 30
     },
     {
+      "tmdb_id": 338562,
+      "tmdb_type": "tv",
+      "title": "翻案人生",
+      "sort": 31
+    },
+    {
       "tmdb_id": 334412,
       "tmdb_type": "tv",
       "title": "Student of the Year: After Dark",
-      "sort": 31
+      "sort": 32
     },
     {
       "tmdb_id": 270431,
       "tmdb_type": "tv",
       "title": "折月亮",
-      "sort": 32
-    },
-    {
-      "tmdb_id": 338562,
-      "tmdb_type": "tv",
-      "title": "翻案人生",
       "sort": 33
     },
     {
@@ -214,33 +214,33 @@
       "sort": 35
     },
     {
-      "tmdb_id": 275297,
-      "tmdb_type": "tv",
-      "title": "走马上任",
-      "sort": 36
-    },
-    {
       "tmdb_id": 303182,
       "tmdb_type": "tv",
       "title": "枕边杀局",
-      "sort": 37
-    },
-    {
-      "tmdb_id": 279155,
-      "tmdb_type": "tv",
-      "title": "谷雨",
-      "sort": 38
-    },
-    {
-      "tmdb_id": 305487,
-      "tmdb_type": "tv",
-      "title": "蝴蝶迷宫",
-      "sort": 39
+      "sort": 36
     },
     {
       "tmdb_id": 326975,
       "tmdb_type": "tv",
       "title": "BOSS的甜蜜诱惑",
+      "sort": 37
+    },
+    {
+      "tmdb_id": 318420,
+      "tmdb_type": "tv",
+      "title": "十二星座恋爱实验",
+      "sort": 38
+    },
+    {
+      "tmdb_id": 243555,
+      "tmdb_type": "tv",
+      "title": "危城女当家",
+      "sort": 39
+    },
+    {
+      "tmdb_id": 275297,
+      "tmdb_type": "tv",
+      "title": "走马上任",
       "sort": 40
     }
   ]

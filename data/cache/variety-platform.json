@@ -154,6 +154,11 @@
   "platform": "iQiyi",
   "status": "Ended"
  },
+ "110364": {
+  "last_air": "2015-10-24",
+  "platform": "Mango TV",
+  "status": "Ended"
+ },
  "111897": {
   "last_air": "2021-11-06",
   "platform": "Mango TV",
@@ -347,6 +352,11 @@
  "131777": {
   "last_air": "2025-12-26",
   "platform": "Zhejiang Television",
+  "status": "Returning Series"
+ },
+ "132645": {
+  "last_air": "2022-01-08",
+  "platform": "iQiyi",
   "status": "Returning Series"
  },
  "136503": {
@@ -557,6 +567,11 @@
  "206296": {
   "last_air": "2025-11-22",
   "platform": "TVBS",
+  "status": "Returning Series"
+ },
+ "206367": {
+  "last_air": "2026-10-20",
+  "platform": "",
   "status": "Returning Series"
  },
  "207023": {
@@ -777,6 +792,11 @@
  "249247": {
   "last_air": "2024-06-08",
   "platform": "Hunan Television",
+  "status": "Ended"
+ },
+ "249544": {
+  "last_air": "2024-06-06",
+  "platform": "Jiangsu Television",
   "status": "Ended"
  },
  "250061": {

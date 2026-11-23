@@ -1,7 +1,7 @@
 {
   "name": "最新热播综艺",
   "cover": "https://image.tmdb.org/t/p/w780/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
-  "updated_at": "2026-11-23 11:55:05",
+  "updated_at": "2026-11-24 04:24:59",
   "videos": [
     {
       "tmdb_id": 154770,
@@ -22,15 +22,15 @@
       "sort": 3
     },
     {
-      "tmdb_id": 231620,
+      "tmdb_id": 219934,
       "tmdb_type": "tv",
-      "title": "现在就出发",
+      "title": "种地吧",
       "sort": 4
     },
     {
-      "tmdb_id": 201900,
+      "tmdb_id": 231620,
       "tmdb_type": "tv",
-      "title": "小姐不熙娣",
+      "title": "现在就出发",
       "sort": 5
     },
     {
@@ -40,21 +40,21 @@
       "sort": 6
     },
     {
-      "tmdb_id": 219934,
+      "tmdb_id": 201900,
       "tmdb_type": "tv",
-      "title": "种地吧",
+      "title": "小姐不熙娣",
       "sort": 7
-    },
-    {
-      "tmdb_id": 131040,
-      "tmdb_type": "tv",
-      "title": "披荆斩棘",
-      "sort": 8
     },
     {
       "tmdb_id": 89861,
       "tmdb_type": "tv",
       "title": "密室大逃脱",
+      "sort": 8
+    },
+    {
+      "tmdb_id": 131040,
+      "tmdb_type": "tv",
+      "title": "披荆斩棘",
       "sort": 9
     },
     {
@@ -160,27 +160,27 @@
       "sort": 26
     },
     {
-      "tmdb_id": 301355,
-      "tmdb_type": "tv",
-      "title": "偏爱之恋",
-      "sort": 27
-    },
-    {
       "tmdb_id": 215280,
       "tmdb_type": "tv",
       "title": "南波万的聚会",
+      "sort": 27
+    },
+    {
+      "tmdb_id": 301355,
+      "tmdb_type": "tv",
+      "title": "偏爱之恋",
       "sort": 28
+    },
+    {
+      "tmdb_id": 206367,
+      "tmdb_type": "tv",
+      "title": "这就是中国",
+      "sort": 29
     },
     {
       "tmdb_id": 239038,
       "tmdb_type": "tv",
       "title": "爱的修学旅行",
-      "sort": 29
-    },
-    {
-      "tmdb_id": 331649,
-      "tmdb_type": "tv",
-      "title": "大哥小助理",
       "sort": 30
     }
   ]

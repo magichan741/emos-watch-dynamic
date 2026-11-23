@@ -1,7 +1,7 @@
 {
   "name": "最新日韩电视剧",
   "cover": "https://magichan741.github.io/emos-watch-dynamic/assets/cover-default.svg",
-  "updated_at": "2026-11-23 11:55:05",
+  "updated_at": "2026-11-24 04:24:59",
   "videos": [
     {
       "tmdb_id": 342629,
@@ -190,117 +190,117 @@
       "sort": 31
     },
     {
+      "tmdb_id": 325044,
+      "tmdb_type": "tv",
+      "title": "언더 더 스킨",
+      "sort": 32
+    },
+    {
       "tmdb_id": 342359,
       "tmdb_type": "tv",
       "title": "ピエール瀧のあなたのことを廃してます",
-      "sort": 32
+      "sort": 33
     },
     {
       "tmdb_id": 341480,
       "tmdb_type": "tv",
       "title": "내 아이돌은 공익근무요원",
-      "sort": 33
+      "sort": 34
     },
     {
       "tmdb_id": 341199,
       "tmdb_type": "tv",
       "title": "지옥의 짬밥",
-      "sort": 34
+      "sort": 35
     },
     {
       "tmdb_id": 339293,
       "tmdb_type": "tv",
       "title": "开除我？我让集团破产",
-      "sort": 35
+      "sort": 36
     },
     {
       "tmdb_id": 339279,
       "tmdb_type": "tv",
       "title": "还魂医师",
-      "sort": 36
+      "sort": 37
     },
     {
       "tmdb_id": 332803,
       "tmdb_type": "tv",
       "title": "只是逢场作戏",
-      "sort": 37
+      "sort": 38
     },
     {
       "tmdb_id": 341059,
       "tmdb_type": "tv",
       "title": "결혼부터 할까요, 기사님?",
-      "sort": 38
+      "sort": 39
     },
     {
       "tmdb_id": 340881,
       "tmdb_type": "tv",
       "title": "時空鉄道　～あの頃に途中下車～",
-      "sort": 39
+      "sort": 40
     },
     {
       "tmdb_id": 279246,
       "tmdb_type": "tv",
       "title": "再婚皇后",
-      "sort": 40
+      "sort": 41
     },
     {
       "tmdb_id": 341723,
       "tmdb_type": "tv",
       "title": "내 아내의 속사정",
-      "sort": 41
+      "sort": 42
     },
     {
       "tmdb_id": 340413,
       "tmdb_type": "tv",
       "title": "二畳半レコード",
-      "sort": 42
+      "sort": 43
     },
     {
       "tmdb_id": 337691,
       "tmdb_type": "tv",
       "title": "老师，请拿身体偿还吧",
-      "sort": 43
+      "sort": 44
     },
     {
       "tmdb_id": 330628,
       "tmdb_type": "tv",
       "title": "我的甜蜜家园",
-      "sort": 44
+      "sort": 45
     },
     {
       "tmdb_id": 340529,
       "tmdb_type": "tv",
       "title": "언니만 따라와",
-      "sort": 45
+      "sort": 46
     },
     {
       "tmdb_id": 340471,
       "tmdb_type": "tv",
       "title": "中部ドキュメンタリーシリーズ",
-      "sort": 46
+      "sort": 47
     },
     {
       "tmdb_id": 335176,
       "tmdb_type": "tv",
       "title": "溺愛　～ 実は、最強ヒーロー ～",
-      "sort": 47
+      "sort": 48
     },
     {
       "tmdb_id": 332637,
       "tmdb_type": "tv",
       "title": "我竟然要一个人活下去",
-      "sort": 48
+      "sort": 49
     },
     {
       "tmdb_id": 307478,
       "tmdb_type": "tv",
       "title": "谎言",
-      "sort": 49
-    },
-    {
-      "tmdb_id": 289517,
-      "tmdb_type": "tv",
-      "title": "末路兼职",
       "sort": 50
     }
   ]

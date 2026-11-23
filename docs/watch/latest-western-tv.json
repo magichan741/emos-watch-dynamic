@@ -1,306 +1,306 @@
 {
   "name": "最新欧美电视剧",
-  "cover": "https://image.tmdb.org/t/p/w780/jQvDPHQUaJZm5PpIry5iL8SJSvu.jpg",
-  "updated_at": "2026-11-23 11:55:05",
+  "cover": "https://image.tmdb.org/t/p/w780/nxpNrQvqLWXRpTOn3o0k6bO59fO.jpg",
+  "updated_at": "2026-11-24 04:24:59",
   "videos": [
+    {
+      "tmdb_id": 343212,
+      "tmdb_type": "tv",
+      "title": "Verdeliss. Más allá del miedo",
+      "sort": 1
+    },
+    {
+      "tmdb_id": 343159,
+      "tmdb_type": "tv",
+      "title": "[##Assistenza~Turkish~Airlines] Italia: Numero Verde, Contatti e Supporto Clienti ||Come possiamo aiutarti?",
+      "sort": 2
+    },
     {
       "tmdb_id": 342297,
       "tmdb_type": "tv",
       "title": "Amici",
-      "sort": 1
+      "sort": 3
     },
     {
       "tmdb_id": 341984,
       "tmdb_type": "tv",
       "title": "Lucy Worsley's Keys to the Castle",
-      "sort": 2
+      "sort": 4
     },
     {
       "tmdb_id": 340910,
       "tmdb_type": "tv",
       "title": "Ashokan",
-      "sort": 3
+      "sort": 5
     },
     {
       "tmdb_id": 340615,
       "tmdb_type": "tv",
-      "title": "The Trials of Karen Read",
-      "sort": 4
+      "title": "卡伦·里德的审判：雪地警员死亡谜案",
+      "sort": 6
     },
     {
       "tmdb_id": 325484,
       "tmdb_type": "tv",
       "title": "New Wave",
-      "sort": 5
+      "sort": 7
     },
     {
       "tmdb_id": 290826,
       "tmdb_type": "tv",
       "title": "Dig",
-      "sort": 6
+      "sort": 8
+    },
+    {
+      "tmdb_id": 343196,
+      "tmdb_type": "tv",
+      "title": "Senza Legge: Viaggio nelle No-Go Zones",
+      "sort": 9
     },
     {
       "tmdb_id": 342714,
       "tmdb_type": "tv",
       "title": "La tragédie du sang contaminé",
-      "sort": 7
+      "sort": 10
     },
     {
       "tmdb_id": 341164,
       "tmdb_type": "tv",
       "title": "Oobah: Scams for a Better Tomorrow",
-      "sort": 8
+      "sort": 11
     },
     {
       "tmdb_id": 340984,
       "tmdb_type": "tv",
       "title": "Noah siendo Noah",
-      "sort": 9
+      "sort": 12
     },
     {
       "tmdb_id": 340566,
       "tmdb_type": "tv",
-      "title": "The Witch Farm",
-      "sort": 10
+      "title": "女巫农场",
+      "sort": 13
     },
     {
       "tmdb_id": 338661,
       "tmdb_type": "tv",
       "title": "Shakedown",
-      "sort": 11
+      "sort": 14
     },
     {
       "tmdb_id": 328853,
       "tmdb_type": "tv",
       "title": "La famiglia Panini - L’avventura delle figurine",
-      "sort": 12
+      "sort": 15
+    },
+    {
+      "tmdb_id": 327127,
+      "tmdb_type": "tv",
+      "title": "Nuits Blanches",
+      "sort": 16
+    },
+    {
+      "tmdb_id": 343195,
+      "tmdb_type": "tv",
+      "title": "40 Hidden Music Treasures at the BBC",
+      "sort": 17
     },
     {
       "tmdb_id": 342915,
       "tmdb_type": "tv",
       "title": "@!!CDMX GUÍAજ⁀➴🛫 Delta         México Teléfono México ¿Cómo llamar a Delta en México? ¿Cómo llamar a Delta  en México?",
-      "sort": 13
+      "sort": 18
+    },
+    {
+      "tmdb_id": 343230,
+      "tmdb_type": "tv",
+      "title": "Անկախություն",
+      "sort": 19
+    },
+    {
+      "tmdb_id": 343197,
+      "tmdb_type": "tv",
+      "title": "Pony Girls",
+      "sort": 20
     },
     {
       "tmdb_id": 342696,
       "tmdb_type": "tv",
       "title": "Plein",
-      "sort": 14
+      "sort": 21
     },
     {
       "tmdb_id": 342657,
       "tmdb_type": "tv",
       "title": "El Médico Milagroso que Ella Rechazó",
-      "sort": 15
+      "sort": 22
     },
     {
       "tmdb_id": 342648,
       "tmdb_type": "tv",
       "title": "Marido alquilado",
-      "sort": 16
+      "sort": 23
     },
     {
       "tmdb_id": 340624,
       "tmdb_type": "tv",
       "title": "Ayô",
-      "sort": 17
+      "sort": 24
     },
     {
       "tmdb_id": 314131,
       "tmdb_type": "tv",
       "title": "MELANIA the Series",
-      "sort": 18
+      "sort": 25
     },
     {
       "tmdb_id": 292113,
       "tmdb_type": "tv",
       "title": "Bill's Included",
-      "sort": 19
+      "sort": 26
     },
     {
       "tmdb_id": 343125,
       "tmdb_type": "tv",
       "title": "Dernière Seconde: Requiem de Minuit",
-      "sort": 20
+      "sort": 27
     },
     {
       "tmdb_id": 342822,
       "tmdb_type": "tv",
       "title": "The Airport",
-      "sort": 21
+      "sort": 28
     },
     {
       "tmdb_id": 342812,
       "tmdb_type": "tv",
       "title": "Friday, Unread",
-      "sort": 22
+      "sort": 29
     },
     {
       "tmdb_id": 342738,
       "tmdb_type": "tv",
       "title": "Ballz",
-      "sort": 23
+      "sort": 30
     },
     {
       "tmdb_id": 342695,
       "tmdb_type": "tv",
       "title": "The Mad Pooper",
-      "sort": 24
+      "sort": 31
     },
     {
       "tmdb_id": 342664,
       "tmdb_type": "tv",
       "title": "Diamonds & Plastic",
-      "sort": 25
+      "sort": 32
     },
     {
       "tmdb_id": 342662,
       "tmdb_type": "tv",
       "title": "El preso que nadie podía matar",
-      "sort": 26
+      "sort": 33
     },
     {
       "tmdb_id": 342659,
       "tmdb_type": "tv",
       "title": "Untitled EJBP miniseries",
-      "sort": 27
+      "sort": 34
     },
     {
       "tmdb_id": 342651,
       "tmdb_type": "tv",
       "title": "Classic Movies: Iconic Scenes",
-      "sort": 28
+      "sort": 35
     },
     {
       "tmdb_id": 342626,
       "tmdb_type": "tv",
       "title": "Tokio Hotel - Gegen alle Regeln",
-      "sort": 29
+      "sort": 36
     },
     {
       "tmdb_id": 342610,
       "tmdb_type": "tv",
       "title": "Nanban",
-      "sort": 30
+      "sort": 37
     },
     {
       "tmdb_id": 342601,
       "tmdb_type": "tv",
       "title": "De Chofer a Rey de la Guerra",
-      "sort": 31
+      "sort": 38
     },
     {
       "tmdb_id": 342600,
       "tmdb_type": "tv",
       "title": "El taxista multimillonario",
-      "sort": 32
+      "sort": 39
     },
     {
       "tmdb_id": 308007,
       "tmdb_type": "tv",
       "title": "镶金理想",
-      "sort": 33
+      "sort": 40
     },
     {
       "tmdb_id": 279382,
       "tmdb_type": "tv",
       "title": "Eldorado",
-      "sort": 34
+      "sort": 41
     },
     {
       "tmdb_id": 342575,
       "tmdb_type": "tv",
       "title": "The AJ Styles Podcast",
-      "sort": 35
+      "sort": 42
     },
     {
       "tmdb_id": 342572,
       "tmdb_type": "tv",
       "title": "Dossiê Celebridades",
-      "sort": 36
+      "sort": 43
     },
     {
       "tmdb_id": 342565,
       "tmdb_type": "tv",
       "title": "Ós Blauw",
-      "sort": 37
+      "sort": 44
     },
     {
       "tmdb_id": 341593,
       "tmdb_type": "tv",
       "title": "Inventeur Gadget - Les 1000 vies de Jean Chalopin",
-      "sort": 38
+      "sort": 45
     },
     {
       "tmdb_id": 340280,
       "tmdb_type": "tv",
       "title": "戈登档案",
-      "sort": 39
+      "sort": 46
     },
     {
       "tmdb_id": 318420,
       "tmdb_type": "tv",
       "title": "十二星座恋爱实验",
-      "sort": 40
+      "sort": 47
     },
     {
       "tmdb_id": 316752,
       "tmdb_type": "tv",
       "title": "Somos así",
-      "sort": 41
+      "sort": 48
     },
     {
       "tmdb_id": 288120,
       "tmdb_type": "tv",
       "title": "维也纳风云",
-      "sort": 42
+      "sort": 49
     },
     {
       "tmdb_id": 283654,
       "tmdb_type": "tv",
       "title": "Home to Harmony",
-      "sort": 43
-    },
-    {
-      "tmdb_id": 342615,
-      "tmdb_type": "tv",
-      "title": "Ring My Bell: Reboot",
-      "sort": 44
-    },
-    {
-      "tmdb_id": 342465,
-      "tmdb_type": "tv",
-      "title": "Yirshawn",
-      "sort": 45
-    },
-    {
-      "tmdb_id": 342453,
-      "tmdb_type": "tv",
-      "title": "Gufengers",
-      "sort": 46
-    },
-    {
-      "tmdb_id": 342410,
-      "tmdb_type": "tv",
-      "title": "The Fourth Seat",
-      "sort": 47
-    },
-    {
-      "tmdb_id": 339407,
-      "tmdb_type": "tv",
-      "title": "He Said, She Said: Till Death Do Us Part",
-      "sort": 48
-    },
-    {
-      "tmdb_id": 342680,
-      "tmdb_type": "tv",
-      "title": "BLACKTIDE",
-      "sort": 49
-    },
-    {
-      "tmdb_id": 342661,
-      "tmdb_type": "tv",
-      "title": "I Am Helen",
       "sort": 50
     }
   ]
