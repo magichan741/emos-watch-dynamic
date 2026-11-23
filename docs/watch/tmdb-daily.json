@@ -1,18 +1,18 @@
 {
   "name": "TMDB 每日热门",
-  "cover": "https://image.tmdb.org/t/p/w780/Aj0Uykxj0vhwVsyrRJka0aM3SP1.jpg",
-  "updated_at": "2026-11-23 00:28:58",
+  "cover": "https://image.tmdb.org/t/p/w780/r47dh8cGfgJ7yCq07oBY7bS1sKs.jpg",
+  "updated_at": "2026-11-23 11:55:05",
   "videos": [
-    {
-      "tmdb_id": 1368337,
-      "tmdb_type": "movie",
-      "title": "奥德赛",
-      "sort": 1
-    },
     {
       "tmdb_id": 1300968,
       "tmdb_type": "movie",
       "title": "饥饿游戏：收获日出",
+      "sort": 1
+    },
+    {
+      "tmdb_id": 1368337,
+      "tmdb_type": "movie",
+      "title": "奥德赛",
       "sort": 2
     },
     {
@@ -40,15 +40,15 @@
       "sort": 6
     },
     {
-      "tmdb_id": 247718,
+      "tmdb_id": 291507,
       "tmdb_type": "tv",
-      "title": "MobLand",
+      "title": "青春共体",
       "sort": 7
     },
     {
-      "tmdb_id": 1568060,
-      "tmdb_type": "movie",
-      "title": "完美骗子",
+      "tmdb_id": 247718,
+      "tmdb_type": "tv",
+      "title": "MobLand",
       "sort": 8
     },
     {
@@ -58,45 +58,45 @@
       "sort": 9
     },
     {
-      "tmdb_id": 1551025,
+      "tmdb_id": 1568060,
       "tmdb_type": "movie",
-      "title": "守护你，遇见爱",
+      "title": "完美骗子",
       "sort": 10
     },
     {
-      "tmdb_id": 79481,
-      "tmdb_type": "tv",
-      "title": "斗破苍穹",
+      "tmdb_id": 969681,
+      "tmdb_type": "movie",
+      "title": "蜘蛛侠：崭新之日",
       "sort": 11
     },
     {
-      "tmdb_id": 1131943,
+      "tmdb_id": 1551025,
       "tmdb_type": "movie",
-      "title": "马登",
+      "title": "守护你，遇见爱",
       "sort": 12
-    },
-    {
-      "tmdb_id": 1381071,
-      "tmdb_type": "movie",
-      "title": "哥斯拉-0.0",
-      "sort": 13
     },
     {
       "tmdb_id": 103540,
       "tmdb_type": "tv",
       "title": "Percy Jackson and the Olympians",
+      "sort": 13
+    },
+    {
+      "tmdb_id": 1381071,
+      "tmdb_type": "movie",
+      "title": "哥斯拉-0.0",
       "sort": 14
     },
     {
-      "tmdb_id": 291507,
+      "tmdb_id": 79481,
       "tmdb_type": "tv",
-      "title": "青春共体",
+      "title": "斗破苍穹",
       "sort": 15
     },
     {
-      "tmdb_id": 1185344,
+      "tmdb_id": 1131943,
       "tmdb_type": "movie",
-      "title": "野兽座驾",
+      "title": "马登",
       "sort": 16
     },
     {
@@ -106,21 +106,21 @@
       "sort": 17
     },
     {
-      "tmdb_id": 969681,
-      "tmdb_type": "movie",
-      "title": "蜘蛛侠：崭新之日",
-      "sort": 18
-    },
-    {
-      "tmdb_id": 1642568,
-      "tmdb_type": "movie",
-      "title": "我不好惹3",
-      "sort": 19
-    },
-    {
       "tmdb_id": 259909,
       "tmdb_type": "tv",
       "title": "嗜血法医：杀魔复生",
+      "sort": 18
+    },
+    {
+      "tmdb_id": 213375,
+      "tmdb_type": "tv",
+      "title": "幻视任务",
+      "sort": 19
+    },
+    {
+      "tmdb_id": 1263337,
+      "tmdb_type": "movie",
+      "title": "野兽之心",
       "sort": 20
     }
   ]
