@@ -1,7 +1,7 @@
 {
   "name": "最新热播综艺",
   "cover": "https://image.tmdb.org/t/p/w780/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
-  "updated_at": "2026-11-24 04:24:59",
+  "updated_at": "2026-11-24 15:03:20",
   "videos": [
     {
       "tmdb_id": 154770,
@@ -160,15 +160,15 @@
       "sort": 26
     },
     {
-      "tmdb_id": 215280,
-      "tmdb_type": "tv",
-      "title": "南波万的聚会",
-      "sort": 27
-    },
-    {
       "tmdb_id": 301355,
       "tmdb_type": "tv",
       "title": "偏爱之恋",
+      "sort": 27
+    },
+    {
+      "tmdb_id": 215280,
+      "tmdb_type": "tv",
+      "title": "南波万的聚会",
       "sort": 28
     },
     {

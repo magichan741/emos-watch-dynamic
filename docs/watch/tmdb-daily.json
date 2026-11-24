@@ -1,24 +1,24 @@
 {
   "name": "TMDB 每日热门",
-  "cover": "https://image.tmdb.org/t/p/w780/r47dh8cGfgJ7yCq07oBY7bS1sKs.jpg",
-  "updated_at": "2026-11-24 04:24:59",
+  "cover": "https://image.tmdb.org/t/p/w780/1CXOvSlK8R0dqc4u1QqDDZkH3ql.jpg",
+  "updated_at": "2026-11-24 15:03:20",
   "videos": [
-    {
-      "tmdb_id": 1300968,
-      "tmdb_type": "movie",
-      "title": "饥饿游戏：收获日出",
-      "sort": 1
-    },
     {
       "tmdb_id": 1003596,
       "tmdb_type": "movie",
       "title": "复仇者联盟5",
+      "sort": 1
+    },
+    {
+      "tmdb_id": 1300968,
+      "tmdb_type": "movie",
+      "title": "饥饿游戏：收获日出",
       "sort": 2
     },
     {
-      "tmdb_id": 1368337,
+      "tmdb_id": 1281331,
       "tmdb_type": "movie",
-      "title": "奥德赛",
+      "title": "社交清算",
       "sort": 3
     },
     {
@@ -28,57 +28,57 @@
       "sort": 4
     },
     {
-      "tmdb_id": 1281331,
-      "tmdb_type": "movie",
-      "title": "社交清算",
+      "tmdb_id": 290826,
+      "tmdb_type": "tv",
+      "title": "挖",
       "sort": 5
+    },
+    {
+      "tmdb_id": 1368337,
+      "tmdb_type": "movie",
+      "title": "奥德赛",
+      "sort": 6
     },
     {
       "tmdb_id": 1595124,
       "tmdb_type": "movie",
       "title": "童话继姊妹",
-      "sort": 6
-    },
-    {
-      "tmdb_id": 290826,
-      "tmdb_type": "tv",
-      "title": "Dig",
       "sort": 7
-    },
-    {
-      "tmdb_id": 247718,
-      "tmdb_type": "tv",
-      "title": "MobLand",
-      "sort": 8
     },
     {
       "tmdb_id": 1538497,
       "tmdb_type": "movie",
       "title": "魔法秘境",
-      "sort": 9
+      "sort": 8
     },
     {
       "tmdb_id": 969681,
       "tmdb_type": "movie",
       "title": "蜘蛛侠：崭新之日",
-      "sort": 10
+      "sort": 9
     },
     {
       "tmdb_id": 291507,
       "tmdb_type": "tv",
       "title": "青春共体",
+      "sort": 10
+    },
+    {
+      "tmdb_id": 84773,
+      "tmdb_type": "tv",
+      "title": "指环王：力量之戒",
       "sort": 11
     },
     {
-      "tmdb_id": 300523,
+      "tmdb_id": 247718,
       "tmdb_type": "tv",
-      "title": "罪蓝之路",
+      "title": "MobLand",
       "sort": 12
     },
     {
-      "tmdb_id": 1599184,
-      "tmdb_type": "movie",
-      "title": "斗破苍穹剧场版：双帝之战",
+      "tmdb_id": 340615,
+      "tmdb_type": "tv",
+      "title": "卡伦·里德的审判：雪地警员死亡谜案",
       "sort": 13
     },
     {
@@ -88,27 +88,27 @@
       "sort": 14
     },
     {
-      "tmdb_id": 84773,
+      "tmdb_id": 103540,
       "tmdb_type": "tv",
-      "title": "指环王：力量之戒",
+      "title": "Percy Jackson and the Olympians",
       "sort": 15
+    },
+    {
+      "tmdb_id": 300523,
+      "tmdb_type": "tv",
+      "title": "罪蓝之路",
+      "sort": 16
+    },
+    {
+      "tmdb_id": 303552,
+      "tmdb_type": "tv",
+      "title": "代考风暴",
+      "sort": 17
     },
     {
       "tmdb_id": 213375,
       "tmdb_type": "tv",
       "title": "幻视任务",
-      "sort": 16
-    },
-    {
-      "tmdb_id": 1568060,
-      "tmdb_type": "movie",
-      "title": "完美骗子",
-      "sort": 17
-    },
-    {
-      "tmdb_id": 103540,
-      "tmdb_type": "tv",
-      "title": "Percy Jackson and the Olympians",
       "sort": 18
     },
     {
@@ -118,9 +118,9 @@
       "sort": 19
     },
     {
-      "tmdb_id": 1551025,
+      "tmdb_id": 1568060,
       "tmdb_type": "movie",
-      "title": "守护你，遇见爱",
+      "title": "完美骗子",
       "sort": 20
     }
   ]
