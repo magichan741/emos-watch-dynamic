@@ -1,7 +1,7 @@
 {
   "name": "最新欧美电视剧",
   "cover": "https://image.tmdb.org/t/p/w780/wnRPHuLIMzqbzLJ6YO2shiJ1n8Y.jpg",
-  "updated_at": "2026-11-24 15:03:20",
+  "updated_at": "2026-11-25 03:35:50",
   "videos": [
     {
       "tmdb_id": 342440,
@@ -136,171 +136,171 @@
       "sort": 22
     },
     {
+      "tmdb_id": 343134,
+      "tmdb_type": "tv",
+      "title": "Operation Cobalt - Der 70-Millionen-Raub",
+      "sort": 23
+    },
+    {
       "tmdb_id": 342915,
       "tmdb_type": "tv",
       "title": "@!!CDMX GUÍAજ⁀➴🛫 Delta         México Teléfono México ¿Cómo llamar a Delta en México? ¿Cómo llamar a Delta  en México?",
-      "sort": 23
+      "sort": 24
+    },
+    {
+      "tmdb_id": 309750,
+      "tmdb_type": "tv",
+      "title": "Estúpido cupido",
+      "sort": 25
     },
     {
       "tmdb_id": 343230,
       "tmdb_type": "tv",
       "title": "Անկախություն",
-      "sort": 24
+      "sort": 26
     },
     {
       "tmdb_id": 343197,
       "tmdb_type": "tv",
       "title": "Pony Girls",
-      "sort": 25
+      "sort": 27
     },
     {
       "tmdb_id": 342696,
       "tmdb_type": "tv",
       "title": "Plein",
-      "sort": 26
+      "sort": 28
     },
     {
       "tmdb_id": 342657,
       "tmdb_type": "tv",
       "title": "El Médico Milagroso que Ella Rechazó",
-      "sort": 27
+      "sort": 29
     },
     {
       "tmdb_id": 342648,
       "tmdb_type": "tv",
       "title": "Marido alquilado",
-      "sort": 28
+      "sort": 30
     },
     {
       "tmdb_id": 340624,
       "tmdb_type": "tv",
       "title": "Ayô",
-      "sort": 29
+      "sort": 31
     },
     {
       "tmdb_id": 314131,
       "tmdb_type": "tv",
       "title": "梅拉尼娅纪录片影集",
-      "sort": 30
+      "sort": 32
     },
     {
       "tmdb_id": 292113,
       "tmdb_type": "tv",
       "title": "Bill's Included",
-      "sort": 31
+      "sort": 33
     },
     {
       "tmdb_id": 343125,
       "tmdb_type": "tv",
       "title": "Dernière Seconde: Requiem de Minuit",
-      "sort": 32
+      "sort": 34
     },
     {
       "tmdb_id": 342822,
       "tmdb_type": "tv",
       "title": "The Airport",
-      "sort": 33
+      "sort": 35
     },
     {
       "tmdb_id": 342812,
       "tmdb_type": "tv",
       "title": "Friday, Unread",
-      "sort": 34
+      "sort": 36
     },
     {
       "tmdb_id": 342738,
       "tmdb_type": "tv",
       "title": "Ballz",
-      "sort": 35
+      "sort": 37
     },
     {
       "tmdb_id": 342695,
       "tmdb_type": "tv",
       "title": "The Mad Pooper",
-      "sort": 36
+      "sort": 38
     },
     {
       "tmdb_id": 342664,
       "tmdb_type": "tv",
       "title": "Diamonds & Plastic",
-      "sort": 37
+      "sort": 39
     },
     {
       "tmdb_id": 342662,
       "tmdb_type": "tv",
       "title": "El preso que nadie podía matar",
-      "sort": 38
+      "sort": 40
     },
     {
       "tmdb_id": 342659,
       "tmdb_type": "tv",
       "title": "Untitled EJBP miniseries",
-      "sort": 39
+      "sort": 41
     },
     {
       "tmdb_id": 342651,
       "tmdb_type": "tv",
       "title": "Classic Movies: Iconic Scenes",
-      "sort": 40
+      "sort": 42
     },
     {
       "tmdb_id": 342626,
       "tmdb_type": "tv",
       "title": "Tokio Hotel - Gegen alle Regeln",
-      "sort": 41
+      "sort": 43
     },
     {
       "tmdb_id": 342610,
       "tmdb_type": "tv",
       "title": "Nanban",
-      "sort": 42
+      "sort": 44
     },
     {
       "tmdb_id": 342601,
       "tmdb_type": "tv",
       "title": "De Chofer a Rey de la Guerra",
-      "sort": 43
+      "sort": 45
     },
     {
       "tmdb_id": 342600,
       "tmdb_type": "tv",
       "title": "El taxista multimillonario",
-      "sort": 44
+      "sort": 46
     },
     {
       "tmdb_id": 308007,
       "tmdb_type": "tv",
       "title": "镶金理想",
-      "sort": 45
+      "sort": 47
     },
     {
       "tmdb_id": 279382,
       "tmdb_type": "tv",
       "title": "Eldorado",
-      "sort": 46
+      "sort": 48
     },
     {
       "tmdb_id": 342575,
       "tmdb_type": "tv",
       "title": "The AJ Styles Podcast",
-      "sort": 47
+      "sort": 49
     },
     {
       "tmdb_id": 342572,
       "tmdb_type": "tv",
       "title": "Dossiê Celebridades",
-      "sort": 48
-    },
-    {
-      "tmdb_id": 342565,
-      "tmdb_type": "tv",
-      "title": "Ós Blauw",
-      "sort": 49
-    },
-    {
-      "tmdb_id": 341593,
-      "tmdb_type": "tv",
-      "title": "Inventeur Gadget - Les 1000 vies de Jean Chalopin",
       "sort": 50
     }
   ]
