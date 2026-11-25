@@ -157,6 +157,27 @@
   ],
   "status": "Returning Series"
  },
+ "195909": {
+  "episodes": 24,
+  "genres": [
+   10765,
+   10759
+  ],
+  "platform": "iQIYI International",
+  "runtime": [],
+  "status": "Returning Series"
+ },
+ "201596": {
+  "episodes": 12,
+  "genres": [
+   18
+  ],
+  "platform": "HBO Max",
+  "runtime": [
+   46
+  ],
+  "status": "Returning Series"
+ },
  "203483": {
   "episodes": 26,
   "genres": [
@@ -290,6 +311,17 @@
   "runtime": [],
   "status": "Ended"
  },
+ "239830": {
+  "episodes": 13,
+  "genres": [
+   35,
+   18,
+   10765
+  ],
+  "platform": "Viki",
+  "runtime": [],
+  "status": "Ended"
+ },
  "242762": {
   "episodes": 38,
   "genres": [
@@ -377,6 +409,56 @@
   "runtime": [],
   "status": "Ended"
  },
+ "271016": {
+  "episodes": 30,
+  "genres": [
+   18,
+   10759
+  ],
+  "platform": "Youku",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "272938": {
+  "episodes": 30,
+  "genres": [
+   35,
+   10759,
+   10765
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "273119": {
+  "episodes": 22,
+  "genres": [
+   9648,
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "275297": {
+  "episodes": 40,
+  "genres": [
+   18,
+   35
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "277910": {
+  "episodes": 24,
+  "genres": [
+   35
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
  "278577": {
   "episodes": 36,
   "genres": [
@@ -424,6 +506,28 @@
   ],
   "status": "Ended"
  },
+ "279923": {
+  "episodes": 18,
+  "genres": [
+   9648,
+   80
+  ],
+  "platform": "Tencent Video",
+  "runtime": [
+   47
+  ],
+  "status": "Ended"
+ },
+ "280133": {
+  "episodes": 23,
+  "genres": [
+   80,
+   9648
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
  "280632": {
   "episodes": 32,
   "genres": [
@@ -437,11 +541,206 @@
   ],
   "status": "Ended"
  },
+ "280735": {
+  "episodes": 24,
+  "genres": [
+   9648
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
  "282326": {
   "episodes": 47,
   "genres": [
    18,
    10751
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "285143": {
+  "episodes": 32,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "285250": {
+  "episodes": 21,
+  "genres": [
+   9648
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "285625": {
+  "episodes": 29,
+  "genres": [
+   18
+  ],
+  "platform": "CCTV-8",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "286171": {
+  "episodes": 40,
+  "genres": [
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "286506": {
+  "episodes": 36,
+  "genres": [
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "286686": {
+  "episodes": 26,
+  "genres": [
+   10751,
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "286988": {
+  "episodes": 24,
+  "genres": [
+   18,
+   35
+  ],
+  "platform": "Hunan Television",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "287496": {
+  "episodes": 36,
+  "genres": [
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [
+   45
+  ],
+  "status": "Ended"
+ },
+ "288328": {
+  "episodes": 12,
+  "genres": [
+   9648
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "288873": {
+  "episodes": 40,
+  "genres": [
+   18
+  ],
+  "platform": "Mango TV",
+  "runtime": [],
+  "status": "Returning Series"
+ },
+ "289078": {
+  "episodes": 24,
+  "genres": [
+   18,
+   9648
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "289080": {
+  "episodes": 22,
+  "genres": [
+   18
+  ],
+  "platform": "CCTV-8",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "289116": {
+  "episodes": 28,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "289139": {
+  "episodes": 33,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "289761": {
+  "episodes": 22,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "290699": {
+  "episodes": 30,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "290863": {
+  "episodes": 18,
+  "genres": [
+   80
+  ],
+  "platform": "Youku",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "291392": {
+  "episodes": 32,
+  "genres": [
+   18
+  ],
+  "platform": "Hunan Television",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "291856": {
+  "episodes": 33,
+  "genres": [
+   18
+  ],
+  "platform": "CCTV-8",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "292365": {
+  "episodes": 26,
+  "genres": [
+   18,
+   10759
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -456,6 +755,110 @@
   "runtime": [
    2
   ],
+  "status": "Returning Series"
+ },
+ "294446": {
+  "episodes": 28,
+  "genres": [
+   18
+  ],
+  "platform": "Dragon Television",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "294486": {
+  "episodes": 40,
+  "genres": [
+   9648
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "294487": {
+  "episodes": 13,
+  "genres": [
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [
+   46
+  ],
+  "status": "Ended"
+ },
+ "294498": {
+  "episodes": 34,
+  "genres": [
+   18,
+   10751
+  ],
+  "platform": "CCTV-1",
+  "runtime": [],
+  "status": "Returning Series"
+ },
+ "294990": {
+  "episodes": 30,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "295558": {
+  "episodes": 28,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "295599": {
+  "episodes": 32,
+  "genres": [
+   18
+  ],
+  "platform": "Hunan Television",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "296003": {
+  "episodes": 18,
+  "genres": [
+   18,
+   10751
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "297253": {
+  "episodes": 60,
+  "genres": [
+   10768
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "297982": {
+  "episodes": 20,
+  "genres": [
+   18
+  ],
+  "platform": "Youku",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "298546": {
+  "episodes": 6,
+  "genres": [
+   35,
+   10765
+  ],
+  "platform": "Netflix",
+  "runtime": [],
   "status": "Returning Series"
  },
  "299952": {
@@ -473,6 +876,44 @@
    18
   ],
   "platform": "CCTV-8",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "300259": {
+  "episodes": 10,
+  "genres": [
+   9648
+  ],
+  "platform": "Netflix",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "301345": {
+  "episodes": 36,
+  "genres": [
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "301489": {
+  "episodes": 16,
+  "genres": [
+   9648,
+   18,
+   80
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "301494": {
+  "episodes": 34,
+  "genres": [
+   80
+  ],
+  "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
  },
@@ -503,6 +944,99 @@
   "runtime": [],
   "status": "Returning Series"
  },
+ "312663": {
+  "episodes": 10,
+  "genres": [
+   10759,
+   35,
+   80
+  ],
+  "platform": "Netflix",
+  "runtime": [
+   45
+  ],
+  "status": "Ended"
+ },
+ "313642": {
+  "episodes": 18,
+  "genres": [
+   18
+  ],
+  "platform": "bilibili",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "316540": {
+  "episodes": 12,
+  "genres": [
+   18
+  ],
+  "platform": "Viki",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "317308": {
+  "episodes": 15,
+  "genres": [
+   18
+  ],
+  "platform": "Viki",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "317312": {
+  "episodes": 14,
+  "genres": [
+   18
+  ],
+  "platform": "Viki",
+  "runtime": [
+   35
+  ],
+  "status": "Ended"
+ },
+ "317331": {
+  "episodes": 3,
+  "genres": [
+   18,
+   9648
+  ],
+  "platform": "Tencent Video",
+  "runtime": [
+   60
+  ],
+  "status": "Ended"
+ },
+ "318349": {
+  "episodes": 26,
+  "genres": [
+   18
+  ],
+  "platform": "Mango TV",
+  "runtime": [],
+  "status": "Returning Series"
+ },
+ "319659": {
+  "episodes": 26,
+  "genres": [
+   18,
+   9648
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "320676": {
+  "episodes": 16,
+  "genres": [
+   18
+  ],
+  "platform": "GagaOOLala",
+  "runtime": [
+   20
+  ],
+  "status": "Ended"
+ },
  "32231": {
   "episodes": 217,
   "genres": [
@@ -512,6 +1046,153 @@
   "platform": "iQiyi",
   "runtime": [
    45
+  ],
+  "status": "Ended"
+ },
+ "327916": {
+  "episodes": 26,
+  "genres": [
+   9648
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "328150": {
+  "episodes": 10,
+  "genres": [
+   18
+  ],
+  "platform": "WeTV",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "329132": {
+  "episodes": 30,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "330465": {
+  "episodes": 3,
+  "genres": [
+   18,
+   10768
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "330718": {
+  "episodes": 24,
+  "genres": [
+   18
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "330828": {
+  "episodes": 35,
+  "genres": [
+   9648
+  ],
+  "platform": "iQiyi",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "331312": {
+  "episodes": 10,
+  "genres": [
+   18,
+   80,
+   10759
+  ],
+  "platform": "GagaOOLala",
+  "runtime": [
+   25
+  ],
+  "status": "Ended"
+ },
+ "331830": {
+  "episodes": 36,
+  "genres": [
+   18
+  ],
+  "platform": "Mango TV",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "332507": {
+  "episodes": 24,
+  "genres": [
+   18,
+   10759,
+   10765
+  ],
+  "platform": "Viki",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "332800": {
+  "episodes": 24,
+  "genres": [
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "332911": {
+  "episodes": 6,
+  "genres": [
+   9648
+  ],
+  "platform": "Netflix",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "333327": {
+  "episodes": 13,
+  "genres": [
+   18
+  ],
+  "platform": "GagaOOLala",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "334299": {
+  "episodes": 27,
+  "genres": [
+   10765
+  ],
+  "platform": "Tencent Video",
+  "runtime": [],
+  "status": "Ended"
+ },
+ "335525": {
+  "episodes": 64,
+  "genres": [
+   18,
+   35
+  ],
+  "platform": "Hong Guo Short Drama",
+  "runtime": [
+   117
+  ],
+  "status": "Returning Series"
+ },
+ "338103": {
+  "episodes": 29,
+  "genres": [
+   18
+  ],
+  "platform": "Tencent Video",
+  "runtime": [
+   16
   ],
   "status": "Ended"
  },
