@@ -163,6 +163,9 @@
    10765,
    10759
   ],
+  "networks": [
+   "iQIYI International"
+  ],
   "platform": "iQIYI International",
   "runtime": [],
   "status": "Returning Series"
@@ -171,6 +174,9 @@
   "episodes": 12,
   "genres": [
    18
+  ],
+  "networks": [
+   "HBO Max"
   ],
   "platform": "HBO Max",
   "runtime": [
@@ -182,6 +188,10 @@
   "episodes": 26,
   "genres": [
    18
+  ],
+  "networks": [
+   "CCTV-8",
+   "iQiyi"
   ],
   "platform": "CCTV-8",
   "runtime": [],
@@ -318,6 +328,13 @@
    18,
    10765
   ],
+  "networks": [
+   "Viki",
+   "GagaOOLala",
+   "MyVideo",
+   "friDay Video",
+   "iQIYI International"
+  ],
   "platform": "Viki",
   "runtime": [],
   "status": "Ended"
@@ -385,6 +402,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "Youku"
+  ],
   "platform": "Youku",
   "runtime": [],
   "status": "Returning Series"
@@ -405,6 +425,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -414,6 +437,9 @@
   "genres": [
    18,
    10759
+  ],
+  "networks": [
+   "Youku"
   ],
   "platform": "Youku",
   "runtime": [],
@@ -426,6 +452,10 @@
    10759,
    10765
   ],
+  "networks": [
+   "iQiyi",
+   "Youku"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -435,6 +465,9 @@
   "genres": [
    9648,
    18
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -446,6 +479,9 @@
    18,
    35
   ],
+  "networks": [
+   "Tencent Video"
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
@@ -454,6 +490,9 @@
   "episodes": 24,
   "genres": [
    35
+  ],
+  "networks": [
+   "iQiyi"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -487,6 +526,10 @@
   "genres": [
    18
   ],
+  "networks": [
+   "CCTV-8",
+   "Youku"
+  ],
   "platform": "CCTV-8",
   "runtime": [
    46
@@ -512,6 +555,9 @@
    9648,
    80
   ],
+  "networks": [
+   "Tencent Video"
+  ],
   "platform": "Tencent Video",
   "runtime": [
    47
@@ -523,6 +569,9 @@
   "genres": [
    80,
    9648
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -546,6 +595,9 @@
   "genres": [
    9648
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -556,6 +608,9 @@
    18,
    10751
   ],
+  "networks": [
+   "Tencent Video"
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
@@ -564,6 +619,9 @@
   "episodes": 32,
   "genres": [
    18
+  ],
+  "networks": [
+   "iQiyi"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -574,6 +632,9 @@
   "genres": [
    9648
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -582,6 +643,10 @@
   "episodes": 29,
   "genres": [
    18
+  ],
+  "networks": [
+   "CCTV-8",
+   "iQiyi"
   ],
   "platform": "CCTV-8",
   "runtime": [],
@@ -592,6 +657,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "Tencent Video"
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
@@ -600,6 +668,9 @@
   "episodes": 36,
   "genres": [
    18
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -611,6 +682,9 @@
    10751,
    18
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -621,6 +695,10 @@
    18,
    35
   ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
+  ],
   "platform": "Hunan Television",
   "runtime": [],
   "status": "Ended"
@@ -629,6 +707,9 @@
   "episodes": 36,
   "genres": [
    18
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [
@@ -641,6 +722,9 @@
   "genres": [
    9648
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -649,6 +733,9 @@
   "episodes": 40,
   "genres": [
    18
+  ],
+  "networks": [
+   "Mango TV"
   ],
   "platform": "Mango TV",
   "runtime": [],
@@ -660,6 +747,10 @@
    18,
    9648
   ],
+  "networks": [
+   "iQiyi",
+   "Tencent Video"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -668,6 +759,11 @@
   "episodes": 22,
   "genres": [
    18
+  ],
+  "networks": [
+   "CCTV-8",
+   "iQiyi",
+   "Tencent Video"
   ],
   "platform": "CCTV-8",
   "runtime": [],
@@ -678,6 +774,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -686,6 +785,10 @@
   "episodes": 33,
   "genres": [
    18
+  ],
+  "networks": [
+   "iQiyi",
+   "Tencent Video"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -696,6 +799,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -704,6 +810,9 @@
   "episodes": 30,
   "genres": [
    18
+  ],
+  "networks": [
+   "iQiyi"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -714,6 +823,9 @@
   "genres": [
    80
   ],
+  "networks": [
+   "Youku"
+  ],
   "platform": "Youku",
   "runtime": [],
   "status": "Ended"
@@ -722,6 +834,10 @@
   "episodes": 32,
   "genres": [
    18
+  ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
   ],
   "platform": "Hunan Television",
   "runtime": [],
@@ -732,6 +848,10 @@
   "genres": [
    18
   ],
+  "networks": [
+   "CCTV-8",
+   "iQiyi"
+  ],
   "platform": "CCTV-8",
   "runtime": [],
   "status": "Ended"
@@ -741,6 +861,9 @@
   "genres": [
    18,
    10759
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -762,6 +885,10 @@
   "genres": [
    18
   ],
+  "networks": [
+   "Dragon Television",
+   "Tencent Video"
+  ],
   "platform": "Dragon Television",
   "runtime": [],
   "status": "Ended"
@@ -771,6 +898,9 @@
   "genres": [
    9648
   ],
+  "networks": [
+   "Tencent Video"
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
@@ -779,6 +909,9 @@
   "episodes": 13,
   "genres": [
    18
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [
@@ -792,6 +925,10 @@
    18,
    10751
   ],
+  "networks": [
+   "CCTV-1",
+   "Tencent Video"
+  ],
   "platform": "CCTV-1",
   "runtime": [],
   "status": "Returning Series"
@@ -800,6 +937,10 @@
   "episodes": 30,
   "genres": [
    18
+  ],
+  "networks": [
+   "iQiyi",
+   "Youku"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -810,6 +951,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -818,6 +962,10 @@
   "episodes": 32,
   "genres": [
    18
+  ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
   ],
   "platform": "Hunan Television",
   "runtime": [],
@@ -829,6 +977,9 @@
    18,
    10751
   ],
+  "networks": [
+   "Tencent Video"
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
@@ -838,6 +989,11 @@
   "genres": [
    10768
   ],
+  "networks": [
+   "iQiyi",
+   "CCTV-1",
+   "Tencent Video"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -846,6 +1002,9 @@
   "episodes": 20,
   "genres": [
    18
+  ],
+  "networks": [
+   "Youku"
   ],
   "platform": "Youku",
   "runtime": [],
@@ -857,6 +1016,9 @@
    35,
    10765
   ],
+  "networks": [
+   "Netflix"
+  ],
   "platform": "Netflix",
   "runtime": [],
   "status": "Returning Series"
@@ -865,6 +1027,9 @@
   "episodes": 24,
   "genres": [
    18
+  ],
+  "networks": [
+   "Youku"
   ],
   "platform": "Youku",
   "runtime": [],
@@ -875,6 +1040,10 @@
   "genres": [
    18
   ],
+  "networks": [
+   "CCTV-8",
+   "Youku"
+  ],
   "platform": "CCTV-8",
   "runtime": [],
   "status": "Ended"
@@ -884,6 +1053,9 @@
   "genres": [
    9648
   ],
+  "networks": [
+   "Netflix"
+  ],
   "platform": "Netflix",
   "runtime": [],
   "status": "Ended"
@@ -892,6 +1064,9 @@
   "episodes": 36,
   "genres": [
    18
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -904,6 +1079,9 @@
    18,
    80
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -912,6 +1090,9 @@
   "episodes": 34,
   "genres": [
    80
+  ],
+  "networks": [
+   "iQiyi"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -922,6 +1103,10 @@
   "genres": [
    18
   ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
+  ],
   "platform": "Hunan Television",
   "runtime": [],
   "status": "Ended"
@@ -931,6 +1116,10 @@
   "genres": [
    18
   ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
+  ],
   "platform": "Hunan Television",
   "runtime": [],
   "status": "Ended"
@@ -939,6 +1128,9 @@
   "episodes": 8,
   "genres": [
    18
+  ],
+  "networks": [
+   "Netflix"
   ],
   "platform": "Netflix",
   "runtime": [],
@@ -951,6 +1143,9 @@
    35,
    80
   ],
+  "networks": [
+   "Netflix"
+  ],
   "platform": "Netflix",
   "runtime": [
    45
@@ -962,6 +1157,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "bilibili"
+  ],
   "platform": "bilibili",
   "runtime": [],
   "status": "Ended"
@@ -970,6 +1168,10 @@
   "episodes": 12,
   "genres": [
    18
+  ],
+  "networks": [
+   "Viki",
+   "GagaOOLala"
   ],
   "platform": "Viki",
   "runtime": [],
@@ -980,6 +1182,10 @@
   "genres": [
    18
   ],
+  "networks": [
+   "Viki",
+   "GagaOOLala"
+  ],
   "platform": "Viki",
   "runtime": [],
   "status": "Ended"
@@ -988,6 +1194,10 @@
   "episodes": 14,
   "genres": [
    18
+  ],
+  "networks": [
+   "Viki",
+   "GagaOOLala"
   ],
   "platform": "Viki",
   "runtime": [
@@ -1001,6 +1211,9 @@
    18,
    9648
   ],
+  "networks": [
+   "Tencent Video"
+  ],
   "platform": "Tencent Video",
   "runtime": [
    60
@@ -1012,6 +1225,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "Mango TV"
+  ],
   "platform": "Mango TV",
   "runtime": [],
   "status": "Returning Series"
@@ -1022,6 +1238,9 @@
    18,
    9648
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -1030,6 +1249,9 @@
   "episodes": 16,
   "genres": [
    18
+  ],
+  "networks": [
+   "GagaOOLala"
   ],
   "platform": "GagaOOLala",
   "runtime": [
@@ -1054,6 +1276,9 @@
   "genres": [
    9648
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -1063,6 +1288,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "WeTV"
+  ],
   "platform": "WeTV",
   "runtime": [],
   "status": "Ended"
@@ -1071,6 +1299,11 @@
   "episodes": 30,
   "genres": [
    18
+  ],
+  "networks": [
+   "iQiyi",
+   "CCTV-1",
+   "Youku"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -1082,6 +1315,10 @@
    18,
    10768
   ],
+  "networks": [
+   "Tencent Video",
+   "剧好看大屏点播"
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
@@ -1091,6 +1328,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "iQiyi"
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
@@ -1099,6 +1339,9 @@
   "episodes": 35,
   "genres": [
    9648
+  ],
+  "networks": [
+   "iQiyi"
   ],
   "platform": "iQiyi",
   "runtime": [],
@@ -1111,6 +1354,9 @@
    80,
    10759
   ],
+  "networks": [
+   "GagaOOLala"
+  ],
   "platform": "GagaOOLala",
   "runtime": [
    25
@@ -1121,6 +1367,9 @@
   "episodes": 36,
   "genres": [
    18
+  ],
+  "networks": [
+   "Mango TV"
   ],
   "platform": "Mango TV",
   "runtime": [],
@@ -1133,6 +1382,10 @@
    10759,
    10765
   ],
+  "networks": [
+   "Viki",
+   "GagaOOLala"
+  ],
   "platform": "Viki",
   "runtime": [],
   "status": "Ended"
@@ -1141,6 +1394,9 @@
   "episodes": 24,
   "genres": [
    18
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -1151,6 +1407,10 @@
   "genres": [
    9648
   ],
+  "networks": [
+   "Netflix",
+   "bilibili"
+  ],
   "platform": "Netflix",
   "runtime": [],
   "status": "Ended"
@@ -1160,6 +1420,9 @@
   "genres": [
    18
   ],
+  "networks": [
+   "GagaOOLala"
+  ],
   "platform": "GagaOOLala",
   "runtime": [],
   "status": "Ended"
@@ -1168,6 +1431,9 @@
   "episodes": 27,
   "genres": [
    10765
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [],
@@ -1179,6 +1445,9 @@
    18,
    35
   ],
+  "networks": [
+   "Hong Guo Short Drama"
+  ],
   "platform": "Hong Guo Short Drama",
   "runtime": [
    117
@@ -1189,6 +1458,9 @@
   "episodes": 29,
   "genres": [
    18
+  ],
+  "networks": [
+   "Tencent Video"
   ],
   "platform": "Tencent Video",
   "runtime": [
