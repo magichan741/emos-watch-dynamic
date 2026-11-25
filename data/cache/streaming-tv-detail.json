@@ -1,0 +1,1368 @@
+{
+ "131142": {
+  "episodes": 9,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "FX",
+   "Hulu"
+  ],
+  "runtime": []
+ },
+ "171802": {
+  "episodes": 8,
+  "genres": [
+   10765
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "198178": {
+  "episodes": 8,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "Disney+"
+  ],
+  "runtime": []
+ },
+ "203483": {
+  "episodes": 26,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "CCTV-8",
+   "iQiyi"
+  ],
+  "runtime": []
+ },
+ "213375": {
+  "episodes": 8,
+  "genres": [
+   10765,
+   18
+  ],
+  "networks": [
+   "Disney+"
+  ],
+  "runtime": []
+ },
+ "213562": {
+  "episodes": 8,
+  "genres": [
+   18,
+   9648
+  ],
+  "networks": [
+   "Peacock"
+  ],
+  "runtime": []
+ },
+ "220102": {
+  "episodes": 8,
+  "genres": [
+   18,
+   9648,
+   80
+  ],
+  "networks": [
+   "MGM+"
+  ],
+  "runtime": []
+ },
+ "224372": {
+  "episodes": 6,
+  "genres": [
+   18,
+   10765,
+   10759
+  ],
+  "networks": [
+   "HBO"
+  ],
+  "runtime": []
+ },
+ "235685": {
+  "episodes": 7,
+  "genres": [
+   10765,
+   10759,
+   18
+  ],
+  "networks": [
+   "DailyWire+"
+  ],
+  "runtime": []
+ },
+ "240459": {
+  "episodes": 10,
+  "genres": [
+   18,
+   10759
+  ],
+  "networks": [
+   "STARZ"
+  ],
+  "runtime": []
+ },
+ "240740": {
+  "episodes": 8,
+  "genres": [
+   18,
+   80,
+   9648
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "241372": {
+  "episodes": 8,
+  "genres": [
+   18,
+   80,
+   9648
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "243555": {
+  "episodes": 5,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "245318": {
+  "episodes": 8,
+  "genres": [
+   18,
+   35
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "249565": {
+  "episodes": 6,
+  "genres": [
+   18,
+   9648
+  ],
+  "networks": [
+   "Peacock"
+  ],
+  "runtime": []
+ },
+ "250203": {
+  "episodes": 8,
+  "genres": [
+   35
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "252107": {
+  "episodes": 8,
+  "genres": [
+   18,
+   10765,
+   10768
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "254420": {
+  "episodes": 8,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "254630": {
+  "episodes": 8,
+  "genres": [
+   10759,
+   80,
+   18
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "255661": {
+  "episodes": 11,
+  "genres": [
+   10759,
+   9648
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "258165": {
+  "episodes": 7,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "259731": {
+  "episodes": 6,
+  "genres": [
+   18,
+   80,
+   9648
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "259837": {
+  "episodes": 8,
+  "genres": [
+   10759,
+   35,
+   10765,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": [
+   80
+  ]
+ },
+ "261315": {
+  "episodes": 30,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Youku"
+  ],
+  "runtime": []
+ },
+ "262932": {
+  "episodes": 37,
+  "genres": [
+   18,
+   10759,
+   9648
+  ],
+  "networks": [
+   "Tencent Video"
+  ],
+  "runtime": []
+ },
+ "270431": {
+  "episodes": 27,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "iQiyi"
+  ],
+  "runtime": []
+ },
+ "270476": {
+  "episodes": 10,
+  "genres": [
+   18,
+   35,
+   9648
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "273160": {
+  "episodes": 11,
+  "genres": [
+   18,
+   10765
+  ],
+  "networks": [
+   "FX",
+   "Hulu"
+  ],
+  "runtime": []
+ },
+ "273207": {
+  "episodes": 8,
+  "genres": [
+   18,
+   9648,
+   80
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "273240": {
+  "episodes": 9,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "275139": {
+  "episodes": 8,
+  "genres": [
+   35,
+   18,
+   9648
+  ],
+  "networks": [
+   "Hulu"
+  ],
+  "runtime": []
+ },
+ "275297": {
+  "episodes": 40,
+  "genres": [
+   18,
+   35
+  ],
+  "networks": [
+   "Tencent Video"
+  ],
+  "runtime": []
+ },
+ "276161": {
+  "episodes": 10,
+  "genres": [
+   10759,
+   18,
+   35
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": [
+   70
+  ]
+ },
+ "277439": {
+  "episodes": 10,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "278178": {
+  "episodes": 8,
+  "genres": [
+   18,
+   9648,
+   80
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "278275": {
+  "episodes": 29,
+  "genres": [
+   18,
+   10765
+  ],
+  "networks": [
+   "Youku"
+  ],
+  "runtime": []
+ },
+ "278573": {
+  "episodes": 12,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "MBC"
+  ],
+  "runtime": []
+ },
+ "278577": {
+  "episodes": 36,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Tencent Video"
+  ],
+  "runtime": [
+   45
+  ]
+ },
+ "278624": {
+  "episodes": 7,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "279041": {
+  "episodes": 29,
+  "genres": [
+   18,
+   10759
+  ],
+  "networks": [
+   "iQiyi"
+  ],
+  "runtime": [
+   40
+  ]
+ },
+ "279155": {
+  "episodes": 30,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "CCTV-8",
+   "Youku"
+  ],
+  "runtime": [
+   46
+  ]
+ },
+ "279246": {
+  "episodes": 10,
+  "genres": [
+   18,
+   10765
+  ],
+  "networks": [
+   "Disney+"
+  ],
+  "runtime": []
+ },
+ "279388": {
+  "episodes": 40,
+  "genres": [
+   18,
+   10759,
+   10768
+  ],
+  "networks": [
+   "iQiyi",
+   "Tencent Video"
+  ],
+  "runtime": [
+   45
+  ]
+ },
+ "279471": {
+  "episodes": 4,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "Hulu"
+  ],
+  "runtime": []
+ },
+ "280632": {
+  "episodes": 32,
+  "genres": [
+   18,
+   9648,
+   35
+  ],
+  "networks": [
+   "iQiyi"
+  ],
+  "runtime": [
+   40
+  ]
+ },
+ "282326": {
+  "episodes": 47,
+  "genres": [
+   18,
+   10751
+  ],
+  "networks": [
+   "Tencent Video"
+  ],
+  "runtime": []
+ },
+ "283297": {
+  "episodes": 8,
+  "genres": [
+   9648,
+   18
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "285322": {
+  "episodes": 6,
+  "genres": [
+   18,
+   9648
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "286171": {
+  "episodes": 40,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Tencent Video"
+  ],
+  "runtime": []
+ },
+ "287238": {
+  "episodes": 8,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "Hulu"
+  ],
+  "runtime": []
+ },
+ "287527": {
+  "episodes": 10,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Hulu"
+  ],
+  "runtime": []
+ },
+ "287556": {
+  "episodes": 24,
+  "genres": [
+   18,
+   10751
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "287620": {
+  "episodes": 10,
+  "genres": [
+   35,
+   10765
+  ],
+  "networks": [
+   "HBO Max"
+  ],
+  "runtime": [
+   24
+  ]
+ },
+ "288120": {
+  "episodes": 6,
+  "genres": [
+   35
+  ],
+  "networks": [
+   "Disney+"
+  ],
+  "runtime": [
+   53
+  ]
+ },
+ "288673": {
+  "episodes": 8,
+  "genres": [
+   9648,
+   18,
+   10765
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "289423": {
+  "episodes": 10,
+  "genres": [
+   10765,
+   35,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "289517": {
+  "episodes": 8,
+  "genres": [
+   9648,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "289560": {
+  "episodes": 22,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "CBS"
+  ],
+  "runtime": [
+   43
+  ]
+ },
+ "290826": {
+  "episodes": 10,
+  "genres": [
+   35
+  ],
+  "networks": [
+   "Peacock"
+  ],
+  "runtime": []
+ },
+ "290856": {
+  "episodes": 22,
+  "genres": [
+   18,
+   80,
+   10759
+  ],
+  "networks": [
+   "CBS"
+  ],
+  "runtime": []
+ },
+ "291084": {
+  "episodes": 21,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "FOX"
+  ],
+  "runtime": [
+   42
+  ]
+ },
+ "291339": {
+  "episodes": 11,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "FOX"
+  ],
+  "runtime": []
+ },
+ "291496": {
+  "episodes": 12,
+  "genres": [
+   18,
+   35
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "291507": {
+  "episodes": 8,
+  "genres": [
+   9648,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "292741": {
+  "episodes": 10,
+  "genres": [
+   80,
+   18,
+   9648
+  ],
+  "networks": [
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "292742": {
+  "episodes": 10,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "STARZ"
+  ],
+  "runtime": []
+ },
+ "293607": {
+  "episodes": 16,
+  "genres": [
+   10759,
+   18
+  ],
+  "networks": [
+   "tvN"
+  ],
+  "runtime": []
+ },
+ "293610": {
+  "episodes": 12,
+  "genres": [
+   9648,
+   18,
+   80
+  ],
+  "networks": [
+   "SBS"
+  ],
+  "runtime": []
+ },
+ "295778": {
+  "episodes": 19,
+  "genres": [
+   35
+  ],
+  "networks": [
+   "ABC"
+  ],
+  "runtime": []
+ },
+ "296206": {
+  "episodes": 10,
+  "genres": [
+   10759,
+   80,
+   18
+  ],
+  "networks": [
+   "SBS"
+  ],
+  "runtime": []
+ },
+ "298168": {
+  "episodes": 9,
+  "genres": [
+   18,
+   9648
+  ],
+  "networks": [
+   "FX"
+  ],
+  "runtime": []
+ },
+ "298505": {
+  "episodes": 10,
+  "genres": [
+   9648,
+   18,
+   10765
+  ],
+  "networks": [
+   "Freeform"
+  ],
+  "runtime": []
+ },
+ "298550": {
+  "episodes": 8,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "298852": {
+  "episodes": 8,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Sky Atlantic"
+  ],
+  "runtime": []
+ },
+ "299167": {
+  "episodes": 9,
+  "genres": [
+   37,
+   18
+  ],
+  "networks": [
+   "Paramount Network",
+   "Paramount+"
+  ],
+  "runtime": []
+ },
+ "299939": {
+  "episodes": 8,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "299952": {
+  "episodes": 24,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Youku"
+  ],
+  "runtime": []
+ },
+ "300146": {
+  "episodes": 30,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "CCTV-8",
+   "Youku"
+  ],
+  "runtime": []
+ },
+ "300523": {
+  "episodes": 8,
+  "genres": [
+   80,
+   9648
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "301174": {
+  "episodes": 177,
+  "genres": [
+   10766,
+   35,
+   18
+  ],
+  "networks": [
+   "TV Globo"
+  ],
+  "runtime": []
+ },
+ "301354": {
+  "episodes": 28,
+  "genres": [
+   10759,
+   10768
+  ],
+  "networks": [
+   "KBS2"
+  ],
+  "runtime": []
+ },
+ "301391": {
+  "episodes": 6,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "TV3",
+   "3Cat"
+  ],
+  "runtime": []
+ },
+ "301507": {
+  "episodes": 6,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Crave"
+  ],
+  "runtime": []
+ },
+ "301557": {
+  "episodes": 193,
+  "genres": [
+   18,
+   10765,
+   10766
+  ],
+  "networks": [
+   "TV Globo"
+  ],
+  "runtime": [
+   34
+  ]
+ },
+ "302074": {
+  "episodes": 16,
+  "genres": [
+   80,
+   9648
+  ],
+  "networks": [
+   "ABC"
+  ],
+  "runtime": []
+ },
+ "303044": {
+  "episodes": 6,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Prime Video"
+  ],
+  "runtime": []
+ },
+ "303182": {
+  "episodes": 3,
+  "genres": [
+   80,
+   9648,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "303630": {
+  "episodes": 11,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "CBS"
+  ],
+  "runtime": []
+ },
+ "303745": {
+  "episodes": 12,
+  "genres": [
+   35,
+   18,
+   80
+  ],
+  "networks": [
+   "tvN"
+  ],
+  "runtime": []
+ },
+ "304452": {
+  "episodes": 40,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
+  ],
+  "runtime": []
+ },
+ "304842": {
+  "episodes": 8,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "FX"
+  ],
+  "runtime": []
+ },
+ "305487": {
+  "episodes": 8,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "AMC+"
+  ],
+  "runtime": []
+ },
+ "305551": {
+  "episodes": 10,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "Nippon TV"
+  ],
+  "runtime": []
+ },
+ "306215": {
+  "episodes": 54,
+  "genres": [
+   10751,
+   18
+  ],
+  "networks": [
+   "Star TV",
+   "MBC Shahid"
+  ],
+  "runtime": [
+   140
+  ]
+ },
+ "306479": {
+  "episodes": 43,
+  "genres": [
+   10765,
+   10759,
+   10762
+  ],
+  "networks": [
+   "tv asahi"
+  ],
+  "runtime": [
+   24
+  ]
+ },
+ "306956": {
+  "episodes": 142,
+  "genres": [
+   10766,
+   18
+  ],
+  "networks": [
+   "TV Globo"
+  ],
+  "runtime": []
+ },
+ "307478": {
+  "episodes": 12,
+  "genres": [
+   80,
+   18,
+   9648
+  ],
+  "networks": [
+   "MBC"
+  ],
+  "runtime": []
+ },
+ "307853": {
+  "episodes": 24,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
+  ],
+  "runtime": []
+ },
+ "308007": {
+  "episodes": 8,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "309328": {
+  "episodes": 23,
+  "genres": [
+   18,
+   10759
+  ],
+  "networks": [
+   "NOW"
+  ],
+  "runtime": []
+ },
+ "312661": {
+  "episodes": 8,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "312693": {
+  "episodes": 6,
+  "genres": [
+   35,
+   18,
+   9648
+  ],
+  "networks": [
+   "BBC Two",
+   "Apple TV"
+  ],
+  "runtime": []
+ },
+ "314360": {
+  "episodes": 8,
+  "genres": [
+   18,
+   10765,
+   9648
+  ],
+  "networks": [
+   "Crave"
+  ],
+  "runtime": []
+ },
+ "314939": {
+  "episodes": 14,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "KBS2"
+  ],
+  "runtime": []
+ },
+ "316702": {
+  "episodes": 12,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "JTBC"
+  ],
+  "runtime": []
+ },
+ "317326": {
+  "episodes": 20,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "iQIYI International"
+  ],
+  "runtime": [
+   60
+  ]
+ },
+ "317883": {
+  "episodes": 26,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Kanal D"
+  ],
+  "runtime": []
+ },
+ "318420": {
+  "episodes": 8,
+  "genres": [
+   18,
+   35
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "320513": {
+  "episodes": 11,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "Fuji TV",
+   "Channel A"
+  ],
+  "runtime": []
+ },
+ "321928": {
+  "episodes": 21,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "atv"
+  ],
+  "runtime": []
+ },
+ "321958": {
+  "episodes": 13,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "NBC"
+  ],
+  "runtime": []
+ },
+ "330613": {
+  "episodes": 10,
+  "genres": [
+   18,
+   9648,
+   10765
+  ],
+  "networks": [
+   "Viu"
+  ],
+  "runtime": []
+ },
+ "331750": {
+  "episodes": 52,
+  "genres": [
+   18,
+   10751
+  ],
+  "networks": [
+   "JioHotstar"
+  ],
+  "runtime": [
+   24
+  ]
+ },
+ "332839": {
+  "episodes": 4,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "333101": {
+  "episodes": 6,
+  "genres": [
+   10759
+  ],
+  "networks": [
+   "MGM+"
+  ],
+  "runtime": []
+ },
+ "334412": {
+  "episodes": 6,
+  "genres": [
+   9648,
+   18
+  ],
+  "networks": [
+   "JioHotstar"
+  ],
+  "runtime": []
+ },
+ "335951": {
+  "episodes": 10,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Lifetime",
+   "wavve"
+  ],
+  "runtime": []
+ },
+ "338562": {
+  "episodes": 20,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "340280": {
+  "episodes": 7,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": []
+ },
+ "95350": {
+  "episodes": 8,
+  "genres": [
+   18,
+   9648,
+   10765
+  ],
+  "networks": [
+   "HBO"
+  ],
+  "runtime": []
+ }
+}
