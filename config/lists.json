@@ -119,6 +119,23 @@
       "pages": 12,
       "per_platform": 18,
       "air_days": 90
+    },
+    {
+      "slug": "hot-all-200",
+      "name": "全网热播大集合",
+      "source": "hot_all_mix",
+      "max_items": 200,
+      "movie_items": 70,
+      "tv_items": 80,
+      "variety_items": 50,
+      "window_days": 365,
+      "movie_pages": 6,
+      "movie_vote": 20,
+      "tv_pages": 7,
+      "tv_vote": 10,
+      "variety_pages": 12,
+      "variety_per_platform": 18,
+      "variety_air_days": 90
     }
   ]
 }

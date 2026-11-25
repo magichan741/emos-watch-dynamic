@@ -702,6 +702,114 @@ def hot_streaming_tv(client, cfg=None):
     return picked
 
 
+# ---------------- 全网热播大集合（电影 + 剧集 + 综艺，多平台混排） ----------------
+
+MIX_TV_CACHE = os.path.join(ROOT, "data", "cache", "mix-tv-detail.json")
+
+
+def mix_tv_detail(client, tmdb_id, cache):
+    """取一部剧集的播出平台与类型（带缓存），用于剔除动画并标注平台。"""
+    key = str(tmdb_id)
+    hit = cache.get(key)
+    if isinstance(hit, dict) and "networks" in hit:
+        return hit
+    info = {"networks": [], "genres": []}
+    try:
+        data = client.get("/tv/%d" % tmdb_id, language=TMDB_LANG)
+        info["networks"] = [(n.get("name") or "").strip()
+                            for n in (data.get("networks") or [])]
+        info["genres"] = [g.get("id") for g in (data.get("genres") or [])]
+    except Exception as e:
+        print("[mix] 取详情失败 %s：%s" % (tmdb_id, e))
+    cache[key] = info
+    return info
+
+
+def hot_all_mix(client, cfg=None):
+    """全网热播大集合：电影 + 剧集 + 综艺三池按配额取样，再按池内名次归一化混排。
+
+    混排逻辑：每个池内第 i 名得 1 - i/N 分，三池打通后按该分排序，
+    使电影、剧集、综艺天然交错，而不是前 70 条全是电影。
+    某一池候选不足配额时，由其他池按热度补足，总量恒定。
+    """
+    cfg = cfg or {}
+    total = int(cfg.get("max_items", 200))
+    movie_n = int(cfg.get("movie_items", 70))
+    tv_n = int(cfg.get("tv_items", 80))
+    variety_n = int(cfg.get("variety_items", 50))
+    window = int(cfg.get("window_days", 365))
+
+    # 1) 电影池：近一年上映、有投票基数的热门电影
+    movies = discover(client, "movie", {
+        "sort_by": "popularity.desc",
+        "primary_release_date.gte": "{today-%d}" % window,
+        "primary_release_date.lte": "{today}",
+        "vote_count.gte": int(cfg.get("movie_vote", 20)),
+    }, int(cfg.get("movie_pages", 6)))
+
+    # 2) 剧集池：近一年首播的热门剧集，剔除动画/综艺/纪录片
+    tv_raw = discover(client, "tv", {
+        "sort_by": "popularity.desc",
+        "first_air_date.gte": "{today-%d}" % window,
+        "first_air_date.lte": "{today}",
+        "without_genres": "16,10764,10767,99",
+        "vote_count.gte": int(cfg.get("tv_vote", 10)),
+    }, int(cfg.get("tv_pages", 7)))
+    cache = load_cache(MIX_TV_CACHE)
+    tv_pool, skipped_anime = [], 0
+    for it in tv_raw:
+        info = mix_tv_detail(client, it["tmdb_id"], cache)
+        if 16 in (info.get("genres") or []):
+            skipped_anime += 1
+            continue
+        nets = info.get("networks") or []
+        it["platform"] = nets[0] if nets else ""
+        tv_pool.append(it)
+        time.sleep(0.02)
+    save_cache(MIX_TV_CACHE, cache)
+
+    # 3) 综艺池：复用热播综艺逻辑（近 90 天仍在更新、多平台配额）
+    variety_pool = hot_variety(client, {
+        "max_items": variety_n,
+        "pages": int(cfg.get("variety_pages", 12)),
+        "per_platform": int(cfg.get("variety_per_platform", 18)),
+        "air_days": int(cfg.get("variety_air_days", 90)),
+    })
+    print("[mix] 池容量：电影 %d、剧集 %d（剔动画 %d）、综艺 %d"
+          % (len(movies), len(tv_pool), skipped_anime, len(variety_pool)))
+
+    # 4) 各池按配额截取，池内名次归一化成 0~1 分
+    pools = [("电影", movies[:movie_n]), ("剧集", tv_pool[:tv_n]),
+             ("综艺", variety_pool[:variety_n])]
+    scored = []
+    for kind, lst in pools:
+        n = max(len(lst), 1)
+        for i, it in enumerate(lst):
+            it["category"] = kind
+            scored.append((1.0 - i / float(n), kind, it))
+    scored.sort(key=lambda t: (-t[0], t[1]))
+    picked = dedupe([t[2] for t in scored])
+    extra_pool = []
+    for kind, lst in (("电影", movies[movie_n:]), ("剧集", tv_pool[tv_n:]),
+                      ("综艺", variety_pool[variety_n:])):
+        for x in lst:
+            x["category"] = kind
+        extra_pool += lst
+    used = {(y["tmdb_id"], y["tmdb_type"]) for y in picked}
+    extra_pool = [x for x in dedupe(extra_pool)
+                  if (x["tmdb_id"], x["tmdb_type"]) not in used]
+    if len(picked) < total:
+        picked += extra_pool[:total - len(picked)]
+
+    final = picked[:total]
+    stat = {}
+    for it in final:
+        stat[it.get("category", "其他")] = stat.get(it.get("category", "其他"), 0) + 1
+    print("[mix] 合计 %d 条：%s"
+          % (len(final), "、".join("%s×%d" % (k, v) for k, v in stat.items())))
+    return final
+
+
 def douban_classic(client):
     """豆瓣高分国漫口碑池：固定顺序的 20 部经典，按标题匹配到 TMDB。"""
     cache = load_cache(DOUBAN_CACHE)
@@ -906,6 +1014,7 @@ SOURCES = {
     "hot_variety": lambda c, cfg: hot_variety(c, cfg),
     "hot_cn_tv": lambda c, cfg: hot_cn_tv(c, cfg),
     "hot_streaming_tv": lambda c, cfg: hot_streaming_tv(c, cfg),
+    "hot_all_mix": lambda c, cfg: hot_all_mix(c, cfg),
 }
 
 
