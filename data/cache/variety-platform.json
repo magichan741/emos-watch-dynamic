@@ -9,6 +9,11 @@
   "platform": "iQiyi",
   "status": "Returning Series"
  },
+ "100680": {
+  "last_air": "2009-05-21",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "100720": {
   "last_air": "2020-04-01",
   "platform": "",
@@ -154,6 +159,11 @@
   "platform": "Jiangsu Television",
   "status": "Ended"
  },
+ "108827": {
+  "last_air": "2021-10-10",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "108849": {
   "last_air": "2024-02-17",
   "platform": "Dragon Television",
@@ -184,6 +194,11 @@
   "platform": "Mango TV",
   "status": "Returning Series"
  },
+ "109480": {
+  "last_air": "2017-12-15",
+  "platform": "iQiyi",
+  "status": "Returning Series"
+ },
  "109497": {
   "last_air": "2023-12-31",
   "platform": "Mango TV",
@@ -194,9 +209,19 @@
   "platform": "iQiyi",
   "status": "Ended"
  },
+ "110197": {
+  "last_air": "2020-07-21",
+  "platform": "iQiyi",
+  "status": "Returning Series"
+ },
  "110364": {
   "last_air": "2015-10-24",
   "platform": "Mango TV",
+  "status": "Ended"
+ },
+ "110546": {
+  "last_air": "2022-11-17",
+  "platform": "Tencent Video",
   "status": "Ended"
  },
  "111897": {
@@ -239,6 +264,11 @@
   "platform": "Hunan Television",
   "status": "Returning Series"
  },
+ "114402": {
+  "last_air": "2021-02-16",
+  "platform": "iQiyi",
+  "status": "Returning Series"
+ },
  "114436": {
   "last_air": "2019-12-09",
   "platform": "",
@@ -263,6 +293,11 @@
   "last_air": "2024-06-20",
   "platform": "",
   "status": "Returning Series"
+ },
+ "115340": {
+  "last_air": "2023-06-03",
+  "platform": "bilibili",
+  "status": "Ended"
  },
  "116103": {
   "last_air": "2021-05-20",
@@ -304,6 +339,16 @@
   "platform": "",
   "status": "Ended"
  },
+ "118741": {
+  "last_air": "2019-07-26",
+  "platform": "Mango TV",
+  "status": "Returning Series"
+ },
+ "118743": {
+  "last_air": "2021-09-21",
+  "platform": "Youku",
+  "status": "Returning Series"
+ },
  "118745": {
   "last_air": "2019-06-15",
   "platform": "Hunan Television",
@@ -334,6 +379,11 @@
   "platform": "bilibili",
   "status": "Returning Series"
  },
+ "119676": {
+  "last_air": "2021-04-21",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "119848": {
   "last_air": "2021-05-01",
   "platform": "iQiyi",
@@ -342,6 +392,11 @@
  "120571": {
   "last_air": "2025-09-20",
   "platform": "bilibili",
+  "status": "Returning Series"
+ },
+ "120728": {
+  "last_air": "2020-11-11",
+  "platform": "Mango TV",
   "status": "Returning Series"
  },
  "121876": {
@@ -388,6 +443,11 @@
   "last_air": "2016-03-27",
   "platform": "CCTV-1",
   "status": "Ended"
+ },
+ "125461": {
+  "last_air": "2023-02-22",
+  "platform": "bilibili",
+  "status": "Returning Series"
  },
  "125636": {
   "last_air": "2014-03-18",
@@ -479,6 +539,11 @@
   "platform": "Mango TV",
   "status": "Returning Series"
  },
+ "130455": {
+  "last_air": "2021-11-10",
+  "platform": "bilibili",
+  "status": "Ended"
+ },
  "130587": {
   "last_air": "2021-10-22",
   "platform": "iQiyi",
@@ -539,15 +604,45 @@
   "platform": "Youku",
   "status": "Ended"
  },
+ "133716": {
+  "last_air": "2019-09-25",
+  "platform": "meWATCH",
+  "status": "Ended"
+ },
+ "133719": {
+  "last_air": "2019-02-01",
+  "platform": "Astro AEC",
+  "status": "Ended"
+ },
  "133819": {
   "last_air": "2020-08-09",
   "platform": "Astro AEC",
+  "status": "Ended"
+ },
+ "134684": {
+  "last_air": "2017-05-15",
+  "platform": "",
+  "status": "Ended"
+ },
+ "134690": {
+  "last_air": "2018-04-16",
+  "platform": "",
+  "status": "Ended"
+ },
+ "134701": {
+  "last_air": "2023-06-18",
+  "platform": "",
   "status": "Ended"
  },
  "135734": {
   "last_air": "2021-10-25",
   "platform": "",
   "status": "Returning Series"
+ },
+ "136041": {
+  "last_air": "2021-09-24",
+  "platform": "Dragon Television",
+  "status": "Ended"
  },
  "136132": {
   "last_air": "2020-04-25",
@@ -571,6 +666,11 @@
  },
  "137553": {
   "last_air": "2021-08-30",
+  "platform": "",
+  "status": "Returning Series"
+ },
+ "137555": {
+  "last_air": "2021-12-29",
   "platform": "",
   "status": "Returning Series"
  },
@@ -704,6 +804,11 @@
   "platform": "Dragon Television",
   "status": "Returning Series"
  },
+ "194842": {
+  "last_air": "2022-05-19",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "195648": {
   "last_air": "2023-01-21",
   "platform": "CCTV-1",
@@ -789,6 +894,11 @@
   "platform": "CCTV-10",
   "status": "Ended"
  },
+ "202984": {
+  "last_air": "2023-07-28",
+  "platform": "LHH.",
+  "status": "Returning Series"
+ },
  "203003": {
   "last_air": "2026-08-19",
   "platform": "Tencent Video",
@@ -854,6 +964,11 @@
   "platform": "",
   "status": "Returning Series"
  },
+ "206712": {
+  "last_air": "2019-08-07",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "207023": {
   "last_air": "2026-10-09",
   "platform": "China Network Television 央视网 (CNTV)",
@@ -874,6 +989,11 @@
   "platform": "",
   "status": "Ended"
  },
+ "210425": {
+  "last_air": "2021-02-08",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "210658": {
   "last_air": "2022-11-17",
   "platform": "",
@@ -893,6 +1013,11 @@
   "last_air": "2016-05-28",
   "platform": "",
   "status": "Ended"
+ },
+ "212872": {
+  "last_air": "2019-03-26",
+  "platform": "Xigua Video",
+  "status": "Returning Series"
  },
  "213415": {
   "last_air": "2022-10-30",
@@ -974,6 +1099,11 @@
   "platform": "",
   "status": "Returning Series"
  },
+ "217397": {
+  "last_air": "2022-09-23",
+  "platform": "Tencent Video",
+  "status": "Ended"
+ },
  "217559": {
   "last_air": "2026-08-23",
   "platform": "TVB Jade",
@@ -983,6 +1113,11 @@
   "last_air": "2023-03-24",
   "platform": "Zhejiang Television",
   "status": "Ended"
+ },
+ "218001": {
+  "last_air": "2023-01-27",
+  "platform": "",
+  "status": "Returning Series"
  },
  "218375": {
   "last_air": "2024-03-31",
@@ -1006,6 +1141,11 @@
  },
  "220551": {
   "last_air": "2018-08-20",
+  "platform": "",
+  "status": "Ended"
+ },
+ "220553": {
+  "last_air": "2019-08-05",
   "platform": "",
   "status": "Ended"
  },
@@ -1062,6 +1202,11 @@
  "225861": {
   "last_air": "2023-07-23",
   "platform": "iQiyi",
+  "status": "Returning Series"
+ },
+ "225947": {
+  "last_air": "2023-05-12",
+  "platform": "",
   "status": "Returning Series"
  },
  "226425": {
@@ -1229,6 +1374,11 @@
   "platform": "Mango TV",
   "status": "Ended"
  },
+ "243142": {
+  "last_air": "2017-06-30",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "243562": {
   "last_air": "2016-12-19",
   "platform": "",
@@ -1237,6 +1387,16 @@
  "243600": {
   "last_air": "2024-03-07",
   "platform": "Tencent Video",
+  "status": "Ended"
+ },
+ "246102": {
+  "last_air": "2022-08-13",
+  "platform": "",
+  "status": "Ended"
+ },
+ "246672": {
+  "last_air": "2024-02-10",
+  "platform": "Beijing Television",
   "status": "Ended"
  },
  "248930": {
@@ -1314,6 +1474,11 @@
   "platform": "Tencent Video",
   "status": "Returning Series"
  },
+ "257701": {
+  "last_air": "2024-08-25",
+  "platform": "Mango TV",
+  "status": "Ended"
+ },
  "258044": {
   "last_air": "2025-12-05",
   "platform": "Tencent Video",
@@ -1348,6 +1513,11 @@
   "last_air": "2026-09-06",
   "platform": "Mango TV",
   "status": "Returning Series"
+ },
+ "261074": {
+  "last_air": "2024-07-20",
+  "platform": "TVB Jade",
+  "status": "Ended"
  },
  "261391": {
   "last_air": "2026-09-05",
@@ -1439,6 +1609,11 @@
   "platform": "Tencent Video",
   "status": "Returning Series"
  },
+ "277981": {
+  "last_air": "2018-12-18",
+  "platform": "",
+  "status": "Ended"
+ },
  "278324": {
   "last_air": "2025-12-26",
   "platform": "iQiyi",
@@ -1453,6 +1628,11 @@
   "last_air": "2026-10-23",
   "platform": "Mango TV",
   "status": "Returning Series"
+ },
+ "278885": {
+  "last_air": "2025-02-12",
+  "platform": "Tencent Video",
+  "status": "Ended"
  },
  "279029": {
   "last_air": "2024-12-07",
@@ -1483,6 +1663,11 @@
   "last_air": "2025-02-14",
   "platform": "Tencent Video",
   "status": "Returning Series"
+ },
+ "280943": {
+  "last_air": "2024-02-26",
+  "platform": "",
+  "status": "Ended"
  },
  "281788": {
   "last_air": "2025-01-26",
@@ -1529,10 +1714,20 @@
   "platform": "LINE TV",
   "status": "Ended"
  },
+ "286775": {
+  "last_air": "2025-12-13",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "287343": {
   "last_air": "2025-04-11",
   "platform": "Mango TV",
   "status": "Canceled"
+ },
+ "287421": {
+  "last_air": "2021-02-25",
+  "platform": "",
+  "status": "Ended"
  },
  "289150": {
   "last_air": "2025-06-19",
@@ -1604,7 +1799,11 @@
   "platform": "Hunan Television",
   "status": "Returning Series"
  },
- "299283": "",
+ "299283": {
+  "last_air": "2025-07-24",
+  "platform": "",
+  "status": "Ended"
+ },
  "299776": {
   "last_air": "2026-09-01",
   "platform": "YouTube",
@@ -1620,7 +1819,16 @@
   "platform": "Youku",
   "status": "Returning Series"
  },
- "302975": "Mango TV",
+ "302810": {
+  "last_air": "2013-09-27",
+  "platform": "",
+  "status": "Ended"
+ },
+ "302975": {
+  "last_air": "2025-12-03",
+  "platform": "Mango TV",
+  "status": "Returning Series"
+ },
  "303777": {
   "last_air": "2025-10-30",
   "platform": "Mango TV",
@@ -1656,10 +1864,19 @@
   "platform": "bilibili",
   "status": "Returning Series"
  },
- "309659": "CCTV",
+ "309659": {
+  "last_air": "2025-12-31",
+  "platform": "CCTV",
+  "status": "Returning Series"
+ },
  "310310": {
   "last_air": "2026-02-16",
   "platform": "rednote",
+  "status": "Returning Series"
+ },
+ "311035": {
+  "last_air": "2023-10-01",
+  "platform": "山东卫视",
   "status": "Returning Series"
  },
  "312066": {
@@ -1672,10 +1889,24 @@
   "platform": "",
   "status": "Returning Series"
  },
- "312468": "遠傳friday影音",
+ "312468": {
+  "last_air": "2026-03-21",
+  "platform": "遠傳friday影音",
+  "status": "Ended"
+ },
  "312878": {
   "last_air": "2026-04-24",
   "platform": "Youku",
+  "status": "Returning Series"
+ },
+ "313551": {
+  "last_air": "2026-03-15",
+  "platform": "帆书 APP",
+  "status": "Returning Series"
+ },
+ "313613": {
+  "last_air": "2026-02-08",
+  "platform": "",
   "status": "Returning Series"
  },
  "314864": {
@@ -1708,6 +1939,11 @@
   "platform": "iQiyi",
   "status": "Returning Series"
  },
+ "322395": {
+  "last_air": "2017-11-17",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "326450": {
   "last_air": "2026-07-03",
   "platform": "Mango TV",
@@ -1720,6 +1956,11 @@
  },
  "329500": {
   "last_air": "2026-08-01",
+  "platform": "",
+  "status": "Returning Series"
+ },
+ "330020": {
+  "last_air": "2026-07-25",
   "platform": "",
   "status": "Returning Series"
  },
@@ -1828,6 +2069,11 @@
   "platform": "iQiyi",
   "status": "Returning Series"
  },
+ "81132": {
+  "last_air": "2018-08-28",
+  "platform": "",
+  "status": "Returning Series"
+ },
  "82559": {
   "last_air": "2007-09-01",
   "platform": "CCTV-10",
@@ -1908,6 +2154,11 @@
   "platform": "iQiyi",
   "status": "Ended"
  },
+ "91226": {
+  "last_air": "2018-07-20",
+  "platform": "GDTV",
+  "status": "Ended"
+ },
  "91792": {
   "last_air": "2025-09-20",
   "platform": "CTV",
@@ -1936,6 +2187,11 @@
  "93550": {
   "last_air": "2021-03-06",
   "platform": "iQiyi",
+  "status": "Ended"
+ },
+ "93777": {
+  "last_air": "2006-01-03",
+  "platform": "Phoenix Television",
   "status": "Ended"
  },
  "94641": {
