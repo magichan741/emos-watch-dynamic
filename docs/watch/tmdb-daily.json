@@ -1,7 +1,7 @@
 {
   "name": "TMDB 每日热门",
   "cover": "https://image.tmdb.org/t/p/w780/q3n6nEjq433I1OE64ZYkAvCqlKO.jpg",
-  "updated_at": "2026-11-25 23:51:35",
+  "updated_at": "2026-11-26 02:43:18",
   "videos": [
     {
       "tmdb_id": 171802,
@@ -22,39 +22,39 @@
       "sort": 3
     },
     {
-      "tmdb_id": 1765072,
-      "tmdb_type": "movie",
-      "title": "一切如你所见",
-      "sort": 4
-    },
-    {
       "tmdb_id": 84773,
       "tmdb_type": "tv",
       "title": "指环王：力量之戒",
-      "sort": 5
-    },
-    {
-      "tmdb_id": 1281331,
-      "tmdb_type": "movie",
-      "title": "社交清算",
-      "sort": 6
-    },
-    {
-      "tmdb_id": 1195803,
-      "tmdb_type": "movie",
-      "title": "编个丈夫",
-      "sort": 7
+      "sort": 4
     },
     {
       "tmdb_id": 1280115,
       "tmdb_type": "movie",
       "title": "海豹小子",
-      "sort": 8
+      "sort": 5
+    },
+    {
+      "tmdb_id": 1765072,
+      "tmdb_type": "movie",
+      "title": "一切如你所见",
+      "sort": 6
     },
     {
       "tmdb_id": 1538497,
       "tmdb_type": "movie",
       "title": "魔法秘境",
+      "sort": 7
+    },
+    {
+      "tmdb_id": 1195803,
+      "tmdb_type": "movie",
+      "title": "编个丈夫",
+      "sort": 8
+    },
+    {
+      "tmdb_id": 1281331,
+      "tmdb_type": "movie",
+      "title": "社交清算",
       "sort": 9
     },
     {
@@ -76,51 +76,51 @@
       "sort": 12
     },
     {
-      "tmdb_id": 1611767,
-      "tmdb_type": "movie",
-      "title": "风雪同舟",
-      "sort": 13
-    },
-    {
-      "tmdb_id": 1496696,
-      "tmdb_type": "movie",
-      "title": "繁殖者",
-      "sort": 14
-    },
-    {
       "tmdb_id": 1170608,
       "tmdb_type": "movie",
       "title": "沙丘3",
-      "sort": 15
-    },
-    {
-      "tmdb_id": 1595124,
-      "tmdb_type": "movie",
-      "title": "童话继姊妹",
-      "sort": 16
+      "sort": 13
     },
     {
       "tmdb_id": 1400336,
       "tmdb_type": "movie",
       "title": "拜见岳父大人4",
-      "sort": 17
-    },
-    {
-      "tmdb_id": 279246,
-      "tmdb_type": "tv",
-      "title": "再婚皇后",
-      "sort": 18
-    },
-    {
-      "tmdb_id": 303745,
-      "tmdb_type": "tv",
-      "title": "我的有罪之人",
-      "sort": 19
+      "sort": 14
     },
     {
       "tmdb_id": 310209,
       "tmdb_type": "tv",
       "title": "朝九晚六",
+      "sort": 15
+    },
+    {
+      "tmdb_id": 1611767,
+      "tmdb_type": "movie",
+      "title": "风雪同舟",
+      "sort": 16
+    },
+    {
+      "tmdb_id": 1496696,
+      "tmdb_type": "movie",
+      "title": "育种师",
+      "sort": 17
+    },
+    {
+      "tmdb_id": 1595124,
+      "tmdb_type": "movie",
+      "title": "童话继姊妹",
+      "sort": 18
+    },
+    {
+      "tmdb_id": 279246,
+      "tmdb_type": "tv",
+      "title": "再婚皇后",
+      "sort": 19
+    },
+    {
+      "tmdb_id": 303745,
+      "tmdb_type": "tv",
+      "title": "我的有罪之人",
       "sort": 20
     }
   ]

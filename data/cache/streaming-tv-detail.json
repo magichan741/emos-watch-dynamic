@@ -339,6 +339,17 @@
   ],
   "runtime": []
  },
+ "250220": {
+  "episodes": 10,
+  "genres": [
+   18,
+   35
+  ],
+  "networks": [
+   "Peacock"
+  ],
+  "runtime": []
+ },
  "252107": {
   "episodes": 8,
   "genres": [
@@ -530,6 +541,17 @@
   ],
   "runtime": []
  },
+ "262388": {
+  "episodes": 9,
+  "genres": [
+   18,
+   80
+  ],
+  "networks": [
+   "Peacock"
+  ],
+  "runtime": []
+ },
  "262932": {
   "episodes": 37,
   "genres": [
@@ -697,6 +719,17 @@
   ],
   "networks": [
    "Apple TV"
+  ],
+  "runtime": []
+ },
+ "278127": {
+  "episodes": 34,
+  "genres": [
+   18,
+   9648
+  ],
+  "networks": [
+   "Youku"
   ],
   "runtime": []
  },
@@ -884,6 +917,19 @@
   ],
   "runtime": [
    40
+  ]
+ },
+ "280948": {
+  "episodes": 12,
+  "genres": [
+   35,
+   18
+  ],
+  "networks": [
+   "tvN"
+  ],
+  "runtime": [
+   65
   ]
  },
  "281016": {
@@ -1240,6 +1286,16 @@
   "runtime": [
    42
   ]
+ },
+ "291334": {
+  "episodes": 20,
+  "genres": [
+   35
+  ],
+  "networks": [
+   "NBC"
+  ],
+  "runtime": []
  },
  "291339": {
   "episodes": 11,
@@ -1940,6 +1996,19 @@
    "CBS"
   ],
   "runtime": []
+ },
+ "319851": {
+  "episodes": 6,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "ITV1"
+  ],
+  "runtime": [
+   50
+  ]
  },
  "320089": {
   "episodes": 80,
