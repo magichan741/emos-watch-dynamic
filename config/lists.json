@@ -133,9 +133,9 @@
       "movie_vote": 20,
       "tv_pages": 7,
       "tv_vote": 10,
-      "variety_pages": 12,
-      "variety_per_platform": 18,
-      "variety_air_days": 90
+      "variety_pages": 20,
+      "variety_per_platform": 30,
+      "variety_air_days": 150
     }
   ]
 }
