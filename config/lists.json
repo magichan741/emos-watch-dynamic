@@ -47,16 +47,15 @@
     },
     {
       "slug": "latest-cn-tv",
-      "name": "最新国产电视剧",
-      "source": "hot_cn_tv",
+      "name": "最新流媒体剧集",
+      "source": "hot_streaming_tv",
       "max_items": 50,
-      "pages": 4,
-      "per_platform": 16,
-      "min_runtime": 10,
+      "pages": 6,
+      "per_platform": 6,
+      "air_days": 365,
       "params": {
-        "without_genres": "16,10764,10767",
-        "vote_count.gte": 2,
-        "first_air_date.lte": "{today}"
+        "without_genres": "16,10764,10767,99",
+        "vote_count.gte": 2
       }
     },
     {

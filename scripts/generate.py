@@ -572,6 +572,119 @@ def hot_cn_tv(client, cfg=None):
     return picked
 
 
+# ---------------- 流媒体剧集（多平台汇总：Netflix / Disney+ / Apple TV+ 等） ----------------
+
+STREAMING_CACHE = os.path.join(ROOT, "data", "cache", "streaming-tv-detail.json")
+
+# 目标流媒体平台：键为展示名，值为匹配 TMDB network 名称的小写关键词
+STREAMING_PLATFORMS = {
+    "Netflix": ["netflix"],
+    "Disney+": ["disney+"],
+    "Apple TV+": ["apple tv", "appletv"],
+    "Hulu": ["hulu"],
+    "Prime Video": ["prime video", "amazon prime"],
+    "HBO/Max": ["hbo"],
+    "Peacock": ["peacock"],
+    "Paramount+": ["paramount+", "paramount plus"],
+    "Crunchyroll": ["crunchyroll"],
+}
+
+
+def streaming_tv_detail(client, tmdb_id, cache):
+    """取一部剧集的播出平台、类型、集均时长、集数（带缓存）。"""
+    key = str(tmdb_id)
+    hit = cache.get(key)
+    if isinstance(hit, dict) and "networks" in hit:
+        return hit
+    info = {"networks": [], "genres": [], "runtime": [], "episodes": 0}
+    try:
+        data = client.get("/tv/%d" % tmdb_id, language=TMDB_LANG)
+        info["networks"] = [(n.get("name") or "").strip()
+                            for n in (data.get("networks") or [])]
+        info["genres"] = [g.get("id") for g in (data.get("genres") or [])]
+        info["runtime"] = data.get("episode_run_time") or []
+        info["episodes"] = data.get("number_of_episodes") or 0
+    except Exception as e:
+        print("[stream-tv] 取详情失败 %s：%s" % (tmdb_id, e))
+    cache[key] = info
+    return info
+
+
+def classify_streaming(net_names):
+    """把 networks 名称归到目标流媒体平台；未命中返回空串。"""
+    blob = " ".join(net_names).lower()
+    for plat, keys in STREAMING_PLATFORMS.items():
+        for k in keys:
+            if k in blob:
+                return plat
+    return ""
+
+
+def hot_streaming_tv(client, cfg=None):
+    """流媒体最新剧集：近一年首播的热度剧集，按目标流媒体平台归类后配额混排。
+
+    只收录 Netflix / Disney+ / Apple TV+ / Hulu / Prime Video / HBO(Max) /
+    Peacock / Paramount+ / Crunchyroll 自制或首发剧集；剔除动画、综艺、纪录片。
+    """
+    cfg = cfg or {}
+    total = int(cfg.get("max_items", 50))
+    pages = int(cfg.get("pages", 6))
+    per_platform = int(cfg.get("per_platform", 6))
+    air_days = int(cfg.get("air_days", 365))
+
+    params = {
+        "without_genres": "16,10764,10767,99",
+        "vote_count.gte": 2,
+        "sort_by": "popularity.desc",
+        "first_air_date.gte": "{today-%d}" % air_days,
+        "first_air_date.lte": "{today}",
+    }
+    params.update(cfg.get("params") or {})
+    raw = discover(client, "tv", params, pages)
+    if not raw:
+        return []
+
+    cache = load_cache(STREAMING_CACHE)
+    items, skipped_genre, skipped_nonstream = [], 0, 0
+    for it in raw:
+        info = streaming_tv_detail(client, it["tmdb_id"], cache)
+        if 16 in (info.get("genres") or []):
+            skipped_genre += 1
+            continue
+        plat = classify_streaming(info.get("networks") or [])
+        if not plat:
+            skipped_nonstream += 1
+            continue
+        it["platform"] = plat
+        items.append(it)
+        time.sleep(0.02)
+    save_cache(STREAMING_CACHE, cache)
+    print("[stream-tv] 候选 %d 部；剔除动画 %d，非目标流媒体 %d，留存 %d"
+          % (len(raw), skipped_genre, skipped_nonstream, len(items)))
+
+    counts, picked, rest, seen_names = {}, [], [], set()
+    for it in items:
+        p = it["platform"]
+        key = norm_title(it["title"])
+        if key in seen_names:
+            continue
+        seen_names.add(key)
+        if counts.get(p, 0) < per_platform and len(picked) < total:
+            counts[p] = counts.get(p, 0) + 1
+            picked.append(it)
+        else:
+            rest.append(it)
+    if len(picked) < total:
+        picked += rest[:total - len(picked)]
+
+    stat = {}
+    for it in picked:
+        stat[it["platform"]] = stat.get(it["platform"], 0) + 1
+    print("[stream-tv] 入选 %d，平台分布：%s"
+          % (len(picked), "、".join("%s×%d" % (k, v) for k, v in stat.items())))
+    return picked
+
+
 def douban_classic(client):
     """豆瓣高分国漫口碑池：固定顺序的 20 部经典，按标题匹配到 TMDB。"""
     cache = load_cache(DOUBAN_CACHE)
@@ -775,6 +888,7 @@ SOURCES = {
     "bili_cn_anime": lambda c, cfg: bili_cn_anime(c, cfg),
     "hot_variety": lambda c, cfg: hot_variety(c, cfg),
     "hot_cn_tv": lambda c, cfg: hot_cn_tv(c, cfg),
+    "hot_streaming_tv": lambda c, cfg: hot_streaming_tv(c, cfg),
 }
 
 
