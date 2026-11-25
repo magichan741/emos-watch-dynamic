@@ -544,9 +544,13 @@ def hot_cn_tv(client, cfg=None):
     print("[cn-tv] 候选 %d 部；按集均时长剔除短剧 %d，标题命中短剧词 %d，留存 %d"
           % (len(raw), skipped_runtime, skipped_word, len(items)))
 
-    counts, picked, rest = {}, [], []
+    counts, picked, rest, seen_names = {}, [], [], set()
     for it in items:
         p = it.get("platform") or "其他"
+        key = norm_name(it["title"])
+        if key in seen_names:
+            continue
+        seen_names.add(key)
         if counts.get(p, 0) < per_platform and len(picked) < total:
             counts[p] = counts.get(p, 0) + 1
             picked.append(it)

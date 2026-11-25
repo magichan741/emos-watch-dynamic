@@ -53,6 +53,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git rebase origin main || git rebase --abort
           if [ -n "$(git status --porcelain docs data/cache)" ]; then
             git add docs data/cache
             git commit -m "chore: update emos watch json [skip ci]"
