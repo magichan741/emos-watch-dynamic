@@ -477,20 +477,23 @@ CN_TV_CACHE = os.path.join(ROOT, "data", "cache", "cn-tv-detail.json")
 
 # 短剧标题特征词（仅作补充判定；主判定依据是集均时长）
 SHORT_DRAMA_WORDS = ["短剧", "微短剧", "竖屏"]
+# 短剧发行平台特征词（命中即剔除，如红果短剧）
+SHORT_DRAMA_PLATFORM_WORDS = ["short drama", "hongguo", "红果", "短剧"]
 
 
 def cn_tv_detail(client, tmdb_id, cache):
     """取一部国产剧的平台、集均时长、集数、状态（带缓存）。"""
     key = str(tmdb_id)
     hit = cache.get(key)
-    if isinstance(hit, dict) and "genres" in hit:
+    if isinstance(hit, dict) and "networks" in hit:
         return hit
-    info = {"platform": "", "runtime": [], "episodes": 0, "status": "", "genres": []}
+    info = {"platform": "", "networks": [], "runtime": [], "episodes": 0, "status": "", "genres": []}
     try:
         data = client.get("/tv/%d" % tmdb_id, language=TMDB_LANG)
         nets = data.get("networks") or []
+        info["networks"] = [(n.get("name") or "").strip() for n in nets]
         if nets:
-            info["platform"] = (nets[0].get("name") or "").strip()
+            info["platform"] = info["networks"][0]
         info["runtime"] = data.get("episode_run_time") or []
         info["episodes"] = data.get("number_of_episodes") or 0
         info["status"] = data.get("status") or ""
@@ -526,7 +529,7 @@ def hot_cn_tv(client, cfg=None):
         return []
 
     cache = load_cache(CN_TV_CACHE)
-    items, skipped_runtime, skipped_word, skipped_genre = [], 0, 0, 0
+    items, skipped_runtime, skipped_word, skipped_genre, skipped_platform = [], 0, 0, 0, 0
     for it in raw:
         info = cn_tv_detail(client, it["tmdb_id"], cache)
         rt = [x for x in info.get("runtime") or [] if isinstance(x, (int, float)) and x]
@@ -535,6 +538,10 @@ def hot_cn_tv(client, cfg=None):
             continue
         if 16 in (info.get("genres") or []):
             skipped_genre += 1
+            continue
+        plat_blob = " ".join(info.get("networks") or []).casefold()
+        if any(w.casefold() in plat_blob for w in SHORT_DRAMA_PLATFORM_WORDS):
+            skipped_platform += 1
             continue
         name = it["title"].casefold()
         if any(w.casefold() in name for w in SHORT_DRAMA_WORDS):
@@ -545,8 +552,8 @@ def hot_cn_tv(client, cfg=None):
         items.append(it)
         time.sleep(0.02)
     save_cache(CN_TV_CACHE, cache)
-    print("[cn-tv] 候选 %d 部；按集均时长剔除短剧 %d，标题命中短剧词 %d，动画 %d，留存 %d"
-          % (len(raw), skipped_runtime, skipped_word, skipped_genre, len(items)))
+    print("[cn-tv] 候选 %d 部；集均时长剔短剧 %d，标题短剧词 %d，动画 %d，短剧平台 %d，留存 %d"
+          % (len(raw), skipped_runtime, skipped_word, skipped_genre, skipped_platform, len(items)))
 
     counts, picked, rest, seen_names = {}, [], [], set()
     for it in items:
