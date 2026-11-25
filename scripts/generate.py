@@ -547,7 +547,7 @@ def hot_cn_tv(client, cfg=None):
     counts, picked, rest, seen_names = {}, [], [], set()
     for it in items:
         p = it.get("platform") or "其他"
-        key = norm_name(it["title"])
+        key = norm_title(it["title"])
         if key in seen_names:
             continue
         seen_names.add(key)
