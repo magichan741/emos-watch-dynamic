@@ -1,306 +1,306 @@
 {
   "name": "最新欧美电视剧",
-  "cover": "https://image.tmdb.org/t/p/w780/wnRPHuLIMzqbzLJ6YO2shiJ1n8Y.jpg",
-  "updated_at": "2026-11-25 03:35:50",
+  "cover": "https://magichan741.github.io/emos-watch-dynamic/assets/cover-default.svg",
+  "updated_at": "2026-11-25 13:37:36",
   "videos": [
+    {
+      "tmdb_id": 343245,
+      "tmdb_type": "tv",
+      "title": "Andrew Tate: Toxic Empire",
+      "sort": 1
+    },
+    {
+      "tmdb_id": 343244,
+      "tmdb_type": "tv",
+      "title": "I Want To Kill My Boss",
+      "sort": 2
+    },
+    {
+      "tmdb_id": 342167,
+      "tmdb_type": "tv",
+      "title": "Virgin Island - Unberührt im Paradies",
+      "sort": 3
+    },
     {
       "tmdb_id": 342440,
       "tmdb_type": "tv",
       "title": "Una finestra vista lago",
-      "sort": 1
+      "sort": 4
     },
     {
       "tmdb_id": 338435,
       "tmdb_type": "tv",
       "title": "The Great Food Con",
-      "sort": 2
+      "sort": 5
     },
     {
       "tmdb_id": 171802,
       "tmdb_type": "tv",
       "title": "银翼杀手2099",
-      "sort": 3
+      "sort": 6
+    },
+    {
+      "tmdb_id": 343594,
+      "tmdb_type": "tv",
+      "title": "Novela Jesus - Vertical",
+      "sort": 7
     },
     {
       "tmdb_id": 343248,
       "tmdb_type": "tv",
       "title": "The Anania Show",
-      "sort": 4
+      "sort": 8
     },
     {
       "tmdb_id": 343212,
       "tmdb_type": "tv",
       "title": "Verdeliss. Más allá del miedo",
-      "sort": 5
+      "sort": 9
     },
     {
       "tmdb_id": 343159,
       "tmdb_type": "tv",
       "title": "[##Assistenza~Turkish~Airlines] Italia: Numero Verde, Contatti e Supporto Clienti ||Come possiamo aiutarti?",
-      "sort": 6
+      "sort": 10
     },
     {
       "tmdb_id": 342297,
       "tmdb_type": "tv",
       "title": "Amici",
-      "sort": 7
+      "sort": 11
     },
     {
       "tmdb_id": 341984,
       "tmdb_type": "tv",
       "title": "Lucy Worsley's Keys to the Castle",
-      "sort": 8
+      "sort": 12
     },
     {
       "tmdb_id": 340910,
       "tmdb_type": "tv",
       "title": "Ashokan",
-      "sort": 9
+      "sort": 13
     },
     {
       "tmdb_id": 340615,
       "tmdb_type": "tv",
       "title": "卡伦·里德的审判：雪地警员死亡谜案",
-      "sort": 10
+      "sort": 14
     },
     {
       "tmdb_id": 325484,
       "tmdb_type": "tv",
       "title": "New Wave",
-      "sort": 11
+      "sort": 15
     },
     {
       "tmdb_id": 290826,
       "tmdb_type": "tv",
       "title": "挖",
-      "sort": 12
+      "sort": 16
     },
     {
       "tmdb_id": 343293,
       "tmdb_type": "tv",
       "title": "ABNORMAL ACTIVITIES - THE SERIES",
-      "sort": 13
+      "sort": 17
     },
     {
       "tmdb_id": 343196,
       "tmdb_type": "tv",
       "title": "Senza Legge: Viaggio nelle No-Go Zones",
-      "sort": 14
+      "sort": 18
     },
     {
       "tmdb_id": 342714,
       "tmdb_type": "tv",
       "title": "La tragédie du sang contaminé",
-      "sort": 15
+      "sort": 19
     },
     {
       "tmdb_id": 341164,
       "tmdb_type": "tv",
       "title": "Oobah: Scams for a Better Tomorrow",
-      "sort": 16
+      "sort": 20
     },
     {
       "tmdb_id": 340984,
       "tmdb_type": "tv",
       "title": "Noah siendo Noah",
-      "sort": 17
+      "sort": 21
     },
     {
       "tmdb_id": 340566,
       "tmdb_type": "tv",
       "title": "女巫农场",
-      "sort": 18
+      "sort": 22
     },
     {
       "tmdb_id": 338661,
       "tmdb_type": "tv",
       "title": "震荡",
-      "sort": 19
+      "sort": 23
     },
     {
       "tmdb_id": 328853,
       "tmdb_type": "tv",
       "title": "La famiglia Panini - L’avventura delle figurine",
-      "sort": 20
+      "sort": 24
     },
     {
       "tmdb_id": 327127,
       "tmdb_type": "tv",
-      "title": "Nuits Blanches",
-      "sort": 21
+      "title": "Nuits blanches",
+      "sort": 25
     },
     {
       "tmdb_id": 343195,
       "tmdb_type": "tv",
       "title": "40 Hidden Music Treasures at the BBC",
-      "sort": 22
+      "sort": 26
     },
     {
       "tmdb_id": 343134,
       "tmdb_type": "tv",
       "title": "Operation Cobalt - Der 70-Millionen-Raub",
-      "sort": 23
+      "sort": 27
     },
     {
       "tmdb_id": 342915,
       "tmdb_type": "tv",
       "title": "@!!CDMX GUÍAજ⁀➴🛫 Delta         México Teléfono México ¿Cómo llamar a Delta en México? ¿Cómo llamar a Delta  en México?",
-      "sort": 24
+      "sort": 28
     },
     {
       "tmdb_id": 309750,
       "tmdb_type": "tv",
       "title": "Estúpido cupido",
-      "sort": 25
+      "sort": 29
     },
     {
       "tmdb_id": 343230,
       "tmdb_type": "tv",
       "title": "Անկախություն",
-      "sort": 26
+      "sort": 30
     },
     {
       "tmdb_id": 343197,
       "tmdb_type": "tv",
       "title": "Pony Girls",
-      "sort": 27
+      "sort": 31
     },
     {
       "tmdb_id": 342696,
       "tmdb_type": "tv",
       "title": "Plein",
-      "sort": 28
+      "sort": 32
     },
     {
       "tmdb_id": 342657,
       "tmdb_type": "tv",
       "title": "El Médico Milagroso que Ella Rechazó",
-      "sort": 29
+      "sort": 33
     },
     {
       "tmdb_id": 342648,
       "tmdb_type": "tv",
       "title": "Marido alquilado",
-      "sort": 30
+      "sort": 34
     },
     {
       "tmdb_id": 340624,
       "tmdb_type": "tv",
       "title": "Ayô",
-      "sort": 31
+      "sort": 35
     },
     {
       "tmdb_id": 314131,
       "tmdb_type": "tv",
       "title": "梅拉尼娅纪录片影集",
-      "sort": 32
+      "sort": 36
     },
     {
       "tmdb_id": 292113,
       "tmdb_type": "tv",
       "title": "Bill's Included",
-      "sort": 33
+      "sort": 37
     },
     {
       "tmdb_id": 343125,
       "tmdb_type": "tv",
       "title": "Dernière Seconde: Requiem de Minuit",
-      "sort": 34
+      "sort": 38
     },
     {
       "tmdb_id": 342822,
       "tmdb_type": "tv",
       "title": "The Airport",
-      "sort": 35
+      "sort": 39
     },
     {
       "tmdb_id": 342812,
       "tmdb_type": "tv",
       "title": "Friday, Unread",
-      "sort": 36
+      "sort": 40
     },
     {
       "tmdb_id": 342738,
       "tmdb_type": "tv",
       "title": "Ballz",
-      "sort": 37
+      "sort": 41
     },
     {
       "tmdb_id": 342695,
       "tmdb_type": "tv",
       "title": "The Mad Pooper",
-      "sort": 38
+      "sort": 42
     },
     {
       "tmdb_id": 342664,
       "tmdb_type": "tv",
       "title": "Diamonds & Plastic",
-      "sort": 39
+      "sort": 43
     },
     {
       "tmdb_id": 342662,
       "tmdb_type": "tv",
       "title": "El preso que nadie podía matar",
-      "sort": 40
+      "sort": 44
     },
     {
       "tmdb_id": 342659,
       "tmdb_type": "tv",
       "title": "Untitled EJBP miniseries",
-      "sort": 41
+      "sort": 45
     },
     {
       "tmdb_id": 342651,
       "tmdb_type": "tv",
       "title": "Classic Movies: Iconic Scenes",
-      "sort": 42
+      "sort": 46
     },
     {
       "tmdb_id": 342626,
       "tmdb_type": "tv",
       "title": "Tokio Hotel - Gegen alle Regeln",
-      "sort": 43
+      "sort": 47
     },
     {
       "tmdb_id": 342610,
       "tmdb_type": "tv",
       "title": "Nanban",
-      "sort": 44
+      "sort": 48
     },
     {
       "tmdb_id": 342601,
       "tmdb_type": "tv",
       "title": "De Chofer a Rey de la Guerra",
-      "sort": 45
+      "sort": 49
     },
     {
       "tmdb_id": 342600,
       "tmdb_type": "tv",
       "title": "El taxista multimillonario",
-      "sort": 46
-    },
-    {
-      "tmdb_id": 308007,
-      "tmdb_type": "tv",
-      "title": "镶金理想",
-      "sort": 47
-    },
-    {
-      "tmdb_id": 279382,
-      "tmdb_type": "tv",
-      "title": "Eldorado",
-      "sort": 48
-    },
-    {
-      "tmdb_id": 342575,
-      "tmdb_type": "tv",
-      "title": "The AJ Styles Podcast",
-      "sort": 49
-    },
-    {
-      "tmdb_id": 342572,
-      "tmdb_type": "tv",
-      "title": "Dossiê Celebridades",
       "sort": 50
     }
   ]

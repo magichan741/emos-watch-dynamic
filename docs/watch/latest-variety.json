@@ -1,7 +1,7 @@
 {
   "name": "最新热播综艺",
   "cover": "https://image.tmdb.org/t/p/w780/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
-  "updated_at": "2026-11-25 03:35:50",
+  "updated_at": "2026-11-25 13:37:36",
   "videos": [
     {
       "tmdb_id": 154770,
@@ -154,15 +154,15 @@
       "sort": 25
     },
     {
-      "tmdb_id": 298320,
-      "tmdb_type": "tv",
-      "title": "合伙人",
-      "sort": 26
-    },
-    {
       "tmdb_id": 301355,
       "tmdb_type": "tv",
       "title": "偏爱之恋",
+      "sort": 26
+    },
+    {
+      "tmdb_id": 298320,
+      "tmdb_type": "tv",
+      "title": "合伙人",
       "sort": 27
     },
     {
@@ -172,15 +172,15 @@
       "sort": 28
     },
     {
-      "tmdb_id": 206367,
-      "tmdb_type": "tv",
-      "title": "这就是中国",
-      "sort": 29
-    },
-    {
       "tmdb_id": 239038,
       "tmdb_type": "tv",
       "title": "爱的修学旅行",
+      "sort": 29
+    },
+    {
+      "tmdb_id": 206367,
+      "tmdb_type": "tv",
+      "title": "这就是中国",
       "sort": 30
     }
   ]
