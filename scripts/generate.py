@@ -674,6 +674,16 @@ def hot_streaming_tv(client, cfg=None):
             picked.append(it)
         else:
             rest.append(it)
+    # 第二轮：仍只补足尚未到配额的平台，避免单一平台靠补位再次霸榜
+    if len(picked) < total:
+        for it in rest:
+            if len(picked) >= total:
+                break
+            p = it["platform"]
+            if counts.get(p, 0) < per_platform:
+                counts[p] = counts.get(p, 0) + 1
+                picked.append(it)
+    # 第三轮：各平台都已满仍不足，才放开配额按热度补位
     if len(picked) < total:
         picked += rest[:total - len(picked)]
 
