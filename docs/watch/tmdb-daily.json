@@ -1,7 +1,7 @@
 {
   "name": "TMDB 每日热门",
   "cover": "https://image.tmdb.org/t/p/w780/1CXOvSlK8R0dqc4u1QqDDZkH3ql.jpg",
-  "updated_at": "2026-11-25 13:37:36",
+  "updated_at": "2026-11-25 17:55:21",
   "videos": [
     {
       "tmdb_id": 1003596,
@@ -10,9 +10,9 @@
       "sort": 1
     },
     {
-      "tmdb_id": 1281331,
-      "tmdb_type": "movie",
-      "title": "社交清算",
+      "tmdb_id": 171802,
+      "tmdb_type": "tv",
+      "title": "银翼杀手2099",
       "sort": 2
     },
     {
@@ -22,33 +22,33 @@
       "sort": 3
     },
     {
+      "tmdb_id": 1281331,
+      "tmdb_type": "movie",
+      "title": "社交清算",
+      "sort": 4
+    },
+    {
       "tmdb_id": 1195803,
       "tmdb_type": "movie",
       "title": "编个丈夫",
-      "sort": 4
+      "sort": 5
     },
     {
       "tmdb_id": 1538497,
       "tmdb_type": "movie",
       "title": "魔法秘境",
-      "sort": 5
+      "sort": 6
     },
     {
       "tmdb_id": 1300968,
       "tmdb_type": "movie",
       "title": "饥饿游戏：收获日出",
-      "sort": 6
+      "sort": 7
     },
     {
       "tmdb_id": 1611767,
       "tmdb_type": "movie",
       "title": "风雪同舟",
-      "sort": 7
-    },
-    {
-      "tmdb_id": 969681,
-      "tmdb_type": "movie",
-      "title": "蜘蛛侠：崭新之日",
       "sort": 8
     },
     {
@@ -58,51 +58,51 @@
       "sort": 9
     },
     {
-      "tmdb_id": 171802,
-      "tmdb_type": "tv",
-      "title": "银翼杀手2099",
+      "tmdb_id": 969681,
+      "tmdb_type": "movie",
+      "title": "蜘蛛侠：崭新之日",
       "sort": 10
-    },
-    {
-      "tmdb_id": 290826,
-      "tmdb_type": "tv",
-      "title": "挖",
-      "sort": 11
     },
     {
       "tmdb_id": 1496696,
       "tmdb_type": "movie",
       "title": "繁殖者",
-      "sort": 12
-    },
-    {
-      "tmdb_id": 1595124,
-      "tmdb_type": "movie",
-      "title": "童话继姊妹",
-      "sort": 13
+      "sort": 11
     },
     {
       "tmdb_id": 84773,
       "tmdb_type": "tv",
       "title": "指环王：力量之戒",
-      "sort": 14
-    },
-    {
-      "tmdb_id": 1400336,
-      "tmdb_type": "movie",
-      "title": "拜见岳父大人4",
-      "sort": 15
+      "sort": 12
     },
     {
       "tmdb_id": 1170608,
       "tmdb_type": "movie",
       "title": "沙丘3",
+      "sort": 13
+    },
+    {
+      "tmdb_id": 1595124,
+      "tmdb_type": "movie",
+      "title": "童话继姊妹",
+      "sort": 14
+    },
+    {
+      "tmdb_id": 1280115,
+      "tmdb_type": "movie",
+      "title": "海豹小子",
+      "sort": 15
+    },
+    {
+      "tmdb_id": 1400336,
+      "tmdb_type": "movie",
+      "title": "拜见岳父大人4",
       "sort": 16
     },
     {
-      "tmdb_id": 291507,
+      "tmdb_id": 290826,
       "tmdb_type": "tv",
-      "title": "青春共体",
+      "title": "挖",
       "sort": 17
     },
     {
@@ -112,15 +112,15 @@
       "sort": 18
     },
     {
-      "tmdb_id": 247718,
+      "tmdb_id": 303745,
       "tmdb_type": "tv",
-      "title": "MobLand",
+      "title": "我的有罪之人",
       "sort": 19
     },
     {
-      "tmdb_id": 1286656,
-      "tmdb_type": "movie",
-      "title": "我演洛奇",
+      "tmdb_id": 247718,
+      "tmdb_type": "tv",
+      "title": "MobLand",
       "sort": 20
     }
   ]
