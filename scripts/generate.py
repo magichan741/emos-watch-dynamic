@@ -471,6 +471,99 @@ def hot_variety(client, cfg=None):
     return picked
 
 
+# ---------------- 国产电视剧（多平台汇总，剔除短剧） ----------------
+
+CN_TV_CACHE = os.path.join(ROOT, "data", "cache", "cn-tv-detail.json")
+
+# 短剧标题特征词（仅作补充判定；主判定依据是集均时长）
+SHORT_DRAMA_WORDS = ["短剧", "微短剧", "竖屏"]
+
+
+def cn_tv_detail(client, tmdb_id, cache):
+    """取一部国产剧的平台、集均时长、集数、状态（带缓存）。"""
+    key = str(tmdb_id)
+    hit = cache.get(key)
+    if isinstance(hit, dict):
+        return hit
+    info = {"platform": "", "runtime": [], "episodes": 0, "status": ""}
+    try:
+        data = client.get("/tv/%d" % tmdb_id, language=TMDB_LANG)
+        nets = data.get("networks") or []
+        if nets:
+            info["platform"] = (nets[0].get("name") or "").strip()
+        info["runtime"] = data.get("episode_run_time") or []
+        info["episodes"] = data.get("number_of_episodes") or 0
+        info["status"] = data.get("status") or ""
+    except Exception as e:
+        print("[cn-tv] 取详情失败 %s：%s" % (tmdb_id, e))
+    cache[key] = info
+    return info
+
+
+def hot_cn_tv(client, cfg=None):
+    """国产电视剧：中文剧集按热度取候选，剔除短剧，再按平台配额混排。
+
+    短剧判定：集均时长低于 min_runtime 分钟，或标题命中短剧特征词。
+    多平台汇总：按 TMDB networks 平台信息做配额，避免单一平台占满。
+    """
+    cfg = cfg or {}
+    total = int(cfg.get("max_items", 50))
+    pages = int(cfg.get("pages", 4))
+    per_platform = int(cfg.get("per_platform", 16))
+    min_runtime = int(cfg.get("min_runtime", 10))
+
+    params = {
+        "with_original_language": "zh",
+        "without_genres": "16,10764,10767",
+        "vote_count.gte": 2,
+        "sort_by": "popularity.desc",
+        "first_air_date.lte": "{today}",
+    }
+    params.update(cfg.get("params") or {})
+    raw = discover(client, "tv", params, pages)
+    if not raw:
+        return []
+
+    cache = load_cache(CN_TV_CACHE)
+    items, skipped_runtime, skipped_word = [], 0, 0
+    for it in raw:
+        info = cn_tv_detail(client, it["tmdb_id"], cache)
+        rt = [x for x in info.get("runtime") or [] if isinstance(x, (int, float)) and x]
+        if rt and (sum(rt) / len(rt)) < min_runtime:
+            skipped_runtime += 1
+            continue
+        name = it["title"].casefold()
+        if any(w.casefold() in name for w in SHORT_DRAMA_WORDS):
+            skipped_word += 1
+            continue
+        it["platform"] = info.get("platform") or ""
+        it["episodes"] = info.get("episodes") or 0
+        items.append(it)
+        time.sleep(0.02)
+    save_cache(CN_TV_CACHE, cache)
+    print("[cn-tv] 候选 %d 部；按集均时长剔除短剧 %d，标题命中短剧词 %d，留存 %d"
+          % (len(raw), skipped_runtime, skipped_word, len(items)))
+
+    counts, picked, rest = {}, [], []
+    for it in items:
+        p = it.get("platform") or "其他"
+        if counts.get(p, 0) < per_platform and len(picked) < total:
+            counts[p] = counts.get(p, 0) + 1
+            picked.append(it)
+        else:
+            rest.append(it)
+    if len(picked) < total:
+        picked += rest[:total - len(picked)]
+
+    stat = {}
+    for it in picked:
+        p = it.get("platform") or "其他"
+        stat[p] = stat.get(p, 0) + 1
+    print("[cn-tv] 入选 %d，平台分布：%s"
+          % (len(picked), "、".join("%s×%d" % (k, v) for k, v in stat.items())))
+    return picked
+
+
 def douban_classic(client):
     """豆瓣高分国漫口碑池：固定顺序的 20 部经典，按标题匹配到 TMDB。"""
     cache = load_cache(DOUBAN_CACHE)
@@ -673,6 +766,7 @@ SOURCES = {
     "tmdb_discover_multi": lambda c, cfg: discover_multi(c, cfg),
     "bili_cn_anime": lambda c, cfg: bili_cn_anime(c, cfg),
     "hot_variety": lambda c, cfg: hot_variety(c, cfg),
+    "hot_cn_tv": lambda c, cfg: hot_cn_tv(c, cfg),
 }
 
 

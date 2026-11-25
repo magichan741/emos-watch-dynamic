@@ -48,14 +48,15 @@
     {
       "slug": "latest-cn-tv",
       "name": "最新国产电视剧",
-      "source": "tmdb_discover_tv",
-      "pages": 3,
+      "source": "hot_cn_tv",
       "max_items": 50,
+      "pages": 4,
+      "per_platform": 16,
+      "min_runtime": 10,
       "params": {
-        "with_original_language": "zh",
-        "sort_by": "first_air_date.desc",
-        "first_air_date.lte": "{today}",
-        "without_genres": "16,10764,10767"
+        "without_genres": "16,10764,10767",
+        "vote_count.gte": 2,
+        "first_air_date.lte": "{today}"
       }
     },
     {
