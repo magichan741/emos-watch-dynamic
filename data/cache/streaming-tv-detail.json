@@ -283,6 +283,18 @@
   ],
   "runtime": []
  },
+ "246412": {
+  "episodes": 8,
+  "genres": [
+   10759,
+   9648,
+   10765
+  ],
+  "networks": [
+   "Peacock"
+  ],
+  "runtime": []
+ },
  "246473": {
   "episodes": 12,
   "genres": [
@@ -615,6 +627,20 @@
    "Prime Video"
   ],
   "runtime": []
+ },
+ "273977": {
+  "episodes": 8,
+  "genres": [
+   80,
+   9648,
+   18
+  ],
+  "networks": [
+   "Netflix"
+  ],
+  "runtime": [
+   45
+  ]
  },
  "275102": {
   "episodes": 8,
