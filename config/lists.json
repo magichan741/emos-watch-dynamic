@@ -60,15 +60,18 @@
     },
     {
       "slug": "latest-western-tv",
-      "name": "最新欧美电视剧",
-      "source": "tmdb_discover_tv",
-      "pages": 3,
+      "name": "最新国产剧集",
+      "source": "hot_cn_tv",
       "max_items": 50,
+      "pages": 4,
+      "per_platform": 16,
+      "min_runtime": 10,
       "params": {
-        "with_original_language": "en|es|fr|de|it|pt",
+        "without_genres": "16,10764,10767,99",
+        "vote_count.gte": 2,
         "sort_by": "first_air_date.desc",
-        "first_air_date.lte": "{today}",
-        "without_genres": "16,10764,10767"
+        "first_air_date.gte": "{today-365}",
+        "first_air_date.lte": "{today}"
       }
     },
     {
