@@ -483,9 +483,9 @@ def cn_tv_detail(client, tmdb_id, cache):
     """取一部国产剧的平台、集均时长、集数、状态（带缓存）。"""
     key = str(tmdb_id)
     hit = cache.get(key)
-    if isinstance(hit, dict):
+    if isinstance(hit, dict) and "genres" in hit:
         return hit
-    info = {"platform": "", "runtime": [], "episodes": 0, "status": ""}
+    info = {"platform": "", "runtime": [], "episodes": 0, "status": "", "genres": []}
     try:
         data = client.get("/tv/%d" % tmdb_id, language=TMDB_LANG)
         nets = data.get("networks") or []
@@ -494,6 +494,7 @@ def cn_tv_detail(client, tmdb_id, cache):
         info["runtime"] = data.get("episode_run_time") or []
         info["episodes"] = data.get("number_of_episodes") or 0
         info["status"] = data.get("status") or ""
+        info["genres"] = [g.get("id") for g in (data.get("genres") or [])]
     except Exception as e:
         print("[cn-tv] 取详情失败 %s：%s" % (tmdb_id, e))
     cache[key] = info
@@ -525,12 +526,15 @@ def hot_cn_tv(client, cfg=None):
         return []
 
     cache = load_cache(CN_TV_CACHE)
-    items, skipped_runtime, skipped_word = [], 0, 0
+    items, skipped_runtime, skipped_word, skipped_genre = [], 0, 0, 0
     for it in raw:
         info = cn_tv_detail(client, it["tmdb_id"], cache)
         rt = [x for x in info.get("runtime") or [] if isinstance(x, (int, float)) and x]
         if rt and (sum(rt) / len(rt)) < min_runtime:
             skipped_runtime += 1
+            continue
+        if 16 in (info.get("genres") or []):
+            skipped_genre += 1
             continue
         name = it["title"].casefold()
         if any(w.casefold() in name for w in SHORT_DRAMA_WORDS):
@@ -541,8 +545,8 @@ def hot_cn_tv(client, cfg=None):
         items.append(it)
         time.sleep(0.02)
     save_cache(CN_TV_CACHE, cache)
-    print("[cn-tv] 候选 %d 部；按集均时长剔除短剧 %d，标题命中短剧词 %d，留存 %d"
-          % (len(raw), skipped_runtime, skipped_word, len(items)))
+    print("[cn-tv] 候选 %d 部；按集均时长剔除短剧 %d，标题命中短剧词 %d，动画 %d，留存 %d"
+          % (len(raw), skipped_runtime, skipped_word, skipped_genre, len(items)))
 
     counts, picked, rest, seen_names = {}, [], [], set()
     for it in items:
