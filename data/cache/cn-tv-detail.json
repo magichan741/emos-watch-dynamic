@@ -1,12 +1,20 @@
 {
  "110714": {
   "episodes": 215,
+  "genres": [
+   18,
+   10759
+  ],
   "platform": "",
   "runtime": [],
   "status": "Ended"
  },
  "111097": {
   "episodes": 195,
+  "genres": [
+   35,
+   18
+  ],
   "platform": "Jiangsu Television",
   "runtime": [
    45
@@ -15,6 +23,10 @@
  },
  "1149": {
   "episodes": 211,
+  "genres": [
+   10765,
+   35
+  ],
   "platform": "GTV",
   "runtime": [
    60,
@@ -24,6 +36,9 @@
  },
  "120850": {
   "episodes": 2315,
+  "genres": [
+   35
+  ],
   "platform": "Guangdong Television",
   "runtime": [
    20
@@ -32,6 +47,10 @@
  },
  "122182": {
   "episodes": 49,
+  "genres": [
+   10759,
+   10768
+  ],
   "platform": "Tencent Video",
   "runtime": [
    45
@@ -40,6 +59,9 @@
  },
  "124817": {
   "episodes": 40,
+  "genres": [
+   18
+  ],
   "platform": "Mango TV",
   "runtime": [
    30
@@ -48,6 +70,12 @@
  },
  "128318": {
   "episodes": 267,
+  "genres": [
+   35,
+   10751,
+   10766,
+   18
+  ],
   "platform": "Beijing Television",
   "runtime": [
    22
@@ -56,6 +84,11 @@
  },
  "136651": {
   "episodes": 338,
+  "genres": [
+   18,
+   10768,
+   10759
+  ],
   "platform": "Hunan Television",
   "runtime": [
    45
@@ -64,6 +97,9 @@
  },
  "137206": {
   "episodes": 40,
+  "genres": [
+   18
+  ],
   "platform": "Youku",
   "runtime": [
    55
@@ -72,6 +108,13 @@
  },
  "137870": {
   "episodes": 56,
+  "genres": [
+   18,
+   10759,
+   10768,
+   10751,
+   35
+  ],
   "platform": "Tencent Video",
   "runtime": [
    45
@@ -80,6 +123,11 @@
  },
  "16941": {
   "episodes": 120,
+  "genres": [
+   18,
+   35,
+   10751
+  ],
   "platform": "Beijing Television",
   "runtime": [
    25
@@ -88,6 +136,9 @@
  },
  "18604": {
   "episodes": 95,
+  "genres": [
+   18
+  ],
   "platform": "Jiangsu Television",
   "runtime": [
    60
@@ -96,6 +147,10 @@
  },
  "19530": {
   "episodes": 2988,
+  "genres": [
+   10759,
+   18
+  ],
   "platform": "PILI Online",
   "runtime": [
    60
@@ -104,12 +159,20 @@
  },
  "203483": {
   "episodes": 26,
+  "genres": [
+   18
+  ],
   "platform": "CCTV-8",
   "runtime": [],
   "status": "Returning Series"
  },
  "203950": {
   "episodes": 504,
+  "genres": [
+   10751,
+   18,
+   35
+  ],
   "platform": "",
   "runtime": [
    25
@@ -118,6 +181,11 @@
  },
  "208919": {
   "episodes": 80,
+  "genres": [
+   80,
+   18,
+   10759
+  ],
   "platform": "iQiyi",
   "runtime": [
    45
@@ -126,6 +194,9 @@
  },
  "210733": {
   "episodes": 25,
+  "genres": [
+   18
+  ],
   "platform": "Youku",
   "runtime": [
    45
@@ -134,6 +205,11 @@
  },
  "210757": {
   "episodes": 39,
+  "genres": [
+   18,
+   10759,
+   80
+  ],
   "platform": "CCTV-8",
   "runtime": [
    46
@@ -142,6 +218,12 @@
  },
  "211089": {
   "episodes": 137,
+  "genres": [
+   9648,
+   80,
+   18,
+   10759
+  ],
   "platform": "Beijing Television",
   "runtime": [
    45
@@ -150,6 +232,10 @@
  },
  "216445": {
   "episodes": 40,
+  "genres": [
+   10759,
+   18
+  ],
   "platform": "Hunan Television",
   "runtime": [
    45
@@ -158,6 +244,9 @@
  },
  "219915": {
   "episodes": 40,
+  "genres": [
+   18
+  ],
   "platform": "Hunan Television",
   "runtime": [
    45
@@ -166,6 +255,11 @@
  },
  "225941": {
   "episodes": 40,
+  "genres": [
+   10759,
+   18,
+   10765
+  ],
   "platform": "Youku",
   "runtime": [
    45
@@ -174,6 +268,12 @@
  },
  "233912": {
   "episodes": 40,
+  "genres": [
+   18,
+   10759,
+   35,
+   9648
+  ],
   "platform": "CCTV-8",
   "runtime": [
    45
@@ -182,12 +282,20 @@
  },
  "235351": {
   "episodes": 60,
+  "genres": [
+   10759,
+   18
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
  },
  "242762": {
   "episodes": 38,
+  "genres": [
+   18,
+   10765
+  ],
   "platform": "Tencent Video",
   "runtime": [
    43
@@ -196,6 +304,11 @@
  },
  "245292": {
   "episodes": 78,
+  "genres": [
+   18,
+   9648,
+   35
+  ],
   "platform": "iQiyi",
   "runtime": [
    20
@@ -204,6 +317,9 @@
  },
  "249972": {
   "episodes": 34,
+  "genres": [
+   18
+  ],
   "platform": "Tencent Video",
   "runtime": [
    45
@@ -212,6 +328,9 @@
  },
  "250060": {
   "episodes": 32,
+  "genres": [
+   18
+  ],
   "platform": "Youku",
   "runtime": [
    45
@@ -220,6 +339,9 @@
  },
  "254821": {
   "episodes": 36,
+  "genres": [
+   18
+  ],
   "platform": "Mango TV",
   "runtime": [
    50
@@ -228,24 +350,38 @@
  },
  "261315": {
   "episodes": 30,
+  "genres": [
+   18
+  ],
   "platform": "Youku",
   "runtime": [],
   "status": "Returning Series"
  },
  "262932": {
   "episodes": 37,
+  "genres": [
+   18,
+   10759,
+   9648
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
  },
  "270431": {
   "episodes": 27,
+  "genres": [
+   18
+  ],
   "platform": "iQiyi",
   "runtime": [],
   "status": "Ended"
  },
  "278577": {
   "episodes": 36,
+  "genres": [
+   18
+  ],
   "platform": "Tencent Video",
   "runtime": [
    45
@@ -254,6 +390,10 @@
  },
  "279041": {
   "episodes": 29,
+  "genres": [
+   18,
+   10759
+  ],
   "platform": "iQiyi",
   "runtime": [
    40
@@ -262,6 +402,9 @@
  },
  "279155": {
   "episodes": 30,
+  "genres": [
+   18
+  ],
   "platform": "CCTV-8",
   "runtime": [
    46
@@ -270,6 +413,11 @@
  },
  "279388": {
   "episodes": 40,
+  "genres": [
+   18,
+   10759,
+   10768
+  ],
   "platform": "iQiyi",
   "runtime": [
    45
@@ -278,6 +426,11 @@
  },
  "280632": {
   "episodes": 32,
+  "genres": [
+   18,
+   9648,
+   35
+  ],
   "platform": "iQiyi",
   "runtime": [
    40
@@ -286,12 +439,19 @@
  },
  "282326": {
   "episodes": 47,
+  "genres": [
+   18,
+   10751
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
  },
  "293371": {
   "episodes": 470,
+  "genres": [
+   18
+  ],
   "platform": "iQiyi",
   "runtime": [
    2
@@ -300,36 +460,55 @@
  },
  "299952": {
   "episodes": 24,
+  "genres": [
+   18
+  ],
   "platform": "Youku",
   "runtime": [],
   "status": "Ended"
  },
  "300146": {
   "episodes": 30,
+  "genres": [
+   18
+  ],
   "platform": "CCTV-8",
   "runtime": [],
   "status": "Ended"
  },
  "304452": {
   "episodes": 40,
+  "genres": [
+   18
+  ],
   "platform": "Hunan Television",
   "runtime": [],
   "status": "Ended"
  },
  "307853": {
   "episodes": 24,
+  "genres": [
+   18
+  ],
   "platform": "Hunan Television",
   "runtime": [],
   "status": "Ended"
  },
  "312661": {
   "episodes": 8,
+  "genres": [
+   18
+  ],
   "platform": "Netflix",
   "runtime": [],
   "status": "Returning Series"
  },
  "32231": {
   "episodes": 217,
+  "genres": [
+   18,
+   10768
+  ],
   "platform": "iQiyi",
   "runtime": [
    45
@@ -338,6 +517,10 @@
  },
  "37681": {
   "episodes": 81,
+  "genres": [
+   10759,
+   18
+  ],
   "platform": "Hunan Television",
   "runtime": [
    50
@@ -346,6 +529,10 @@
  },
  "40521": {
   "episodes": 367,
+  "genres": [
+   35,
+   10751
+  ],
   "platform": "Beijing Television",
   "runtime": [
    25
@@ -354,6 +541,10 @@
  },
  "41146": {
   "episodes": 80,
+  "genres": [
+   10768,
+   18
+  ],
   "platform": "Anhui Television",
   "runtime": [
    45
@@ -362,6 +553,10 @@
  },
  "4285": {
   "episodes": 112,
+  "genres": [
+   18,
+   35
+  ],
   "platform": "TVB Jade",
   "runtime": [
    45
@@ -370,6 +565,10 @@
  },
  "44277": {
   "episodes": 212,
+  "genres": [
+   18,
+   9648
+  ],
   "platform": "CCTV-8",
   "runtime": [
    45
@@ -378,6 +577,10 @@
  },
  "48361": {
   "episodes": 108,
+  "genres": [
+   9648,
+   18
+  ],
   "platform": "Youku",
   "runtime": [
    47
@@ -386,6 +589,10 @@
  },
  "49036": {
   "episodes": 849,
+  "genres": [
+   10751,
+   35
+  ],
   "platform": "Beijing Television",
   "runtime": [
    45
@@ -394,6 +601,9 @@
  },
  "49203": {
   "episodes": 72,
+  "genres": [
+   18
+  ],
   "platform": "CCTV-1",
   "runtime": [
    45
@@ -402,6 +612,9 @@
  },
  "50878": {
   "episodes": 76,
+  "genres": [
+   18
+  ],
   "platform": "Dragon Television",
   "runtime": [
    45
@@ -410,6 +623,10 @@
  },
  "51821": {
   "episodes": 236,
+  "genres": [
+   10765,
+   9648
+  ],
   "platform": "CTS",
   "runtime": [
    47
@@ -418,6 +635,9 @@
  },
  "52453": {
   "episodes": 125,
+  "genres": [
+   9648
+  ],
   "platform": "TVB Jade",
   "runtime": [
    45
@@ -426,6 +646,9 @@
  },
  "61988": {
   "episodes": 96,
+  "genres": [
+   18
+  ],
   "platform": "Hunan Television",
   "runtime": [
    45
@@ -434,6 +657,9 @@
  },
  "64197": {
   "episodes": 104,
+  "genres": [
+   18
+  ],
   "platform": "iQiyi",
   "runtime": [
    45
@@ -442,6 +668,11 @@
  },
  "64709": {
   "episodes": 81,
+  "genres": [
+   35,
+   18,
+   10751
+  ],
   "platform": "CCTV-8",
   "runtime": [
    47
@@ -450,6 +681,9 @@
  },
  "65255": {
   "episodes": 81,
+  "genres": [
+   18
+  ],
   "platform": "Beijing Television",
   "runtime": [
    45
@@ -458,6 +692,9 @@
  },
  "66370": {
   "episodes": 201,
+  "genres": [
+   18
+  ],
   "platform": "CCTV-8",
   "runtime": [
    40
@@ -466,6 +703,11 @@
  },
  "67015": {
   "episodes": 78,
+  "genres": [
+   18,
+   10765,
+   10768
+  ],
   "platform": "Hunan Television",
   "runtime": [
    45
@@ -474,6 +716,10 @@
  },
  "68809": {
   "episodes": 124,
+  "genres": [
+   18,
+   35
+  ],
   "platform": "Guangdong Television",
   "runtime": [
    45
@@ -482,6 +728,9 @@
  },
  "70030": {
   "episodes": 92,
+  "genres": [
+   18
+  ],
   "platform": "Beijing Television",
   "runtime": [
    45
@@ -490,6 +739,9 @@
  },
  "71673": {
   "episodes": 67,
+  "genres": [
+   18
+  ],
   "platform": "Hunan Television",
   "runtime": [
    45
@@ -498,6 +750,10 @@
  },
  "72311": {
   "episodes": 86,
+  "genres": [
+   18,
+   10768
+  ],
   "platform": "Jiangsu Television",
   "runtime": [
    45
@@ -506,6 +762,10 @@
  },
  "72645": {
   "episodes": 84,
+  "genres": [
+   18,
+   10768
+  ],
   "platform": "CCTV-1",
   "runtime": [
    45
@@ -514,6 +774,9 @@
  },
  "73625": {
   "episodes": 74,
+  "genres": [
+   18
+  ],
   "platform": "Jiangsu Television",
   "runtime": [
    45
@@ -522,6 +785,9 @@
  },
  "78132": {
   "episodes": 43,
+  "genres": [
+   18
+  ],
   "platform": "CCTV-1",
   "runtime": [
    46
@@ -530,6 +796,10 @@
  },
  "78199": {
   "episodes": 165,
+  "genres": [
+   18,
+   35
+  ],
   "platform": "Beijing Television",
   "runtime": [
    45
@@ -538,6 +808,9 @@
  },
  "81133": {
   "episodes": 70,
+  "genres": [
+   18
+  ],
   "platform": "iQiyi",
   "runtime": [
    45
@@ -546,12 +819,20 @@
  },
  "81500": {
   "episodes": 45,
+  "genres": [
+   10765,
+   10759
+  ],
   "platform": "Hunan Television",
   "runtime": [],
   "status": "Ended"
  },
  "81502": {
   "episodes": 78,
+  "genres": [
+   18,
+   10751
+  ],
   "platform": "Hunan Television",
   "runtime": [
    45
@@ -560,12 +841,20 @@
  },
  "81769": {
   "episodes": 87,
+  "genres": [
+   18
+  ],
   "platform": "Tencent Video",
   "runtime": [],
   "status": "Ended"
  },
  "83612": {
   "episodes": 103,
+  "genres": [
+   10759,
+   18,
+   10765
+  ],
   "platform": "Tencent Video",
   "runtime": [
    45
@@ -574,6 +863,10 @@
  },
  "84634": {
   "episodes": 86,
+  "genres": [
+   18,
+   10759
+  ],
   "platform": "Tianjin Television",
   "runtime": [
    60
@@ -582,6 +875,9 @@
  },
  "84856": {
   "episodes": 119,
+  "genres": [
+   18
+  ],
   "platform": "Beijing Television",
   "runtime": [
    45
@@ -590,6 +886,9 @@
  },
  "91066": {
   "episodes": 172,
+  "genres": [
+   18
+  ],
   "platform": "Tencent Video",
   "runtime": [
    49
@@ -598,6 +897,12 @@
  },
  "95842": {
   "episodes": 83,
+  "genres": [
+   18,
+   35,
+   10765,
+   10768
+  ],
   "platform": "CCTV-8",
   "runtime": [
    45
@@ -606,6 +911,9 @@
  },
  "96000": {
   "episodes": 86,
+  "genres": [
+   18
+  ],
   "platform": "CTV",
   "runtime": [
    45
