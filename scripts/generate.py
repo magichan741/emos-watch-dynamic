@@ -978,13 +978,20 @@ def discover_movie(client, cfg=None):
 
 def build_payload(name, items, max_items, cover_override, now_str):
     trimmed = items[:max_items]
+    n = len(trimmed)
     videos = []
     for idx, it in enumerate(trimmed):
+        # 规范要求 sort 落在 1-100；超过 100 条时按名次等比例映射到该区间，
+        # 保证 sort 单调不减、相对顺序不乱（旧写法会把 100 名之后全压成 100）
+        if n <= 100:
+            s = idx + 1
+        else:
+            s = int(round(1 + (idx * 99.0) / (n - 1)))
         videos.append({
             "tmdb_id": int(it["tmdb_id"]),
             "tmdb_type": it["tmdb_type"],
             "title": it["title"][:120],
-            "sort": min(idx + 1, 100),   # 规范要求 1-100，越小越靠前
+            "sort": max(1, min(100, s)),
         })
     if cover_override:
         cover = cover_override
