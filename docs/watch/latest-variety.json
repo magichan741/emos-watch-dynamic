@@ -1,7 +1,7 @@
 {
   "name": "最新热播综艺",
   "cover": "https://image.tmdb.org/t/p/w780/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
-  "updated_at": "2026-11-26 02:43:18",
+  "updated_at": "2026-11-26 13:21:24",
   "videos": [
     {
       "tmdb_id": 154770,
@@ -124,15 +124,15 @@
       "sort": 20
     },
     {
-      "tmdb_id": 338938,
-      "tmdb_type": "tv",
-      "title": "后会友期",
-      "sort": 21
-    },
-    {
       "tmdb_id": 108433,
       "tmdb_type": "tv",
       "title": "十三邀",
+      "sort": 21
+    },
+    {
+      "tmdb_id": 338938,
+      "tmdb_type": "tv",
+      "title": "后会友期",
       "sort": 22
     },
     {
@@ -172,15 +172,15 @@
       "sort": 28
     },
     {
-      "tmdb_id": 207023,
-      "tmdb_type": "tv",
-      "title": "鲁健访谈",
-      "sort": 29
-    },
-    {
       "tmdb_id": 239038,
       "tmdb_type": "tv",
       "title": "爱的修学旅行",
+      "sort": 29
+    },
+    {
+      "tmdb_id": 207023,
+      "tmdb_type": "tv",
+      "title": "鲁健访谈",
       "sort": 30
     }
   ]

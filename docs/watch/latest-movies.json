@@ -1,7 +1,7 @@
 {
   "name": "最新电影",
   "cover": "https://image.tmdb.org/t/p/w780/jsAhBolI6Rn9Iva635bNf27rJc2.jpg",
-  "updated_at": "2026-11-26 02:43:18",
+  "updated_at": "2026-11-26 13:21:24",
   "videos": [
     {
       "tmdb_id": 1538497,
@@ -136,10 +136,16 @@
       "sort": 6
     },
     {
+      "tmdb_id": 1381273,
+      "tmdb_type": "movie",
+      "title": "纸老虎",
+      "sort": 6
+    },
+    {
       "tmdb_id": 1314786,
       "tmdb_type": "movie",
       "title": "谍杀风暴",
-      "sort": 6
+      "sort": 7
     },
     {
       "tmdb_id": 1780407,
@@ -163,7 +169,7 @@
       "tmdb_id": 1615596,
       "tmdb_type": "movie",
       "title": "全县最棒的煎饼",
-      "sort": 7
+      "sort": 8
     },
     {
       "tmdb_id": 1544126,
@@ -187,7 +193,7 @@
       "tmdb_id": 1772726,
       "tmdb_type": "movie",
       "title": "忏悔",
-      "sort": 8
+      "sort": 9
     },
     {
       "tmdb_id": 1664682,
@@ -211,7 +217,7 @@
       "tmdb_id": 1559980,
       "tmdb_type": "movie",
       "title": "圣诞福音颂",
-      "sort": 9
+      "sort": 10
     },
     {
       "tmdb_id": 1429602,
@@ -235,7 +241,7 @@
       "tmdb_id": 1820172,
       "tmdb_type": "movie",
       "title": "詹妮尔·詹姆斯：超浪漫",
-      "sort": 10
+      "sort": 11
     },
     {
       "tmdb_id": 1437511,
@@ -259,7 +265,7 @@
       "tmdb_id": 1794569,
       "tmdb_type": "movie",
       "title": "无人守护：枕边杀局",
-      "sort": 11
+      "sort": 12
     },
     {
       "tmdb_id": 1666787,
@@ -283,7 +289,7 @@
       "tmdb_id": 1286656,
       "tmdb_type": "movie",
       "title": "我演洛奇",
-      "sort": 12
+      "sort": 13
     },
     {
       "tmdb_id": 1050981,
@@ -300,14 +306,14 @@
     {
       "tmdb_id": 1697911,
       "tmdb_type": "movie",
-      "title": "Drummer Boy",
+      "title": "鼓手男孩",
       "sort": 13
     },
     {
       "tmdb_id": 1654940,
       "tmdb_type": "movie",
       "title": "余命一年买男人",
-      "sort": 13
+      "sort": 14
     },
     {
       "tmdb_id": 1583853,
@@ -331,7 +337,7 @@
       "tmdb_id": 1402181,
       "tmdb_type": "movie",
       "title": "சீன்",
-      "sort": 14
+      "sort": 15
     },
     {
       "tmdb_id": 1307474,
@@ -355,7 +361,7 @@
       "tmdb_id": 1753205,
       "tmdb_type": "movie",
       "title": "Rammstein: Live in Mexico City",
-      "sort": 15
+      "sort": 16
     },
     {
       "tmdb_id": 1649403,
@@ -379,7 +385,7 @@
       "tmdb_id": 1585239,
       "tmdb_type": "movie",
       "title": "夜店小子",
-      "sort": 16
+      "sort": 17
     },
     {
       "tmdb_id": 1570488,
@@ -403,7 +409,7 @@
       "tmdb_id": 1381071,
       "tmdb_type": "movie",
       "title": "哥斯拉-0.0",
-      "sort": 17
+      "sort": 18
     },
     {
       "tmdb_id": 1796880,
@@ -427,7 +433,7 @@
       "tmdb_id": 1117898,
       "tmdb_type": "movie",
       "title": "戴帽子的猫",
-      "sort": 18
+      "sort": 19
     },
     {
       "tmdb_id": 1789549,
@@ -451,7 +457,7 @@
       "tmdb_id": 1532997,
       "tmdb_type": "movie",
       "title": "亡者狼嚎",
-      "sort": 19
+      "sort": 20
     },
     {
       "tmdb_id": 891621,
@@ -475,7 +481,7 @@
       "tmdb_id": 1657630,
       "tmdb_type": "movie",
       "title": "邪灵苏醒",
-      "sort": 20
+      "sort": 21
     },
     {
       "tmdb_id": 1541477,
@@ -499,7 +505,7 @@
       "tmdb_id": 1294189,
       "tmdb_type": "movie",
       "title": "猫鼬",
-      "sort": 21
+      "sort": 22
     },
     {
       "tmdb_id": 939541,
@@ -522,8 +528,8 @@
     {
       "tmdb_id": 1496696,
       "tmdb_type": "movie",
-      "title": "繁殖者",
-      "sort": 22
+      "title": "育种师",
+      "sort": 23
     },
     {
       "tmdb_id": 1468846,
@@ -547,7 +553,7 @@
       "tmdb_id": 1596275,
       "tmdb_type": "movie",
       "title": "假面恋人：换档追爱",
-      "sort": 23
+      "sort": 24
     },
     {
       "tmdb_id": 1773380,
@@ -571,12 +577,12 @@
       "tmdb_id": 1689329,
       "tmdb_type": "movie",
       "title": "Leones en invierno",
-      "sort": 24
+      "sort": 25
     },
     {
       "tmdb_id": 1643567,
       "tmdb_type": "movie",
-      "title": "Ghosts: The Possession of Button House",
+      "title": "古宅老友记：巴顿庄园鬼上身",
       "sort": 25
     },
     {
@@ -595,7 +601,7 @@
       "tmdb_id": 1371730,
       "tmdb_type": "movie",
       "title": "爱语",
-      "sort": 25
+      "sort": 26
     },
     {
       "tmdb_id": 1084409,
@@ -619,7 +625,7 @@
       "tmdb_id": 1606527,
       "tmdb_type": "movie",
       "title": "418",
-      "sort": 26
+      "sort": 27
     },
     {
       "tmdb_id": 1525072,
@@ -643,7 +649,7 @@
       "tmdb_id": 1660660,
       "tmdb_type": "movie",
       "title": "Marie Madeleine",
-      "sort": 27
+      "sort": 28
     },
     {
       "tmdb_id": 1584855,
@@ -667,7 +673,7 @@
       "tmdb_id": 1480856,
       "tmdb_type": "movie",
       "title": "命悬一线",
-      "sort": 28
+      "sort": 29
     },
     {
       "tmdb_id": 1437981,
@@ -691,7 +697,7 @@
       "tmdb_id": 1154730,
       "tmdb_type": "movie",
       "title": "行走之人",
-      "sort": 29
+      "sort": 30
     },
     {
       "tmdb_id": 858035,
@@ -715,7 +721,7 @@
       "tmdb_id": 1815524,
       "tmdb_type": "movie",
       "title": "Azzurrina – Oltre il tempo",
-      "sort": 30
+      "sort": 31
     },
     {
       "tmdb_id": 1176778,
@@ -739,7 +745,7 @@
       "tmdb_id": 1773759,
       "tmdb_type": "movie",
       "title": "单身多专家",
-      "sort": 31
+      "sort": 32
     },
     {
       "tmdb_id": 1765072,
@@ -763,7 +769,7 @@
       "tmdb_id": 1561726,
       "tmdb_type": "movie",
       "title": "偷天父子兵",
-      "sort": 32
+      "sort": 33
     },
     {
       "tmdb_id": 1536343,
@@ -787,7 +793,7 @@
       "tmdb_id": 1623256,
       "tmdb_type": "movie",
       "title": "风暴生日宴",
-      "sort": 33
+      "sort": 34
     },
     {
       "tmdb_id": 1477572,
@@ -817,7 +823,7 @@
       "tmdb_id": 1241803,
       "tmdb_type": "movie",
       "title": "悲惨世界",
-      "sort": 34
+      "sort": 35
     },
     {
       "tmdb_id": 1234139,
@@ -841,7 +847,7 @@
       "tmdb_id": 1783629,
       "tmdb_type": "movie",
       "title": "迈克尔·彻：爆笑明尼苏达",
-      "sort": 35
+      "sort": 36
     },
     {
       "tmdb_id": 1727317,
@@ -865,7 +871,7 @@
       "tmdb_id": 1796809,
       "tmdb_type": "movie",
       "title": "保持冷静",
-      "sort": 36
+      "sort": 37
     },
     {
       "tmdb_id": 1790935,
@@ -889,7 +895,7 @@
       "tmdb_id": 1798852,
       "tmdb_type": "movie",
       "title": "Angelo Pintus in Nabana",
-      "sort": 37
+      "sort": 38
     },
     {
       "tmdb_id": 1794652,
@@ -913,7 +919,7 @@
       "tmdb_id": 1792591,
       "tmdb_type": "movie",
       "title": "Ateş",
-      "sort": 38
+      "sort": 39
     },
     {
       "tmdb_id": 1742441,
@@ -937,7 +943,7 @@
       "tmdb_id": 1507696,
       "tmdb_type": "movie",
       "title": "天启Z：新世界",
-      "sort": 39
+      "sort": 40
     },
     {
       "tmdb_id": 1443151,
@@ -961,7 +967,7 @@
       "tmdb_id": 1381221,
       "tmdb_type": "movie",
       "title": "米斯蒂·格林",
-      "sort": 40
+      "sort": 41
     },
     {
       "tmdb_id": 1288069,
@@ -985,7 +991,7 @@
       "tmdb_id": 1792069,
       "tmdb_type": "movie",
       "title": "La última semana de Jesús",
-      "sort": 41
+      "sort": 42
     },
     {
       "tmdb_id": 1791526,
@@ -1009,7 +1015,7 @@
       "tmdb_id": 1639616,
       "tmdb_type": "movie",
       "title": "Zustìssia",
-      "sort": 42
+      "sort": 43
     },
     {
       "tmdb_id": 1523898,
@@ -1033,7 +1039,7 @@
       "tmdb_id": 1185344,
       "tmdb_type": "movie",
       "title": "野兽座驾",
-      "sort": 43
+      "sort": 44
     },
     {
       "tmdb_id": 1634905,
@@ -1057,7 +1063,7 @@
       "tmdb_id": 1429592,
       "tmdb_type": "movie",
       "title": "杰出的无名氏",
-      "sort": 44
+      "sort": 45
     },
     {
       "tmdb_id": 1429581,
@@ -1081,7 +1087,7 @@
       "tmdb_id": 1281331,
       "tmdb_type": "movie",
       "title": "社交清算",
-      "sort": 45
+      "sort": 46
     },
     {
       "tmdb_id": 1001405,
@@ -1105,7 +1111,7 @@
       "tmdb_id": 1148365,
       "tmdb_type": "movie",
       "title": "火柴盒大电影",
-      "sort": 46
+      "sort": 47
     },
     {
       "tmdb_id": 1752355,
@@ -1129,7 +1135,7 @@
       "tmdb_id": 1610703,
       "tmdb_type": "movie",
       "title": "病院尸录",
-      "sort": 47
+      "sort": 48
     },
     {
       "tmdb_id": 1596303,
@@ -1153,7 +1159,7 @@
       "tmdb_id": 1458857,
       "tmdb_type": "movie",
       "title": "只要活下去",
-      "sort": 48
+      "sort": 49
     },
     {
       "tmdb_id": 1401433,
@@ -1177,7 +1183,7 @@
       "tmdb_id": 1290035,
       "tmdb_type": "movie",
       "title": "അവറാച്ചൻ & Sons",
-      "sort": 49
+      "sort": 50
     },
     {
       "tmdb_id": 1269325,
@@ -1201,7 +1207,7 @@
       "tmdb_id": 1736490,
       "tmdb_type": "movie",
       "title": "کمی نور",
-      "sort": 50
+      "sort": 51
     },
     {
       "tmdb_id": 1676129,
@@ -1225,7 +1231,7 @@
       "tmdb_id": 1515692,
       "tmdb_type": "movie",
       "title": "禁闭洗手间",
-      "sort": 51
+      "sort": 52
     },
     {
       "tmdb_id": 1477583,
@@ -1249,7 +1255,7 @@
       "tmdb_id": 1758536,
       "tmdb_type": "movie",
       "title": "鳏夫疑案：至死不渝",
-      "sort": 52
+      "sort": 53
     },
     {
       "tmdb_id": 1514891,
@@ -1273,7 +1279,7 @@
       "tmdb_id": 1321666,
       "tmdb_type": "movie",
       "title": "娃娃",
-      "sort": 53
+      "sort": 54
     },
     {
       "tmdb_id": 1318864,
@@ -1297,7 +1303,7 @@
       "tmdb_id": 1767073,
       "tmdb_type": "movie",
       "title": "更好的自己",
-      "sort": 54
+      "sort": 55
     },
     {
       "tmdb_id": 1757386,
@@ -1321,7 +1327,7 @@
       "tmdb_id": 1248832,
       "tmdb_type": "movie",
       "title": "挖掘者",
-      "sort": 55
+      "sort": 56
     },
     {
       "tmdb_id": 1643768,
@@ -1345,7 +1351,7 @@
       "tmdb_id": 1755291,
       "tmdb_type": "movie",
       "title": "附带伤亡",
-      "sort": 56
+      "sort": 57
     },
     {
       "tmdb_id": 1735270,
@@ -1369,7 +1375,7 @@
       "tmdb_id": 1578079,
       "tmdb_type": "movie",
       "title": "多萝西",
-      "sort": 57
+      "sort": 58
     },
     {
       "tmdb_id": 1571766,
@@ -1393,7 +1399,7 @@
       "tmdb_id": 1492640,
       "tmdb_type": "movie",
       "title": "大学炸弹客",
-      "sort": 58
+      "sort": 59
     },
     {
       "tmdb_id": 1437396,
@@ -1417,7 +1423,7 @@
       "tmdb_id": 1232113,
       "tmdb_type": "movie",
       "title": "Pauline Julien: Femme pays",
-      "sort": 59
+      "sort": 60
     },
     {
       "tmdb_id": 1089598,
@@ -1441,7 +1447,7 @@
       "tmdb_id": 1750432,
       "tmdb_type": "movie",
       "title": "Spidey and the Avengers: Halloween Team-Up!",
-      "sort": 60
+      "sort": 61
     },
     {
       "tmdb_id": 1594043,
@@ -1465,7 +1471,7 @@
       "tmdb_id": 1314122,
       "tmdb_type": "movie",
       "title": "血腥网球",
-      "sort": 61
+      "sort": 62
     },
     {
       "tmdb_id": 1290418,
@@ -1489,7 +1495,7 @@
       "tmdb_id": 1126097,
       "tmdb_type": "movie",
       "title": "查理与哈珀",
-      "sort": 62
+      "sort": 63
     },
     {
       "tmdb_id": 1720724,
@@ -1513,12 +1519,12 @@
       "tmdb_id": 1503762,
       "tmdb_type": "movie",
       "title": "理智与情感",
-      "sort": 63
+      "sort": 64
     },
     {
       "tmdb_id": 1483525,
       "tmdb_type": "movie",
-      "title": "可能的爱",
+      "title": "假如爱有如果",
       "sort": 64
     },
     {
@@ -1537,7 +1543,7 @@
       "tmdb_id": 1376856,
       "tmdb_type": "movie",
       "title": "乐土之战",
-      "sort": 64
+      "sort": 65
     },
     {
       "tmdb_id": 1375441,
@@ -1561,7 +1567,7 @@
       "tmdb_id": 1032863,
       "tmdb_type": "movie",
       "title": "爱情假说",
-      "sort": 65
+      "sort": 66
     },
     {
       "tmdb_id": 1607127,
@@ -1585,7 +1591,7 @@
       "tmdb_id": 1760576,
       "tmdb_type": "movie",
       "title": "扎基尔·汗：亦父亦友",
-      "sort": 66
+      "sort": 67
     },
     {
       "tmdb_id": 1706702,
@@ -1615,7 +1621,7 @@
       "tmdb_id": 1514863,
       "tmdb_type": "movie",
       "title": "最佳舞伴",
-      "sort": 67
+      "sort": 68
     },
     {
       "tmdb_id": 1513253,
@@ -1639,7 +1645,7 @@
       "tmdb_id": 1021848,
       "tmdb_type": "movie",
       "title": "茫然女王",
-      "sort": 68
+      "sort": 69
     },
     {
       "tmdb_id": 1764166,
@@ -1663,7 +1669,7 @@
       "tmdb_id": 1654566,
       "tmdb_type": "movie",
       "title": "废柴救国",
-      "sort": 69
+      "sort": 70
     },
     {
       "tmdb_id": 1564324,
@@ -1687,7 +1693,7 @@
       "tmdb_id": 1473148,
       "tmdb_type": "movie",
       "title": "温柔的怪物",
-      "sort": 70
+      "sort": 71
     },
     {
       "tmdb_id": 1466670,
@@ -1711,7 +1717,7 @@
       "tmdb_id": 1191818,
       "tmdb_type": "movie",
       "title": "夜之寓言",
-      "sort": 71
+      "sort": 72
     },
     {
       "tmdb_id": 607833,
@@ -1735,7 +1741,7 @@
       "tmdb_id": 1643135,
       "tmdb_type": "movie",
       "title": "校园大逃杀2：篝火行动",
-      "sort": 72
+      "sort": 73
     },
     {
       "tmdb_id": 1318467,
@@ -1759,7 +1765,7 @@
       "tmdb_id": 1760040,
       "tmdb_type": "movie",
       "title": "102 Minutes: Inside the Towers",
-      "sort": 73
+      "sort": 74
     },
     {
       "tmdb_id": 1701141,
@@ -1783,7 +1789,7 @@
       "tmdb_id": 1596248,
       "tmdb_type": "movie",
       "title": "如果我走了，谁会想念我",
-      "sort": 74
+      "sort": 75
     },
     {
       "tmdb_id": 1591675,
@@ -1807,7 +1813,7 @@
       "tmdb_id": 1513475,
       "tmdb_type": "movie",
       "title": "ആശ",
-      "sort": 75
+      "sort": 76
     },
     {
       "tmdb_id": 1497946,
@@ -1831,7 +1837,7 @@
       "tmdb_id": 1743695,
       "tmdb_type": "movie",
       "title": "El Club del Pie Izquierdo",
-      "sort": 76
+      "sort": 77
     },
     {
       "tmdb_id": 1645164,
@@ -1855,7 +1861,7 @@
       "tmdb_id": 1465943,
       "tmdb_type": "movie",
       "title": "மண்டாடி",
-      "sort": 77
+      "sort": 78
     },
     {
       "tmdb_id": 1465063,
@@ -1879,7 +1885,7 @@
       "tmdb_id": 1228834,
       "tmdb_type": "movie",
       "title": "拨乱行动",
-      "sort": 78
+      "sort": 79
     },
     {
       "tmdb_id": 1198654,
@@ -1903,7 +1909,7 @@
       "tmdb_id": 1666700,
       "tmdb_type": "movie",
       "title": "Les Survivants du Che",
-      "sort": 79
+      "sort": 80
     },
     {
       "tmdb_id": 1447853,
@@ -1927,7 +1933,7 @@
       "tmdb_id": 1302904,
       "tmdb_type": "movie",
       "title": "魔法情缘",
-      "sort": 80
+      "sort": 81
     },
     {
       "tmdb_id": 1258181,
@@ -1951,7 +1957,7 @@
       "tmdb_id": 1739206,
       "tmdb_type": "movie",
       "title": "体坛秘史：T先生的硬派人生",
-      "sort": 81
+      "sort": 82
     },
     {
       "tmdb_id": 1733908,
@@ -1975,7 +1981,7 @@
       "tmdb_id": 1653720,
       "tmdb_type": "movie",
       "title": "恶灵之锁",
-      "sort": 82
+      "sort": 83
     },
     {
       "tmdb_id": 1377237,
@@ -1999,7 +2005,7 @@
       "tmdb_id": 1743704,
       "tmdb_type": "movie",
       "title": "Haunted Harmony Mysteries: Prelude to a Wedding",
-      "sort": 83
+      "sort": 84
     },
     {
       "tmdb_id": 1702575,
@@ -2023,7 +2029,7 @@
       "tmdb_id": 1712451,
       "tmdb_type": "movie",
       "title": "生化杀机",
-      "sort": 84
+      "sort": 85
     },
     {
       "tmdb_id": 1702462,
@@ -2047,7 +2053,7 @@
       "tmdb_id": 1549315,
       "tmdb_type": "movie",
       "title": "Cronos",
-      "sort": 85
+      "sort": 86
     },
     {
       "tmdb_id": 1530121,
@@ -2071,7 +2077,7 @@
       "tmdb_id": 1572116,
       "tmdb_type": "movie",
       "title": "米娅与怪物学院",
-      "sort": 86
+      "sort": 87
     },
     {
       "tmdb_id": 1553672,
@@ -2095,7 +2101,7 @@
       "tmdb_id": 1486475,
       "tmdb_type": "movie",
       "title": "恶未眠",
-      "sort": 87
+      "sort": 88
     },
     {
       "tmdb_id": 1386315,
@@ -2119,7 +2125,7 @@
       "tmdb_id": 1257147,
       "tmdb_type": "movie",
       "title": "熟龄闺蜜出走记",
-      "sort": 88
+      "sort": 89
     },
     {
       "tmdb_id": 1250502,
@@ -2143,7 +2149,7 @@
       "tmdb_id": 1731694,
       "tmdb_type": "movie",
       "title": "乐高星球大战：曼达洛人",
-      "sort": 89
+      "sort": 90
     },
     {
       "tmdb_id": 1437948,
@@ -2167,7 +2173,7 @@
       "tmdb_id": 1340065,
       "tmdb_type": "movie",
       "title": "My Notes on Mars",
-      "sort": 90
+      "sort": 91
     },
     {
       "tmdb_id": 1284046,
@@ -2191,7 +2197,7 @@
       "tmdb_id": 1742458,
       "tmdb_type": "movie",
       "title": "分娩监禁",
-      "sort": 91
+      "sort": 92
     },
     {
       "tmdb_id": 1739202,
@@ -2215,7 +2221,7 @@
       "tmdb_id": 1482547,
       "tmdb_type": "movie",
       "title": "滑索惊魂",
-      "sort": 92
+      "sort": 93
     },
     {
       "tmdb_id": 1519320,
@@ -2239,7 +2245,7 @@
       "tmdb_id": 1365884,
       "tmdb_type": "movie",
       "title": "百分之十：电影版",
-      "sort": 93
+      "sort": 94
     },
     {
       "tmdb_id": 1748756,
@@ -2263,7 +2269,7 @@
       "tmdb_id": 1517111,
       "tmdb_type": "movie",
       "title": "Boorman and the Devil",
-      "sort": 94
+      "sort": 95
     },
     {
       "tmdb_id": 1490214,
@@ -2287,7 +2293,7 @@
       "tmdb_id": 1383750,
       "tmdb_type": "movie",
       "title": "从足球流氓到黑帮崛起7",
-      "sort": 95
+      "sort": 96
     },
     {
       "tmdb_id": 1314279,
@@ -2311,7 +2317,7 @@
       "tmdb_id": 1758110,
       "tmdb_type": "movie",
       "title": "Terminator, des machines et des hommes... et une femme",
-      "sort": 96
+      "sort": 97
     },
     {
       "tmdb_id": 1752312,
@@ -2335,7 +2341,7 @@
       "tmdb_id": 1514026,
       "tmdb_type": "movie",
       "title": "逃出布迪秀",
-      "sort": 97
+      "sort": 98
     },
     {
       "tmdb_id": 1479846,
@@ -2359,12 +2365,12 @@
       "tmdb_id": 1462861,
       "tmdb_type": "movie",
       "title": "邪蛛海滩",
-      "sort": 98
+      "sort": 99
     },
     {
       "tmdb_id": 1403676,
       "tmdb_type": "movie",
-      "title": "April X",
+      "title": "消失的艾普尔",
       "sort": 99
     },
     {
@@ -2383,7 +2389,7 @@
       "tmdb_id": 1516698,
       "tmdb_type": "movie",
       "title": "最后的曙光",
-      "sort": 99
+      "sort": 100
     },
     {
       "tmdb_id": 1417935,
@@ -2395,12 +2401,6 @@
       "tmdb_id": 1384216,
       "tmdb_type": "movie",
       "title": "末世行者",
-      "sort": 100
-    },
-    {
-      "tmdb_id": 1235769,
-      "tmdb_type": "movie",
-      "title": "庆州纪行",
       "sort": 100
     }
   ]
