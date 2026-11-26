@@ -790,6 +790,18 @@
   ],
   "runtime": []
  },
+ "278927": {
+  "episodes": 40,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "CCTV-8",
+   "iQiyi",
+   "Youku"
+  ],
+  "runtime": []
+ },
  "279041": {
   "episodes": 29,
   "genres": [
@@ -1203,6 +1215,17 @@
   ],
   "networks": [
    "Prime Video"
+  ],
+  "runtime": []
+ },
+ "289139": {
+  "episodes": 33,
+  "genres": [
+   18
+  ],
+  "networks": [
+   "iQiyi",
+   "Tencent Video"
   ],
   "runtime": []
  },
