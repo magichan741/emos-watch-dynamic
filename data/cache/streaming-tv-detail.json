@@ -1002,6 +1002,20 @@
   ],
   "runtime": []
  },
+ "283952": {
+  "episodes": 40,
+  "genres": [
+   18,
+   10768
+  ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
+  ],
+  "runtime": [
+   45
+  ]
+ },
  "284558": {
   "episodes": 8,
   "genres": [
@@ -1396,6 +1410,18 @@
   ],
   "networks": [
    "SBS"
+  ],
+  "runtime": []
+ },
+ "295509": {
+  "episodes": 12,
+  "genres": [
+   10765,
+   35,
+   18
+  ],
+  "networks": [
+   "tvN"
   ],
   "runtime": []
  },
