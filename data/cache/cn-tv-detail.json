@@ -445,6 +445,22 @@
   "runtime": [],
   "status": "Ended"
  },
+ "272130": {
+  "episodes": 10,
+  "genres": [
+   80,
+   18
+  ],
+  "networks": [
+   "PTS",
+   "Disney+",
+   "Hami Video",
+   "PTS+"
+  ],
+  "platform": "PTS",
+  "runtime": [],
+  "status": "Ended"
+ },
  "272938": {
   "episodes": 30,
   "genres": [

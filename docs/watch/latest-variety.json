@@ -1,7 +1,7 @@
 {
   "name": "最新热播综艺",
   "cover": "https://image.tmdb.org/t/p/w780/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
-  "updated_at": "2026-11-28 12:53:39",
+  "updated_at": "2026-11-29 01:01:29",
   "videos": [
     {
       "tmdb_id": 154770,
@@ -118,21 +118,21 @@
       "sort": 19
     },
     {
-      "tmdb_id": 259700,
-      "tmdb_type": "tv",
-      "title": "忙忙碌碌寻宝藏",
-      "sort": 20
-    },
-    {
       "tmdb_id": 296217,
       "tmdb_type": "tv",
       "title": "一饭封神",
+      "sort": 20
+    },
+    {
+      "tmdb_id": 259700,
+      "tmdb_type": "tv",
+      "title": "忙忙碌碌寻宝藏",
       "sort": 21
     },
     {
-      "tmdb_id": 94773,
+      "tmdb_id": 215280,
       "tmdb_type": "tv",
-      "title": "舞蹈新风暴",
+      "title": "南波万的聚会",
       "sort": 22
     },
     {
@@ -142,9 +142,9 @@
       "sort": 23
     },
     {
-      "tmdb_id": 215280,
+      "tmdb_id": 94773,
       "tmdb_type": "tv",
-      "title": "南波万的聚会",
+      "title": "舞蹈新风暴",
       "sort": 24
     },
     {
@@ -154,27 +154,27 @@
       "sort": 25
     },
     {
-      "tmdb_id": 207023,
-      "tmdb_type": "tv",
-      "title": "鲁健访谈",
-      "sort": 26
-    },
-    {
       "tmdb_id": 239038,
       "tmdb_type": "tv",
       "title": "爱的修学旅行",
+      "sort": 26
+    },
+    {
+      "tmdb_id": 207023,
+      "tmdb_type": "tv",
+      "title": "鲁健访谈",
       "sort": 27
+    },
+    {
+      "tmdb_id": 255818,
+      "tmdb_type": "tv",
+      "title": "此生要去的100个地方",
+      "sort": 28
     },
     {
       "tmdb_id": 331649,
       "tmdb_type": "tv",
       "title": "大哥小助理",
-      "sort": 28
-    },
-    {
-      "tmdb_id": 299776,
-      "tmdb_type": "tv",
-      "title": "罗永浩的十字路口",
       "sort": 29
     },
     {

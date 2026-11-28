@@ -407,6 +407,15 @@
    "Youku"
   ]
  },
+ "254498": {
+  "genres": [
+   80,
+   9648
+  ],
+  "networks": [
+   "Youku"
+  ]
+ },
  "254528": {
   "genres": [
    35
@@ -557,6 +566,16 @@
   ],
   "networks": [
    "Prime Video"
+  ]
+ },
+ "261676": {
+  "genres": [
+   80,
+   9648
+  ],
+  "networks": [
+   "iQiyi",
+   "Tencent Video"
   ]
  },
  "262262": {
@@ -809,6 +828,16 @@
    "Apple TV"
   ]
  },
+ "278113": {
+  "genres": [
+   18,
+   80,
+   9648
+  ],
+  "networks": [
+   "Disney+"
+  ]
+ },
  "278127": {
   "genres": [
    18,
@@ -870,6 +899,16 @@
   ],
   "networks": [
    "Apple TV"
+  ]
+ },
+ "278882": {
+  "genres": [
+   35,
+   18,
+   10765
+  ],
+  "networks": [
+   "Tencent Video"
   ]
  },
  "278927": {
@@ -1138,6 +1177,14 @@
    "Mango TV"
   ]
  },
+ "283961": {
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Mango TV"
+  ]
+ },
  "284512": {
   "genres": [
    9648,
@@ -1393,6 +1440,15 @@
    "HBO Max"
   ]
  },
+ "287641": {
+  "genres": [
+   18
+  ],
+  "networks": [
+   "Hunan Television",
+   "Mango TV"
+  ]
+ },
  "288385": {
   "genres": [
    9648,
@@ -1435,6 +1491,16 @@
   ],
   "networks": [
    "Prime Video"
+  ]
+ },
+ "289078": {
+  "genres": [
+   18,
+   9648
+  ],
+  "networks": [
+   "iQiyi",
+   "Tencent Video"
   ]
  },
  "289116": {
