@@ -1,7 +1,7 @@
 {
   "name": "TMDB 每日热门",
   "cover": "https://image.tmdb.org/t/p/w780/B7id5YjOBmyvlzIRrlhqA051EW.jpg",
-  "updated_at": "2026-11-28 02:19:03",
+  "updated_at": "2026-11-28 12:53:39",
   "videos": [
     {
       "tmdb_id": 1153576,
@@ -28,15 +28,15 @@
       "sort": 4
     },
     {
-      "tmdb_id": 1458300,
+      "tmdb_id": 1300968,
       "tmdb_type": "movie",
-      "title": "蚊子杯：最后一役",
+      "title": "饥饿游戏：收获日出",
       "sort": 5
     },
     {
-      "tmdb_id": 326247,
-      "tmdb_type": "tv",
-      "title": "愚者之夜",
+      "tmdb_id": 1458300,
+      "tmdb_type": "movie",
+      "title": "蚊子杯：最后一役",
       "sort": 6
     },
     {
@@ -52,33 +52,33 @@
       "sort": 8
     },
     {
-      "tmdb_id": 244447,
-      "tmdb_type": "tv",
-      "title": "狩猎娇妻",
-      "sort": 9
-    },
-    {
       "tmdb_id": 969681,
       "tmdb_type": "movie",
       "title": "蜘蛛侠：崭新之日",
-      "sort": 10
+      "sort": 9
     },
     {
-      "tmdb_id": 1300968,
-      "tmdb_type": "movie",
-      "title": "饥饿游戏：收获日出",
-      "sort": 11
-    },
-    {
-      "tmdb_id": 84773,
+      "tmdb_id": 326247,
       "tmdb_type": "tv",
-      "title": "指环王：力量之戒",
-      "sort": 12
+      "title": "愚者之夜",
+      "sort": 10
     },
     {
       "tmdb_id": 1368337,
       "tmdb_type": "movie",
       "title": "奥德赛",
+      "sort": 11
+    },
+    {
+      "tmdb_id": 244447,
+      "tmdb_type": "tv",
+      "title": "狩猎娇妻",
+      "sort": 12
+    },
+    {
+      "tmdb_id": 84773,
+      "tmdb_type": "tv",
+      "title": "指环王：力量之戒",
       "sort": 13
     },
     {
@@ -88,39 +88,39 @@
       "sort": 14
     },
     {
-      "tmdb_id": 1765072,
+      "tmdb_id": 1506401,
       "tmdb_type": "movie",
-      "title": "一切如你所见",
+      "title": "逝去的孩子",
       "sort": 15
-    },
-    {
-      "tmdb_id": 1400336,
-      "tmdb_type": "movie",
-      "title": "拜见岳父大人4",
-      "sort": 16
     },
     {
       "tmdb_id": 1170608,
       "tmdb_type": "movie",
       "title": "沙丘3",
+      "sort": 16
+    },
+    {
+      "tmdb_id": 1195803,
+      "tmdb_type": "movie",
+      "title": "编个丈夫",
       "sort": 17
+    },
+    {
+      "tmdb_id": 1765072,
+      "tmdb_type": "movie",
+      "title": "一切如你所见",
+      "sort": 18
     },
     {
       "tmdb_id": 1269325,
       "tmdb_type": "movie",
       "title": "误杀瞒天记3",
-      "sort": 18
-    },
-    {
-      "tmdb_id": 218347,
-      "tmdb_type": "tv",
-      "title": "甜豌豆",
       "sort": 19
     },
     {
-      "tmdb_id": 1506401,
+      "tmdb_id": 1400336,
       "tmdb_type": "movie",
-      "title": "逝去的孩子",
+      "title": "拜见岳父大人4",
       "sort": 20
     }
   ]
